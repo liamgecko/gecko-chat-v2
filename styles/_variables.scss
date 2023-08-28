@@ -1720,7 +1720,7 @@ $modal-content-box-shadow-xs:       $box-shadow-sm !default;
 $modal-content-box-shadow-sm-up:    $box-shadow !default;
 
 $modal-backdrop-bg:                 $primary !default;
-$modal-backdrop-opacity:            .9 !default;
+$modal-backdrop-opacity:            .1 !default;
 
 $modal-header-border-color:         $modal-content-border-color !default;
 $modal-header-border-width:         $modal-content-border-width !default;
@@ -1937,9 +1937,9 @@ $spinner-border-width-sm: .2em !default;
 // Close
 
 // scss-docs-start close-variables
-$btn-close-width:            24px !default;
-$btn-close-height:           24px !default;
-$btn-close-padding-x:        .25em !default;
+$btn-close-width:            10px !default;
+$btn-close-height:           10px !default;
+$btn-close-padding-x:        $spacer !default;
 $btn-close-padding-y:        $btn-close-padding-x !default;
 $btn-close-color:            $primary !default;
 $btn-close-bg:               url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512' fill='#{$btn-close-color}'><path d='M312.1 375c9.369 9.369 9.369 24.57 0 33.94s-24.57 9.369-33.94 0L160 289.9l-119 119c-9.369 9.369-24.57 9.369-33.94 0s-9.369-24.57 0-33.94L126.1 256L7.027 136.1c-9.369-9.369-9.369-24.57 0-33.94s24.57-9.369 33.94 0L160 222.1l119-119c9.369-9.369 24.57-9.369 33.94 0s9.369 24.57 0 33.94L193.9 256L312.1 375z'/></svg>") !default;

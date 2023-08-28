@@ -8688,11 +8688,11 @@ hr.dropdown-divider {
 /* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_close.scss */
 .btn-close {
   box-sizing: content-box;
-  width: 24px;
-  height: 24px;
-  padding: 0.25em 0.25em;
+  width: 10px;
+  height: 10px;
+  padding: 8px 8px;
   color: #1b325a;
-  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512' fill='%231b325a'%3e%3cpath d='M312.1 375c9.369 9.369 9.369 24.57 0 33.94s-24.57 9.369-33.94 0L160 289.9l-119 119c-9.369 9.369-24.57 9.369-33.94 0s-9.369-24.57 0-33.94L126.1 256L7.027 136.1c-9.369-9.369-9.369-24.57 0-33.94s24.57-9.369 33.94 0L160 222.1l119-119c9.369-9.369 24.57-9.369 33.94 0s9.369 24.57 0 33.94L193.9 256L312.1 375z'/%3e%3c/svg%3e") center/12px auto no-repeat;
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512' fill='%231b325a'%3e%3cpath d='M312.1 375c9.369 9.369 9.369 24.57 0 33.94s-24.57 9.369-33.94 0L160 289.9l-119 119c-9.369 9.369-24.57 9.369-33.94 0s-9.369-24.57 0-33.94L126.1 256L7.027 136.1c-9.369-9.369-9.369-24.57 0-33.94s24.57-9.369 33.94 0L160 222.1l119-119c9.369-9.369 24.57-9.369 33.94 0s9.369 24.57 0 33.94L193.9 256L312.1 375z'/%3e%3c/svg%3e") center/10px auto no-repeat;
   border: 0;
   border-radius: 4px;
   transition: all 0.15s ease-in-out;
@@ -8987,13 +8987,14 @@ hr.dropdown-divider {
   border: var(--gecko-modal-border-width) solid var(--gecko-modal-border-color);
   border-radius: var(--gecko-modal-border-radius);
   outline: 0;
+  box-shadow: 0 12px 48px rgba(32, 40, 77, 0.35), 0 32px 80px rgba(32, 40, 77, 0.1);
 }
 
-/* line 117, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+/* line 118, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
 .modal-backdrop {
   --gecko-backdrop-zindex: 1050;
   --gecko-backdrop-bg: #1b325a;
-  --gecko-backdrop-opacity: 0.9;
+  --gecko-backdrop-opacity: 0.1;
   position: fixed;
   top: 0;
   left: 0;
@@ -9013,7 +9014,7 @@ hr.dropdown-divider {
   opacity: var(--gecko-backdrop-opacity);
 }
 
-/* line 129, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+/* line 130, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
 .modal-header {
   display: flex;
   flex-shrink: 0;
@@ -9025,18 +9026,18 @@ hr.dropdown-divider {
   border-top-right-radius: var(--gecko-modal-inner-border-radius);
 }
 
-/* line 138, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+/* line 139, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
 .modal-header .modal-title {
   margin: 0;
 }
 
-/* line 142, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+/* line 143, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
 .modal-header .btn-close {
   padding: calc(var(--gecko-modal-header-padding-y) * .5) calc(var(--gecko-modal-header-padding-x) * .5);
   margin: calc(-.5 * var(--gecko-modal-header-padding-y)) calc(-.5 * var(--gecko-modal-header-padding-x)) calc(-.5 * var(--gecko-modal-header-padding-y)) auto;
 }
 
-/* line 150, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+/* line 151, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
 .modal-title h2, .modal-title .h2 {
   margin-bottom: 0;
   line-height: var(--gecko-modal-title-line-height);
@@ -9044,24 +9045,24 @@ hr.dropdown-divider {
   font-weight: var(--gecko-modal-title-font-weight);
 }
 
-/* line 160, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+/* line 161, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
 .modal-body {
   position: relative;
   flex: 1 1 auto;
   padding: var(--gecko-modal-padding);
 }
 
-/* line 167, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+/* line 168, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
 .modal-body p:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 171, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+/* line 172, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
 .modal-body .modal-body-heading {
   font-size: var(--gecko-modal-body-title-size);
 }
 
-/* line 177, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+/* line 178, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
 .modal-footer {
   padding: var(--gecko-modal-footer-padding);
   background-color: var(--gecko-modal-footer-bg);
@@ -9070,41 +9071,41 @@ hr.dropdown-divider {
   border-bottom-left-radius: var(--gecko-modal-inner-border-radius);
 }
 
-/* line 184, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+/* line 185, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
 .modal-footer .footer-container .footer-col-left {
   float: left;
 }
 
-/* line 187, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+/* line 188, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
 .modal-footer .footer-container .footer-col-right {
   float: right;
 }
 
-/* line 189, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+/* line 190, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
 .modal-footer .footer-container .footer-col-right .btn {
   margin-left: 8px;
 }
 
 @media (min-width: 576px) {
-  /* line 198, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 199, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal {
     --gecko-modal-margin: 1.75rem;
     --gecko-modal-box-shadow: 0 0 1rem 0 rgba(27, 50, 90, 0.15);
   }
-  /* line 204, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 205, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-dialog {
     max-width: var(--gecko-modal-width);
     margin-right: auto;
     margin-left: auto;
   }
-  /* line 210, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 211, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-sm {
     --gecko-modal-width: 300px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 216, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 217, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-lg,
   .modal-xl {
     --gecko-modal-width: 800px;
@@ -9112,13 +9113,13 @@ hr.dropdown-divider {
 }
 
 @media (min-width: 1200px) {
-  /* line 223, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 224, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-xl {
     --gecko-modal-width: 1140px;
   }
 }
 
-/* line 234, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+/* line 235, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
 .modal-fullscreen {
   width: 100vw;
   max-width: none;
@@ -9126,144 +9127,144 @@ hr.dropdown-divider {
   margin: 0;
 }
 
-/* line 240, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+/* line 241, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
 .modal-fullscreen .modal-content {
   height: 100%;
   border: 0;
   border-radius: 0;
 }
 
-/* line 246, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+/* line 247, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
 .modal-fullscreen .modal-header,
 .modal-fullscreen .modal-footer {
   border-radius: 0;
 }
 
-/* line 251, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+/* line 252, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
 .modal-fullscreen .modal-body {
   overflow-y: auto;
 }
 
 @media (max-width: 575.98px) {
-  /* line 234, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 235, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-sm-down {
     width: 100vw;
     max-width: none;
     height: 100%;
     margin: 0;
   }
-  /* line 240, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 241, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-sm-down .modal-content {
     height: 100%;
     border: 0;
     border-radius: 0;
   }
-  /* line 246, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 247, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-sm-down .modal-header,
   .modal-fullscreen-sm-down .modal-footer {
     border-radius: 0;
   }
-  /* line 251, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 252, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-sm-down .modal-body {
     overflow-y: auto;
   }
 }
 
 @media (max-width: 767.98px) {
-  /* line 234, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 235, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-md-down {
     width: 100vw;
     max-width: none;
     height: 100%;
     margin: 0;
   }
-  /* line 240, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 241, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-md-down .modal-content {
     height: 100%;
     border: 0;
     border-radius: 0;
   }
-  /* line 246, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 247, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-md-down .modal-header,
   .modal-fullscreen-md-down .modal-footer {
     border-radius: 0;
   }
-  /* line 251, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 252, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-md-down .modal-body {
     overflow-y: auto;
   }
 }
 
 @media (max-width: 991.98px) {
-  /* line 234, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 235, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-lg-down {
     width: 100vw;
     max-width: none;
     height: 100%;
     margin: 0;
   }
-  /* line 240, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 241, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-lg-down .modal-content {
     height: 100%;
     border: 0;
     border-radius: 0;
   }
-  /* line 246, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 247, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-lg-down .modal-header,
   .modal-fullscreen-lg-down .modal-footer {
     border-radius: 0;
   }
-  /* line 251, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 252, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-lg-down .modal-body {
     overflow-y: auto;
   }
 }
 
 @media (max-width: 1199.98px) {
-  /* line 234, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 235, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-xl-down {
     width: 100vw;
     max-width: none;
     height: 100%;
     margin: 0;
   }
-  /* line 240, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 241, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-xl-down .modal-content {
     height: 100%;
     border: 0;
     border-radius: 0;
   }
-  /* line 246, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 247, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-xl-down .modal-header,
   .modal-fullscreen-xl-down .modal-footer {
     border-radius: 0;
   }
-  /* line 251, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 252, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-xl-down .modal-body {
     overflow-y: auto;
   }
 }
 
 @media (max-width: 1399.98px) {
-  /* line 234, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 235, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-xxl-down {
     width: 100vw;
     max-width: none;
     height: 100%;
     margin: 0;
   }
-  /* line 240, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 241, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-xxl-down .modal-content {
     height: 100%;
     border: 0;
     border-radius: 0;
   }
-  /* line 246, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 247, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-xxl-down .modal-header,
   .modal-fullscreen-xxl-down .modal-footer {
     border-radius: 0;
   }
-  /* line 251, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
+  /* line 252, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */
   .modal-fullscreen-xxl-down .modal-body {
     overflow-y: auto;
   }
@@ -10488,7 +10489,7 @@ hr.dropdown-divider {
 
 /* line 13, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_backdrop.scss */
 .offcanvas-backdrop.show {
-  opacity: 0.9;
+  opacity: 0.1;
 }
 
 /* line 121, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_offcanvas.scss */

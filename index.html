@@ -52,11 +52,13 @@
             <div class="user-menu">
                 <ul class="app-menu flex-column mb-auto text-center list-unstyled">
                     <li class="d-flex justify-content-center mb-2">
-                        <a href="" title="Search" data-bs-toggle="tooltip" data-bs-title="Search" data-bs-custom-class="tooltip-menu" class="d-flex justify-content-center align-items-center rounded position-relative text-decoration-none"><i class="fa-light fa-search"></i></a>
+                        <span class="menu-modal-btn" data-bs-toggle="modal" data-bs-target="#search-modal">
+                            <a title="Search" data-bs-toggle="tooltip" data-bs-title="Search" data-bs-custom-class="tooltip-menu" class="d-flex justify-content-center align-items-center rounded position-relative text-decoration-none"><i class="fa-light fa-search"></i></a>
+                        </span>
                     </li>
                     <li class="d-flex justify-content-center mb-2">
-                        <a href="table-view.html" title="Settings" data-bs-toggle="tooltip" data-bs-title="Settings" data-bs-custom-class="tooltip-menu" class="d-flex justify-content-center align-items-center rounded position-relative text-decoration-none"><i class="fa-light fa-cog"></i></a>
-                    </li>
+                        <a href="" title="Settings" data-bs-toggle="tooltip" data-bs-title="Settings" data-bs-custom-class="tooltip-menu" class="d-flex justify-content-center align-items-center rounded position-relative text-decoration-none"><i class="fa-light fa-cog"></i></a>
+                    </li>    
                 </ul>
                 <div class="dropdown dropend">
                     <div class="avatar avatar-sm justify-content-center p-4" id="dropdownUser" data-bs-toggle="dropdown">
@@ -66,8 +68,8 @@
                     </div>
                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
                         <a class="dropdown-item" href="#">Set status as <strong>unavailable</strong></a>
-                        <a class="dropdown-item" href="#">Switch to dark mode</a>
                         <hr class="dropdown-divider">
+                        <a class="dropdown-item" href="#">Switch to dark mode</a>
                         <a class="dropdown-item" href="#">Agent settings</a>
                         <a class="dropdown-item" href="#">Security preferences</a>
                         <a class="dropdown-item" href="#">My accounts</a>
@@ -1058,6 +1060,77 @@
             
         </div>
 
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="search-modal" tabindex="-1" aria-labelledby="search-modal" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="search-input position-relative border-bottom d-flex align-items-center">
+                    <i class="search-icon far fa-search position-absolute text-primary"></i>
+                    <input placeholder="Search Gecko Chat" type="search" class="form-control position-relative p-4">
+                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-2">
+                    <div class="search-category-filter">
+                        <span class="fs-3 fw-bold text-secondary mb-2 px-2">Search in</span>
+                        <ul class="list-unstyled">
+                            <li>
+                                <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
+                                    <span><i class="category-icon text-center far fa-comments me-1"></i> <span class="fw-semibold">Conversations</span></span>
+                                    <span>
+                                        <div class="rounded border p-1 fs-4 fw-bold text-grey-600 bg-grey-100 border-grey-200">&#8984; A</div>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
+                                    <span><i class="category-icon text-center far fa-circle-bolt me-1"></i> <span class="fw-semibold">Automation</span></span>
+                                    <span>
+                                        <div class="rounded border p-1 fs-4 fw-bold text-grey-600 bg-grey-100 border-grey-200">&#8984; B</div>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
+                                    <span><i class="category-icon text-center far fa-address-book me-1"></i> <span class="fw-semibold">Contacts</span></span>
+                                    <span>
+                                        <div class="rounded border p-1 fs-4 fw-bold text-grey-600 bg-grey-100 border-grey-200">&#8984; C</div>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
+                                    <span><i class="category-icon text-center far fa-users me-1"></i> <span class="fw-semibold">Agents and teams</span></span>
+                                    <span>
+                                        <div class="rounded border p-1 fs-4 fw-bold text-grey-600 bg-grey-100 border-grey-200">&#8984; D</div>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
+                                    <span><i class="category-icon text-center far fa-route me-1"></i> <span class="fw-semibold">Workflows</span></span>
+                                    <span>
+                                        <div class="rounded border p-1 fs-4 fw-bold text-grey-600 bg-grey-100 border-grey-200">&#8984; E</div>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
+                                    <span><i class="category-icon text-center far fa-tags me-1"></i> <span class="fw-semibold">Tags</span></span>
+                                    <span>
+                                        <div class="rounded border p-1 fs-4 fw-bold text-grey-600 bg-grey-100 border-grey-200">&#8984; F</div>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer fs-3 bg-grey-100">
+                    💡 Tip: You can use in: or from: in the search box to focus your search.
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
