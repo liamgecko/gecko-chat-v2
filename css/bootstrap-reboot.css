@@ -1,0 +1,729 @@
+/*!
+   * Bootstrap Reboot v5.2.2 (https://getbootstrap.com/)
+   * Copyright 2011-2022 The Bootstrap Authors
+   * Copyright 2011-2022 Twitter, Inc.
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+   */
+/* line 1, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_root.scss */
+:root {
+  --gecko-blue: #3b6dc4;
+  --gecko-navy: #3b6dc4;
+  --gecko-red: #d12e2e;
+  --gecko-orange: #ffa557;
+  --gecko-yellow: #f5d470;
+  --gecko-green: #36b580;
+  --gecko-black: #35424b;
+  --gecko-white: white;
+  --gecko-grey: #556677;
+  --gecko-grey-dark: #35424b;
+  --gecko-gray-grey-100: #f9fafb;
+  --gecko-gray-grey-200: #f0f2f4;
+  --gecko-gray-grey-300: #e1e6ea;
+  --gecko-gray-grey-400: #d2d9df;
+  --gecko-gray-grey-500: #a3b0bd;
+  --gecko-gray-grey-600: #63788c;
+  --gecko-gray-grey-700: #556677;
+  --gecko-gray-grey-800: #4a5a68;
+  --gecko-gray-grey-900: #35424b;
+  --gecko-primary: #1b325a;
+  --gecko-secondary: #556677;
+  --gecko-success: #36b580;
+  --gecko-info: #406fbf;
+  --gecko-warning: #ffa557;
+  --gecko-danger: #d12e2e;
+  --gecko-light: white;
+  --gecko-dark: #35424b;
+  --gecko-grey-100: #f9fafb;
+  --gecko-grey-200: #f0f2f4;
+  --gecko-grey-300: #e1e6ea;
+  --gecko-grey-400: #d2d9df;
+  --gecko-grey-500: #a3b0bd;
+  --gecko-grey-600: #63788c;
+  --gecko-grey-700: #556677;
+  --gecko-grey-800: #4a5a68;
+  --gecko-grey-900: #35424b;
+  --gecko-blue-100: #ebf3fa;
+  --gecko-blue-200: #dfebf6;
+  --gecko-blue-300: #afcde9;
+  --gecko-blue-400: #668dd1;
+  --gecko-blue-500: #406fbf;
+  --gecko-blue-600: #3460ad;
+  --gecko-blue-700: #274882;
+  --gecko-blue-800: #1b325a;
+  --gecko-blue-900: #142543;
+  --gecko-navy-100: #ebf3fa;
+  --gecko-navy-200: #dfebf6;
+  --gecko-navy-300: #afcde9;
+  --gecko-navy-400: #668dd1;
+  --gecko-navy-500: #406fbf;
+  --gecko-navy-600: #3460ad;
+  --gecko-navy-700: #274882;
+  --gecko-navy-800: #1c345e;
+  --gecko-navy-900: #1a3056;
+  --gecko-red-100: #faeaea;
+  --gecko-red-200: #f6d5d5;
+  --gecko-red-300: #e79292;
+  --gecko-red-400: #dc6060;
+  --gecko-red-500: #d12e2e;
+  --gecko-red-600: #a72525;
+  --gecko-red-700: #972121;
+  --gecko-red-800: #7d1c1c;
+  --gecko-red-900: #3f0e0f;
+  --gecko-orange-100: #fff1e6;
+  --gecko-orange-200: #ffe4cc;
+  --gecko-orange-300: #ffc38f;
+  --gecko-orange-400: #ffa557;
+  --gecko-orange-500: #ff9233;
+  --gecko-orange-600: #bd5800;
+  --gecko-orange-700: #994700;
+  --gecko-orange-800: #803c00;
+  --gecko-orange-900: #522600;
+  --gecko-yellow-100: #fdf8e7;
+  --gecko-yellow-200: #fbf0d0;
+  --gecko-yellow-300: #f8e2a0;
+  --gecko-yellow-400: #f5d470;
+  --gecko-yellow-500: #f2c540;
+  --gecko-yellow-600: #eeb711;
+  --gecko-yellow-700: #cd9d0e;
+  --gecko-yellow-800: #775b08;
+  --gecko-yellow-900: #483705;
+  --gecko-green-100: #ebf9f3;
+  --gecko-green-200: #d8f3e7;
+  --gecko-green-300: #ade6cd;
+  --gecko-green-400: #89dcb8;
+  --gecko-green-500: #36b580;
+  --gecko-green-600: #2e9469;
+  --gecko-green-700: #247553;
+  --gecko-green-800: #1d5e44;
+  --gecko-green-900: #123b29;
+  --gecko-primary-rgb: 26.979, 50.2044, 90.321;
+  --gecko-secondary-rgb: 84.66, 102, 119.34;
+  --gecko-success-rgb: 53.958, 180.642, 127.857;
+  --gecko-info-rgb: 63.75, 110.5, 191.25;
+  --gecko-warning-rgb: 255, 165.24, 86.7;
+  --gecko-danger-rgb: 209.1, 45.9, 45.9;
+  --gecko-light-rgb: 255, 255, 255;
+  --gecko-dark-rgb: 52.9125, 65.55625, 74.5875;
+  --gecko-grey-100-rgb: 248.625, 249.9, 251.175;
+  --gecko-grey-200-rgb: 240.0825, 242.25, 244.4175;
+  --gecko-grey-300-rgb: 225.165, 229.5, 233.835;
+  --gecko-grey-400-rgb: 210.2475, 217.1835, 223.2525;
+  --gecko-grey-500-rgb: 162.5115, 176.39795, 189.3885;
+  --gecko-grey-600-rgb: 99.4755, 119.85, 140.2245;
+  --gecko-grey-700-rgb: 84.66, 102, 119.34;
+  --gecko-grey-800-rgb: 74.0775, 90.2615, 104.4225;
+  --gecko-grey-900-rgb: 52.9125, 65.55625, 74.5875;
+  --gecko-blue-100-rgb: 234.6, 242.76, 249.9;
+  --gecko-blue-200-rgb: 222.972, 234.9876, 246.228;
+  --gecko-blue-300-rgb: 175.44, 204.952, 232.56;
+  --gecko-blue-400-rgb: 101.847, 141.2292, 209.253;
+  --gecko-blue-500-rgb: 63.75, 110.5, 191.25;
+  --gecko-blue-600-rgb: 51.612, 96.0432, 172.788;
+  --gecko-blue-700-rgb: 38.709, 72.0324, 129.591;
+  --gecko-blue-800-rgb: 26.979, 50.2044, 90.321;
+  --gecko-blue-900-rgb: 19.941, 37.1076, 66.759;
+  --gecko-navy-100-rgb: 234.6, 242.76, 249.9;
+  --gecko-navy-200-rgb: 222.972, 234.9876, 246.228;
+  --gecko-navy-300-rgb: 175.44, 204.952, 232.56;
+  --gecko-navy-400-rgb: 101.847, 141.2292, 209.253;
+  --gecko-navy-500-rgb: 63.75, 110.5, 191.25;
+  --gecko-navy-600-rgb: 51.612, 96.0432, 172.788;
+  --gecko-navy-700-rgb: 38.709, 72.0324, 129.591;
+  --gecko-navy-800-rgb: 28.152, 52.3872, 94.248;
+  --gecko-navy-900-rgb: 25.806, 48.0216, 86.394;
+  --gecko-red-100-rgb: 250.41, 234.09, 234.09;
+  --gecko-red-200-rgb: 245.82, 213.18, 213.18;
+  --gecko-red-300-rgb: 231.132, 146.268, 146.268;
+  --gecko-red-400-rgb: 220.116, 96.084, 96.084;
+  --gecko-red-500-rgb: 209.1, 45.9, 45.9;
+  --gecko-red-600-rgb: 167.28, 36.72, 36.72;
+  --gecko-red-700-rgb: 150.552, 33.048, 33.048;
+  --gecko-red-800-rgb: 125.46, 27.54, 27.54;
+  --gecko-red-900-rgb: 62.73, 13.77, 15.402;
+  --gecko-orange-100-rgb: 255, 241.4, 229.5;
+  --gecko-orange-200-rgb: 255, 227.8, 204;
+  --gecko-orange-300-rgb: 255, 195.16, 142.8;
+  --gecko-orange-400-rgb: 255, 165.24, 86.7;
+  --gecko-orange-500-rgb: 255, 146.2, 51;
+  --gecko-orange-600-rgb: 188.7, 88.06, 0;
+  --gecko-orange-700-rgb: 153, 71.4, 0;
+  --gecko-orange-800-rgb: 127.5, 59.5, 0;
+  --gecko-orange-900-rgb: 81.6, 38.08, 0;
+  --gecko-yellow-100-rgb: 253.0875, 247.66875, 231.4125;
+  --gecko-yellow-200-rgb: 250.92, 240.21, 208.08;
+  --gecko-yellow-300-rgb: 248.37, 226.185, 159.63;
+  --gecko-yellow-400-rgb: 245.055, 211.7775, 111.945;
+  --gecko-yellow-500-rgb: 241.74, 197.37, 64.26;
+  --gecko-yellow-600-rgb: 238.425, 182.9625, 16.575;
+  --gecko-yellow-700-rgb: 205.0455, 157.34775, 14.2545;
+  --gecko-yellow-800-rgb: 119.2125, 91.48125, 8.2875;
+  --gecko-yellow-900-rgb: 71.5275, 54.88875, 4.9725;
+  --gecko-green-100-rgb: 235.365, 249.135, 243.168;
+  --gecko-green-200-rgb: 215.985, 243.015, 231.302;
+  --gecko-green-300-rgb: 172.533, 230.367, 205.3056;
+  --gecko-green-400-rgb: 137.19, 219.81, 184.008;
+  --gecko-green-500-rgb: 53.958, 180.642, 127.857;
+  --gecko-green-600-rgb: 45.543, 148.257, 105.4595;
+  --gecko-green-700-rgb: 35.955, 117.045, 83.2575;
+  --gecko-green-800-rgb: 28.764, 93.636, 67.6872;
+  --gecko-green-900-rgb: 17.595, 58.905, 41.004;
+  --gecko-white-rgb: 255, 255, 255;
+  --gecko-black-rgb: 52.9125, 65.55625, 74.5875;
+  --gecko-body-color-rgb: 26.979, 50.2044, 90.321;
+  --gecko-body-bg-rgb: 255, 255, 255;
+  --gecko-font-sans-serif: "Muli", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --gecko-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --gecko-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --gecko-body-font-family: var(--gecko-font-sans-serif);
+  --gecko-body-font-size: 1rem;
+  --gecko-body-font-weight: 400;
+  --gecko-body-line-height: 1.5;
+  --gecko-body-color: #1b325a;
+  --gecko-body-bg: white;
+  --gecko-border-width: 1px;
+  --gecko-border-style: solid;
+  --gecko-border-color: #e1e6ea;
+  --gecko-border-color-translucent: rgba(53, 66, 75, 0.175);
+  --gecko-border-radius: 4px;
+  --gecko-border-radius-sm: 2px;
+  --gecko-border-radius-lg: 6px;
+  --gecko-border-radius-xl: 8px;
+  --gecko-border-radius-2xl: 16px;
+  --gecko-border-radius-pill: 50rem;
+  --gecko-link-color: #406fbf;
+  --gecko-link-hover-color: #1b325a;
+  --gecko-code-color: #d12e2e;
+  --gecko-highlight-bg: #fdf8e7;
+}
+
+/* line 16, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* line 28, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+/* line 49, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+html {
+  font-size: 87.5%;
+}
+
+/* line 52, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+body {
+  margin: 0;
+  font-family: var(--gecko-body-font-family);
+  font-size: 14px;
+  font-size: 1rem;
+  font-weight: var(--gecko-body-font-weight);
+  line-height: var(--gecko-body-line-height);
+  color: var(--gecko-body-color);
+  text-align: var(--gecko-body-text-align);
+  background-color: var(--gecko-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(53, 66, 75, 0);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 73, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+hr {
+  margin: 4px 0;
+  color: inherit;
+  border: 0;
+  border-top: 1px solid;
+  opacity: 0.25;
+}
+
+/* line 88, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* line 98, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+h1 {
+  font-size: calc(1.29643rem + 0.55716vw);
+  letter-spacing: -0.02rem;
+}
+
+@media (min-width: 1200px) {
+  /* line 98, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+  h1 {
+    font-size: 1.7143rem;
+  }
+}
+
+/* line 104, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+h2 {
+  font-size: calc(1.25357rem + 0.04284vw);
+  letter-spacing: -0.02rem;
+}
+
+@media (min-width: 1200px) {
+  /* line 104, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+  h2 {
+    font-size: 1.2857rem;
+  }
+}
+
+/* line 110, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+h3 {
+  font-size: 1.143rem;
+}
+
+/* line 115, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+h4 {
+  font-size: 1rem;
+}
+
+/* line 120, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+h5 {
+  font-size: 0.85714rem;
+}
+
+/* line 125, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+h6 {
+  font-size: 0.85714rem;
+}
+
+/* line 136, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* line 148, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+abbr[title] {
+  text-decoration: underline dotted;
+  cursor: help;
+  text-decoration-skip-ink: none;
+}
+
+/* line 157, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+/* line 166, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+ol,
+ul {
+  padding-left: 2rem;
+}
+
+/* line 171, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* line 178, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+/* line 185, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+dt {
+  font-weight: 700;
+}
+
+/* line 191, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0;
+}
+
+/* line 199, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+blockquote {
+  margin: 0 0 1rem;
+}
+
+/* line 208, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+b,
+strong {
+  font-weight: 700;
+}
+
+/* line 218, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+small {
+  font-size: 0.875em;
+}
+
+/* line 225, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+mark {
+  padding: 0.1875em;
+  background-color: var(--gecko-highlight-bg);
+}
+
+/* line 236, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+sub,
+sup {
+  position: relative;
+  font-size: 0.75em;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+/* line 244, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+sub {
+  bottom: -.25em;
+}
+
+/* line 245, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+sup {
+  top: -.5em;
+}
+
+/* line 250, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+a {
+  color: var(--gecko-link-color);
+  text-decoration: underline;
+  transition: all 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* line 250, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+  a {
+    transition: none;
+  }
+}
+
+/* line 255, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+a:hover {
+  color: var(--gecko-link-hover-color);
+}
+
+/* line 267, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 277, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: var(--gecko-font-monospace);
+  font-size: 1em;
+}
+
+/* line 289, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+  font-size: 0.875em;
+}
+
+/* line 298, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+pre code {
+  font-size: inherit;
+  color: inherit;
+  word-break: normal;
+}
+
+/* line 305, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+code {
+  font-size: 0.875em;
+  color: var(--gecko-code-color);
+  word-wrap: break-word;
+  background-color: #f9fafb;
+  border: 1px solid #d2d9df;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+/* line 315, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+a > code {
+  color: inherit;
+}
+
+/* line 320, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+kbd {
+  padding: 0.1875rem 0.375rem;
+  font-size: 0.875em;
+  color: var(--gecko-body-bg);
+  background-color: var(--gecko-body-color);
+  border-radius: 2px;
+}
+
+/* line 327, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+kbd kbd {
+  padding: 0;
+  font-size: 1em;
+}
+
+/* line 339, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+figure {
+  margin: 0 0 1rem;
+}
+
+/* line 346, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+img,
+svg {
+  vertical-align: middle;
+}
+
+/* line 356, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+/* line 361, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #556677;
+  text-align: left;
+}
+
+/* line 372, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+th {
+  text-align: inherit;
+  text-align: -webkit-match-parent;
+}
+
+/* line 378, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* line 394, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+label {
+  display: inline-block;
+}
+
+/* line 401, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+button {
+  border-radius: 0;
+}
+
+/* line 411, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+/* line 417, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* line 429, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 436, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+[role="button"] {
+  cursor: pointer;
+}
+
+/* line 440, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+select {
+  word-wrap: normal;
+}
+
+/* line 446, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+select:disabled {
+  opacity: 1;
+}
+
+/* line 454, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+[list]:not([type="date"]):not([type="datetime-local"]):not([type="month"]):not([type="week"]):not([type="time"])::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+
+/* line 463, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* line 470, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+
+/* line 478, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+/* line 485, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 496, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* line 508, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+legend {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font-size: calc(1.275rem + 0.3vw);
+  line-height: inherit;
+}
+
+@media (min-width: 1200px) {
+  /* line 508, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+  legend {
+    font-size: 1.5rem;
+  }
+}
+
+/* line 517, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+legend + * {
+  clear: left;
+}
+
+/* line 525, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+::-webkit-datetime-edit-fields-wrapper,
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-minute,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-year-field {
+  padding: 0;
+}
+
+/* line 535, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+::-webkit-inner-spin-button {
+  height: auto;
+}
+
+/* line 545, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: textfield;
+}
+
+/* rtl:raw:
+[type="tel"],
+[type="url"],
+[type="email"],
+[type="number"] {
+  direction: ltr;
+}
+*/
+/* line 566, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 572, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+/* line 580, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+::file-selector-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+/* line 587, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+output {
+  display: inline-block;
+}
+
+/* line 593, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+iframe {
+  border: 0;
+}
+
+/* line 601, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+/* line 611, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/* line 620, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+[hidden] {
+  display: none !important;
+}
+
+/* line 624, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+::-webkit-input-placeholder {
+  color: #556677;
+  opacity: 1;
+}
+
+/* line 628, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+::-moz-placeholder {
+  color: #556677;
+  opacity: 1;
+}
+
+/* line 632, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+:-ms-input-placeholder {
+  color: #556677;
+  opacity: 1;
+}
+
+/* line 636, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+:-moz-placeholder {
+  color: #556677;
+  opacity: 1;
+}
+
+/* line 640, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/_reboot.scss */
+.overflow {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: block !important;
+}
+
+/*# sourceMappingURL=bootstrap-reboot.css.map */
