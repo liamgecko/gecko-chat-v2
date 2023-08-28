@@ -9387,26 +9387,27 @@ hr.dropdown-divider {
   max-width: var(--gecko-tooltip-max-width);
   padding: var(--gecko-tooltip-padding-y) var(--gecko-tooltip-padding-x);
   color: var(--gecko-tooltip-color);
+  font-weight: 500;
   line-height: initial;
   background-color: var(--gecko-tooltip-bg);
   border-radius: var(--gecko-tooltip-border-radius);
+  box-shadow: 0 0 1rem 0 rgba(27, 50, 90, 0.15);
 }
 
-/* line 122, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_tooltip.scss */
+/* line 124, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_tooltip.scss */
 .tooltip-menu {
   font-size: 1rem;
   font-weight: 600;
 }
 
-/* line 128, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_tooltip.scss */
+/* line 130, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_tooltip.scss */
 .tooltip-menu.bs-tooltip-end .tooltip-arrow:before, .tooltip-menu.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow:before,
 .tooltip-menu.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow:before {
   right: 0;
 }
 
-/* line 132, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_tooltip.scss */
+/* line 134, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_tooltip.scss */
 .tooltip-menu .tooltip-inner {
-  box-shadow: 0 0 1rem 0 rgba(27, 50, 90, 0.15);
   padding: 12px;
 }
 
@@ -10668,13 +10669,13 @@ hr.dropdown-divider {
 .avatar.avatar-sm .avatar-body {
   width: 24px;
   height: 24px;
-  font-size: 0.85714rem;
+  font-size: 0.71429rem;
 }
 
 /* line 97, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_avatar.scss */
 .avatar.avatar-sm .avatar-body.avatar-online:before, .avatar.avatar-sm .avatar-body.avatar-online:after, .avatar.avatar-sm .avatar-body.avatar-unavailable:before, .avatar.avatar-sm .avatar-body.avatar-unavailable:after, .avatar.avatar-sm .avatar-body.avatar-offline:before, .avatar.avatar-sm .avatar-body.avatar-offline:after, .avatar.avatar-sm .avatar-body.avatar-notification:before, .avatar.avatar-sm .avatar-body.avatar-notification:after {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
 }
 
 /* line 106, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_avatar.scss */
@@ -10856,7 +10857,7 @@ hr.dropdown-divider {
 .avatar-group .avatar.avatar-sm .avatar-dropdown {
   width: 24px;
   height: 24px;
-  font-size: 0.85714rem;
+  font-size: 0.71429rem;
 }
 
 /* line 101, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_avatar-group.scss */

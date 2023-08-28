@@ -114,9 +114,11 @@
   max-width: var(--#{$prefix}tooltip-max-width);
   padding: var(--#{$prefix}tooltip-padding-y) var(--#{$prefix}tooltip-padding-x);
   color: var(--#{$prefix}tooltip-color);
+  font-weight: $font-weight-medium;
   line-height: initial;
   background-color: var(--#{$prefix}tooltip-bg);
   @include border-radius(var(--#{$prefix}tooltip-border-radius));
+  box-shadow: $box-shadow;
 }
 
 .tooltip-menu {
@@ -130,7 +132,6 @@
     }
   }
   .tooltip-inner {
-    box-shadow: $box-shadow;
     padding: 12px;
   }
 
