@@ -18,15 +18,15 @@
   --gecko-white: white;
   --gecko-grey: #556677;
   --gecko-grey-dark: #35424b;
-  --gecko-gray-grey-100: #f9fafb;
-  --gecko-gray-grey-200: #f0f2f4;
-  --gecko-gray-grey-300: #e1e6ea;
-  --gecko-gray-grey-400: #d2d9df;
-  --gecko-gray-grey-500: #a3b0bd;
-  --gecko-gray-grey-600: #63788c;
-  --gecko-gray-grey-700: #556677;
-  --gecko-gray-grey-800: #4a5a68;
-  --gecko-gray-grey-900: #35424b;
+  --gecko-grey-grey-100: #f9fafb;
+  --gecko-grey-grey-200: #f0f2f4;
+  --gecko-grey-grey-300: #e1e6ea;
+  --gecko-grey-grey-400: #d2d9df;
+  --gecko-grey-grey-500: #a3b0bd;
+  --gecko-grey-grey-600: #63788c;
+  --gecko-grey-grey-700: #556677;
+  --gecko-grey-grey-800: #4a5a68;
+  --gecko-grey-grey-900: #35424b;
   --gecko-primary: #1b325a;
   --gecko-secondary: #556677;
   --gecko-success: #36b580;
@@ -196,6 +196,33 @@
   --gecko-link-hover-color: #1b325a;
   --gecko-code-color: #d12e2e;
   --gecko-highlight-bg: #fdf8e7;
+}
+
+/* line 75, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_root.scss */
+[data-gecko-theme="dark"] {
+  --gecko-body-color: var(--bs-white);
+  --gecko-body-color-rgb: 255, 255, 255;
+  --gecko-body-bg: var(--bs-blue);
+  --gecko-body-bg-rgb: 58.65, 109.14, 196.35;
+  --gecko-tertiary-bg: #3460ad;
+}
+
+/* line 82, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_root.scss */
+[data-gecko-theme="dark"] .dropdown-menu {
+  --gecko-dropdown-bg: #3a67b6;
+  --gecko-dropdown-link-active-bg: #274882;
+}
+
+/* line 87, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_root.scss */
+[data-gecko-theme="dark"] .btn-secondary {
+  --gecko-btn-bg: #668dd1;
+  --gecko-btn-border-color: rgba(255, 255, 255, 0.25);
+  --gecko-btn-hover-bg: #527ecb;
+  --gecko-btn-hover-border-color: rgba(255, 255, 255, 0.25);
+  --gecko-btn-active-bg: #3f70c5;
+  --gecko-btn-active-border-color: rgba(255, 255, 255, 0.5);
+  --gecko-btn-focus-border-color: rgba(255, 255, 255, 0.5);
+  --gecko-btn-focus-box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .2);
 }
 
 /* line 16, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_reboot.scss */
@@ -898,11 +925,6 @@ progress {
 /* line 127, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_type.scss */
 .fa-2xl {
   font-size: 1.7143rem;
-}
-
-/* line 131, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_type.scss */
-.fa-classic, .fa-light, .fa-regular, .fa-solid, .fa-thin, .fal, .far, .fas, .fat {
-  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* line 8, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_images.scss */
@@ -4980,13 +5002,7 @@ fieldset:disabled .btn {
   opacity: 1;
 }
 
-/* line 199, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
-hr.dropdown-divider {
-  padding: 0;
-  border-color: #e1e6ea;
-}
-
-/* line 207, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 202, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-item {
   display: block;
   width: 100%;
@@ -5003,70 +5019,70 @@ hr.dropdown-divider {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  /* line 207, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+  /* line 202, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
   .dropdown-item {
     transition: none;
   }
 }
 
-/* line 221, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 216, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-item:first-child {
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
-/* line 225, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 220, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-item:last-child {
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
-/* line 229, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 224, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-item:hover, .dropdown-item:focus {
   color: var(--gecko-dropdown-link-hover-color);
   background-color: var(--gecko-dropdown-link-hover-bg);
 }
 
-/* line 236, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 231, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-item.active, .dropdown-item:active {
   color: var(--gecko-dropdown-link-active-color);
   text-decoration: none;
   background-color: var(--gecko-dropdown-link-active-bg);
 }
 
-/* line 243, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 238, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: var(--gecko-dropdown-link-disabled-color);
   pointer-events: none;
   background-color: transparent;
 }
 
-/* line 252, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 247, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-item > .svg-inline--fa {
   margin-right: 8px;
   width: 20px;
 }
 
-/* line 257, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 252, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-item.delete {
   color: #d12e2e;
 }
 
-/* line 259, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 254, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-item.delete:hover {
   background-color: #faeaea;
   color: #a72525;
 }
 
-/* line 267, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 262, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-item .avatar.avatar-sm .avatar-name {
   font-size: 1rem;
 }
 
-/* line 274, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 269, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-menu.show {
   display: block;
 }
 
-/* line 279, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 274, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-header {
   display: block;
   padding: var(--gecko-dropdown-header-padding-y) var(--gecko-dropdown-header-padding-x);
@@ -5076,14 +5092,14 @@ hr.dropdown-divider {
   white-space: nowrap;
 }
 
-/* line 289, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 284, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-item-text {
   display: block;
   padding: var(--gecko-dropdown-item-padding-y) var(--gecko-dropdown-item-padding-x);
   color: var(--gecko-dropdown-link-color);
 }
 
-/* line 296, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 291, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-menu-dark {
   --gecko-dropdown-color: #a3b0bd;
   --gecko-dropdown-bg: #35424b;
@@ -5099,7 +5115,7 @@ hr.dropdown-divider {
   --gecko-dropdown-header-color: #556677;
 }
 
-/* line 313, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 308, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-footer {
   border-top: 1px solid #e1e6ea;
   padding: 12px 8px;
@@ -5108,7 +5124,7 @@ hr.dropdown-divider {
   justify-content: end;
 }
 
-/* line 319, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 314, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-footer .btn {
   margin-left: 4px;
 }
@@ -19226,4 +19242,4 @@ hr.dropdown-divider {
   }
 }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=bootstrap.css.map */

@@ -1,10 +1,10 @@
-/* line 1, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 1, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper {
   overflow: hidden;
   height: 100vh;
 }
 
-/* line 5, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 5, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-menu-wrapper {
   height: 100vh;
   left: 0;
@@ -14,33 +14,33 @@
   z-index: 10;
 }
 
-/* line 13, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 13, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-menu-wrapper .app-logo {
   padding: 16px 0;
   border-bottom: 1px solid #435169;
 }
 
-/* line 16, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 16, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-menu-wrapper .app-logo img {
   width: 36px;
 }
 
-/* line 21, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 21, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-menu-wrapper .app-menu {
   margin-top: 1rem;
 }
 
-/* line 23, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 23, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-menu-wrapper .app-menu li {
   margin-bottom: 8px;
 }
 
-/* line 25, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 25, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-menu-wrapper .app-menu li:last-child {
   margin-bottom: 0;
 }
 
-/* line 28, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 28, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-menu-wrapper .app-menu li a {
   background-color: #142543;
   border-radius: 4px;
@@ -52,13 +52,13 @@
   position: relative;
 }
 
-/* line 37, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 37, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-menu-wrapper .app-menu li a:hover, .app-wrapper .app-menu-wrapper .app-menu li a.active {
   background-color: #1B325A;
   color: #FFFFFF;
 }
 
-/* line 43, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 43, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-menu-wrapper .app-menu li a.active:before {
   content: "";
   height: 24px;
@@ -69,87 +69,87 @@
   position: absolute;
 }
 
-/* line 59, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 59, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-menu-wrapper .user-menu .dropdown .avatar {
   padding: 16px;
   cursor: pointer;
 }
 
-/* line 63, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 63, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-menu-wrapper .user-menu .dropdown .dropdown-menu {
   transform: translate3d(54px, -16px, 0px) !important;
 }
 
-/* line 71, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 71, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body {
   padding-left: 64px;
 }
 
-/* line 74, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 74, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body .panel {
   height: 100vh;
 }
 
-/* line 76, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 76, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body .panel .panel-heading {
   height: 60px;
 }
 
-/* line 81, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 81, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body .panel-side {
   max-width: 320px;
   min-width: 240px;
 }
 
-/* line 87, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 87, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body .chat-head-sidebar .chat-head-container {
   overflow: auto;
   height: calc(100% - 60px);
 }
 
-/* line 90, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 90, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body .chat-head-sidebar .chat-head-container .chat-head {
   margin-bottom: 1px;
 }
 
-/* line 92, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 92, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body .chat-head-sidebar .chat-head-container .chat-head:hover {
   background-color: #F9FAFB;
   cursor: pointer;
 }
 
-/* line 96, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 96, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body .chat-head-sidebar .chat-head-container .chat-head.active {
   background-color: #F1F3F5;
 }
 
-/* line 103, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 103, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body .conversation-view {
   position: relative;
 }
 
-/* line 106, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 106, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body .conversation-view .conversation-name h3 {
   margin: 0;
 }
 
-/* line 110, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 110, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body .conversation-view .conversation-messages-container {
   height: calc(100% - 230px);
   overflow-y: auto;
 }
 
-/* line 113, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 113, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body .conversation-view .conversation-messages-container .conversation-message-content {
   line-height: 1.3;
 }
 
-/* line 117, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 117, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body .conversation-view .conversation-messages-container .conversation-message:last-child {
   margin-bottom: 0 !important;
 }
 
-/* line 123, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 123, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body .conversation-view .reply-box {
   position: absolute;
   bottom: 0;
@@ -157,24 +157,24 @@
   right: 0;
 }
 
-/* line 129, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 129, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body .conversation-view .reply-box .reply-box-container .reply-box-body {
   max-height: 80px;
   overflow-y: auto;
 }
 
-/* line 135, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 135, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body .conversation-view .reply-box .reply-box-container .reply-box-controls .btn:hover {
   background-color: #F1F3F5;
 }
 
-/* line 145, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 145, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body .contact-sidebar .contact-container {
   overflow: auto;
   height: calc(100% - 60px);
 }
 
-/* line 149, ../../../../../Users/liamyoung/Documents/GeckoChat/Styles/GeckoChat.scss */
+/* line 149, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
 .app-wrapper .app-body .contact-sidebar .contact-container .accordion-item .accordion-button {
   padding: 12px 16px;
 }

@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-gecko-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gecko Chat 2.0</title>
 
-    <!-- <link href="css/bootstrap-grid.css" rel="stylesheet">
-    <link href="css/bootstrap-reboot.css" rel="stylesheet">
-    <link href="css/bootstrap-utilities.css" rel="stylesheet"> -->
     <link href="css/App.css" rel="stylesheet">
     <link href="css/GeckoChat.css" rel="stylesheet">
 
@@ -62,7 +59,7 @@
                     </li>
                 </ul>
                 <div class="dropdown dropend">
-                    <div class="avatar avatar-sm d-flex" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="avatar avatar-sm justify-content-center" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
                         <div class="avatar-body avatar-online">LY</div>
                     </div>
                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
@@ -125,7 +122,7 @@
 
                         <div class="new-conversation">
 
-                            <button type="button" class="btn-icon btn btn-outline-primary btn-sm">
+                            <button type="button" class="btn-icon btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-title="Create new conversation" data-bs-placement="bottom">
                                 <i class="fa-regular fa-edit"></i>
                             </button>
 
@@ -208,7 +205,7 @@
 
                                 <div class="chat-head-meta">
                                     <h4 class="chat-head-contact m-0">Amy Gallacher</h4>
-                                    <div class="chat-head-snippet fs-3 text-secondary">You: Lorem ipsum dolor sit amet...</div>
+                                    <div class="chat-head-snippet fs-3 text-secondary"><em>Typing...</em></div>
                                 </div>
 
                             </div>
@@ -526,8 +523,8 @@
                                 </div>
                                 <div class="conversation-actions ms-3">
 
-                                    <button type="button" class="btn-icon btn btn-outline-primary btn-sm">
-                                        <i class="fa-regular fa-check"></i>
+                                    <button type="button" class="btn-icon btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-title="Close conversation" data-bs-placement="bottom">
+                                        <i class="fa-solid fa-check"></i>
                                     </button>
 
                                 </div>
@@ -536,7 +533,7 @@
 
                             <div class="contact-sidebar-control ms-5">
 
-                                <button type="button" class="btn-icon btn btn-outline-primary btn-sm active">
+                                <button type="button" class="btn-icon btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-title="Collapse sidebar" data-bs-placement="bottom">
                                     <i class="fa-regular fa-sidebar-flip"></i>
                                 </button>
 
@@ -548,7 +545,7 @@
 
                     <div class="conversation-messages-container p-4">
 
-                        <div class="conversation-message col-10 mb-4">
+                        <div class="conversation-message col-10 col-xxl-8 mb-4">
                             <div class="d-flex">
                                 <div class="conversation-message-avatar me-2">
                                     <div class="avatar">
@@ -559,21 +556,21 @@
                                 </div>
                                 <div class="conversation-message-container">
                                     <div class="conversation-message-wrapper">
-                                        <div class="conversation-message-content p-3 rounded bg-grey-200">
+                                        <div class="conversation-message-content p-3 rounded bg-grey-200 d-inline-block">
                                         <span class="message-content">
                                             Hi, I'm considering applying to Gecko University. Do you offer work-study programs?
                                         </span>
                                         </div>
                                     </div>
                                     <div class="conversation-message-meta text-secondary mt-1 fs-3">
-                                        Sent via<span> Live-Chat | https://gecko.fm/kfflx</span> - 28/10/2019 14:46 -  <span title="This message has been read" class="far fa-envelope-open text-green-darken-3" aria-hidden="true"></span><span class="sr-only">This message has been read</span>
+                                        Sent via<span> Live-Chat | https://gecko.fm/kfflx</span> - 28/10/2019 14:46 -  <span title="This message has been read" class="far fa-envelope-open text-green-darken-3" aria-hidden="true" data-bs-toggle="tooltip" data-bs-title="This message has been read" data-bs-placement="bottom"></span><span class="sr-only">This message has been read</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="conversation-message agent mb-4">
-                            <div class="d-flex flex-row-reverse col-10 offset-2">
+                        <div class="conversation-message agent col-10 col-xxl-8 offset-2 offset-xxl-4 mb-4">
+                            <div class="d-flex flex-row-reverse">
                                 <div class="conversation-message-avatar ms-2">
                                     <div class="avatar">
                                         <div class="avatar-body">
@@ -583,20 +580,20 @@
                                 </div>
                                 <div class="conversation-message-container">
                                     <div class="conversation-message-wrapper">
-                                        <div class="conversation-message-content p-3 rounded bg-blue-100">
+                                        <div class="conversation-message-content p-3 rounded bg-blue-100 d-inline-block">
                                         <span class="message-content">
                                             Absolutely! We offer work-study opportunities aligned with your field of study. More info here: <a href="">www.geckou.edu/work-study</a>. If you need further assistance, feel free to ask. We're here to help!
                                         </span>
                                         </div>
                                     </div>
                                     <div class="conversation-message-meta text-secondary mt-1 fs-3 text-end">
-                                        Sent via<span> Live-Chat | https://gecko.fm/kfflx</span> - 28/10/2019 14:46 -  <span title="This message has been read" class="far fa-envelope-open text-green-darken-3" aria-hidden="true"></span><span class="sr-only">This message has been read</span>
+                                        Sent via<span> Live-Chat | https://gecko.fm/kfflx</span> - 28/10/2019 14:46 -  <span title="This message has been read" class="far fa-envelope-open text-green-darken-3" aria-hidden="true" data-bs-toggle="tooltip" data-bs-title="This message has been read" data-bs-placement="bottom"></span><span class="sr-only">This message has been read</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="conversation-message col-10 mb-4">
+                        <div class="conversation-message col-10 col-xxl-8 mb-4">
                             <div class="d-flex">
                                 <div class="conversation-message-avatar me-2">
                                     <div class="avatar">
@@ -607,14 +604,14 @@
                                 </div>
                                 <div class="conversation-message-container">
                                     <div class="conversation-message-wrapper">
-                                        <div class="conversation-message-content p-3 rounded bg-grey-200">
+                                        <div class="conversation-message-content p-3 rounded bg-grey-200 d-inline-block">
                                         <span class="message-content">
                                             Thank you! I'll check out the link. Just one more thing, could you provide me with information about the financial aid and tuition costs?
                                         </span>
                                         </div>
                                     </div>
                                     <div class="conversation-message-meta text-secondary mt-1 fs-3">
-                                        Sent via<span> Live-Chat | https://gecko.fm/kfflx</span> - 28/10/2019 14:46 -  <span title="This message has been read" class="far fa-envelope-open text-green-darken-3" aria-hidden="true"></span><span class="sr-only">This message has been read</span>
+                                        Sent via<span> Live-Chat | https://gecko.fm/kfflx</span> - 28/10/2019 14:46 -  <span title="This message has been read" class="far fa-envelope-open text-green-darken-3" aria-hidden="true" data-bs-toggle="tooltip" data-bs-title="This message has been read" data-bs-placement="bottom"></span><span class="sr-only">This message has been read</span>
                                     </div>
                                 </div>
                             </div>
@@ -649,22 +646,22 @@
 
                                 <div class="reply-box-controls">
 
-                                    <button type="button" class="btn-icon btn btn-naked-primary">
+                                    <button type="button" class="btn-icon btn btn-naked-primary" data-bs-toggle="tooltip" data-bs-title="Change to note mode" data-bs-placement="top">
                                         <i class="fa-regular fa-sticky-note"></i>
                                     </button>
-                                    <button type="button" class="btn-icon btn btn-naked-primary">
+                                    <button type="button" class="btn-icon btn btn-naked-primary" data-bs-toggle="tooltip" data-bs-title="Upload attachment" data-bs-placement="top">
                                         <i class="fa-regular fa-paperclip"></i>
                                     </button>
-                                    <button type="button" class="btn-icon btn btn-naked-primary">
+                                    <button type="button" class="btn-icon btn btn-naked-primary" data-bs-toggle="tooltip" data-bs-title="Use a saved reply" data-bs-placement="top">
                                         <i class="fa-regular fa-bookmark"></i>
                                     </button>
-                                    <button type="button" class="btn-icon btn btn-naked-primary">
+                                    <button type="button" class="btn-icon btn btn-naked-primary" data-bs-toggle="tooltip" data-bs-title="Mail merge tag builder" data-bs-placement="top">
                                         <i class="fa-regular fa-id-card"></i>
                                     </button>
-                                    <button type="button" class="btn-icon btn btn-naked-primary">
+                                    <button type="button" class="btn-icon btn btn-naked-primary" data-bs-toggle="tooltip" data-bs-title="Use an emoji" data-bs-placement="top">
                                         <i class="fa-regular fa-smile"></i>
                                     </button>
-                                    <button type="button" class="btn-icon btn btn-naked-primary btn-ai">
+                                    <button type="button" class="btn-icon btn btn-naked-primary btn-ai" data-bs-toggle="tooltip" data-bs-title="Generate a response" data-bs-placement="top">
                                         <i class="fa-regular fa-wand-magic-sparkles"></i>
                                     </button>
 
@@ -809,9 +806,9 @@
                                     </button>
                                 </h4>
                                 <div id="contact-tags" class="accordion-collapse collapse">
-                                <div class="accordion-body px-4">
-
-                                </div>
+                                    <div class="accordion-body px-4">
+                                        Tag content here
+                                    </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
@@ -821,9 +818,9 @@
                                     </button>
                                 </h4>
                                 <div id="contact-notes" class="accordion-collapse collapse">
-                                <div class="accordion-body px-4">
-
-                                </div>
+                                    <div class="accordion-body px-4">
+                                        Notes content here
+                                    </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
@@ -833,9 +830,9 @@
                                     </button>
                                 </h4>
                                 <div id="contact-forms" class="accordion-collapse collapse">
-                                <div class="accordion-body px-4">
-
-                                </div>
+                                    <div class="accordion-body px-4">
+                                        Form content here
+                                    </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
@@ -845,9 +842,9 @@
                                     </button>
                                 </h4>
                                 <div id="contact-events" class="accordion-collapse collapse">
-                                <div class="accordion-body px-4">
-
-                                </div>
+                                    <div class="accordion-body px-4">
+                                        Event details here
+                                    </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
@@ -857,9 +854,9 @@
                                     </button>
                                 </h4>
                                 <div id="contact-campaigns" class="accordion-collapse collapse">
-                                <div class="accordion-body px-4">
-
-                                </div>
+                                    <div class="accordion-body px-4">
+                                        Campaigns content here
+                                    </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
@@ -869,9 +866,9 @@
                                     </button>
                                 </h4>
                                 <div id="contact-system" class="accordion-collapse collapse">
-                                <div class="accordion-body px-4">
-
-                                </div>
+                                    <div class="accordion-body px-4">
+                                        System information content here
+                                    </div>
                                 </div>
                             </div>
                         </div>
