@@ -8987,7 +8987,7 @@ hr.dropdown-divider {
   border: var(--gecko-modal-border-width) solid var(--gecko-modal-border-color);
   border-radius: var(--gecko-modal-border-radius);
   outline: 0;
-  box-shadow: 0 12px 48px rgba(32, 40, 77, 0.35), 0 32px 80px rgba(32, 40, 77, 0.1);
+  box-shadow: 0 12px 48px rgba(27, 50, 90, 0.35), 0 32px 80px rgba(27, 50, 90, 0.1);
 }
 
 /* line 118, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_modal.scss */

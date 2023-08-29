@@ -111,7 +111,7 @@
   @include border-radius(var(--#{$prefix}modal-border-radius));
   // Remove focus outline from opened modal
   outline: 0;
-  box-shadow: 0 12px 48px rgba(32,40,77,.35), 0 32px 80px rgba(32,40,77,.1);
+  box-shadow: 0 12px 48px rgba(27,50,90,.35), 0 32px 80px rgba(27,50,90,.1);
 }
 
 // Modal background
