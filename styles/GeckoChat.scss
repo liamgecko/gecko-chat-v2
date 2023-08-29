@@ -201,20 +201,20 @@
     }
 }
 
-.activity-feed#activity-feed-accordion.collapse:not(.show) {
-    display: block;
-    height: 3rem;
-    overflow: hidden;
-}
+// .activity-feed#activity-feed-accordion.collapse:not(.show) {
+//     display: block;
+//     height: 3rem;
+//     overflow: hidden;
+// }
 
-.activity-feed#activity-feed-accordion.collapsing {
-    height: 3rem;
-}
+// .activity-feed#activity-feed-accordion.collapsing {
+//     height: 3rem;
+// }
 
-a.activity-feed-reveal::after {
-    content: '+ Show More';
-}
+// a.activity-feed-reveal::after {
+//     content: '+ Show More';
+// }
 
-a.activity-feed-reveal:not(.collapsed)::after {
-    content: '- Show Less';
-}
+// a.activity-feed-reveal:not(.collapsed)::after {
+//     content: '- Show Less';
+// }

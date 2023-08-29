@@ -228,26 +228,4 @@
   width: 18px;
 }
 
-/* line 204, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
-.activity-feed#activity-feed-accordion.collapse:not(.show) {
-  display: block;
-  height: 3rem;
-  overflow: hidden;
-}
-
-/* line 210, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
-.activity-feed#activity-feed-accordion.collapsing {
-  height: 3rem;
-}
-
-/* line 214, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
-a.activity-feed-reveal::after {
-  content: '+ Show More';
-}
-
-/* line 218, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/GeckoChat.scss */
-a.activity-feed-reveal:not(.collapsed)::after {
-  content: '- Show Less';
-}
-
 /*# sourceMappingURL=GeckoChat.css.map */
