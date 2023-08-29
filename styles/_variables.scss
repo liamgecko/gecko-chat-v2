@@ -42,6 +42,7 @@ $red:     hsla(360, 64%, 50%, 1) !default;
 $orange:  hsla(28, 100%, 67%, 1) !default;
 $yellow:  hsla(45, 87%, 70%, 1) !default;
 $green:   hsla(155, 54%, 46%, 1) !default;
+$purple:  hsla(240, 67%, 70%, 1) !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -52,6 +53,7 @@ $colors: (
   "orange":     $orange,
   "yellow":     $yellow,
   "green":      $green,
+  "purple":     $purple,
   "black":      $black,
   "white":      $white,
   "grey":       $grey-700,
@@ -129,6 +131,16 @@ $yellow-700: hsla(45, 87%, 43%, 1) !default;
 $yellow-800: hsla(45, 87%, 25%, 1) !default;
 $yellow-900: hsla(45, 87%, 15%, 1) !default;
 
+$purple-100: hsla(240, 67%, 98%, 1) !default;
+$purple-200: hsla(240, 67%, 96%, 1) !default;
+$purple-300: hsla(240, 67%, 94%, 1) !default;
+$purple-400: hsla(240, 67%, 89%, 1) !default;
+$purple-500: hsla(240, 67%, 81%, 1) !default;
+$purple-600: hsla(240, 67%, 70%, 1) !default;
+$purple-700: hsla(240, 67%, 64%, 1) !default;
+$purple-800: hsla(240, 67%, 39%, 1) !default;
+$purple-900: hsla(240, 67%, 26%, 1) !default;
+
 $blues: (
   "blue-100": $blue-100,
   "blue-200": $blue-200,
@@ -199,6 +211,18 @@ $greens: (
   "green-700": $green-700,
   "green-800": $green-800,
   "green-900": $green-900
+) !default;
+
+$purples: (
+  "purple-100": $purple-100,
+  "purple-200": $purple-200,
+  "purple-300": $purple-300,
+  "purple-400": $purple-400,
+  "purple-500": $purple-500,
+  "purple-600": $purple-600,
+  "purple-700": $purple-700,
+  "purple-800": $purple-800,
+  "purple-900": $purple-900
 ) !default;
 // fusv-enable
 
@@ -294,6 +318,16 @@ $theme-colors: (
     "green-700": $green-700,
     "green-800": $green-800,
     "green-900": $green-900,
+    // green
+    "purple-100": $purple-100,
+    "purple-200": $purple-200,
+    "purple-300": $purple-300,
+    "purple-400": $purple-400,
+    "purple-500": $purple-500,
+    "purple-600": $purple-600,
+    "purple-700": $purple-700,
+    "purple-800": $purple-800,
+    "purple-900": $purple-900,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -558,8 +592,8 @@ $font-weight-base:            $font-weight-normal !default;
 
 $font-letter-spacing:         -0.02rem !default;
 
-$line-height-base:            1.5 !default;
-$line-height-sm:              1.25 !default;
+$line-height-base:            1.3 !default;
+$line-height-sm:              1.2 !default;
 $line-height-lg:              2 !default;
 
 $h1-font-size:                $font-size-base * 1.7143 !default;

@@ -152,6 +152,15 @@
                     }
                 }
             }
+            .activity-feed {
+                .activity-feed-icon {
+                    height: 24px;
+                    width: 24px;
+                }
+                .activity-feed-meta {
+                    font-size: 0.875em;
+                }
+            }
         }
     }
 
@@ -190,4 +199,22 @@
             width: 18px;
         }
     }
+}
+
+.activity-feed#activity-feed-accordion.collapse:not(.show) {
+    display: block;
+    height: 3rem;
+    overflow: hidden;
+}
+
+.activity-feed#activity-feed-accordion.collapsing {
+    height: 3rem;
+}
+
+a.activity-feed-reveal::after {
+    content: '+ Show More';
+}
+
+a.activity-feed-reveal:not(.collapsed)::after {
+    content: '- Show Less';
 }

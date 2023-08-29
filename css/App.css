@@ -14,6 +14,7 @@
   --gecko-orange: #ffa557;
   --gecko-yellow: #f5d470;
   --gecko-green: #36b580;
+  --gecko-purple: #7f7fe6;
   --gecko-black: #35424b;
   --gecko-white: white;
   --gecko-grey: #556677;
@@ -98,6 +99,15 @@
   --gecko-green-700: #247553;
   --gecko-green-800: #1d5e44;
   --gecko-green-900: #123b29;
+  --gecko-purple-100: #f6f6fd;
+  --gecko-purple-200: #eeeefc;
+  --gecko-purple-300: #e5e5fa;
+  --gecko-purple-400: #d0d0f6;
+  --gecko-purple-500: #aeaeef;
+  --gecko-purple-600: #7f7fe6;
+  --gecko-purple-700: #6666e1;
+  --gecko-purple-800: #2121a6;
+  --gecko-purple-900: #16166f;
   --gecko-primary-rgb: 26.979, 50.2044, 90.321;
   --gecko-secondary-rgb: 84.66, 102, 119.34;
   --gecko-success-rgb: 53.958, 180.642, 127.857;
@@ -169,6 +179,15 @@
   --gecko-green-700-rgb: 35.955, 117.045, 83.2575;
   --gecko-green-800-rgb: 28.764, 93.636, 67.6872;
   --gecko-green-900-rgb: 17.595, 58.905, 41.004;
+  --gecko-purple-100-rgb: 246.483, 246.483, 253.317;
+  --gecko-purple-200-rgb: 237.966, 237.966, 251.634;
+  --gecko-purple-300-rgb: 229.449, 229.449, 249.951;
+  --gecko-purple-400-rgb: 208.1565, 208.1565, 245.7435;
+  --gecko-purple-500-rgb: 174.0885, 174.0885, 239.0115;
+  --gecko-purple-600-rgb: 127.245, 127.245, 229.755;
+  --gecko-purple-700-rgb: 101.694, 101.694, 224.706;
+  --gecko-purple-800-rgb: 32.8185, 32.8185, 166.0815;
+  --gecko-purple-900-rgb: 21.879, 21.879, 110.721;
   --gecko-white-rgb: 255, 255, 255;
   --gecko-black-rgb: 52.9125, 65.55625, 74.5875;
   --gecko-body-color-rgb: 26.979, 50.2044, 90.321;
@@ -179,7 +198,7 @@
   --gecko-body-font-family: var(--gecko-font-sans-serif);
   --gecko-body-font-size: 1rem;
   --gecko-body-font-weight: 400;
-  --gecko-body-line-height: 1.5;
+  --gecko-body-line-height: 1.3;
   --gecko-body-color: #1b325a;
   --gecko-body-bg: white;
   --gecko-border-width: 1px;
@@ -3353,7 +3372,7 @@ textarea.form-control-lg {
 /* line 5, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/forms/_form-check.scss */
 .form-check {
   display: block;
-  min-height: 1.5rem;
+  min-height: 1.3rem;
   padding-left: 1.5rem;
   margin-bottom: 0.125rem;
 }
@@ -3382,7 +3401,7 @@ textarea.form-control-lg {
 .form-check-input {
   width: 1rem;
   height: 1rem;
-  margin-top: 0.25rem;
+  margin-top: 0.15rem;
   vertical-align: top;
   background-color: white;
   background-repeat: no-repeat;
@@ -5580,7 +5599,7 @@ hr.dropdown-divider {
   --gecko-navbar-hover-color: rgba(53, 66, 75, 0.7);
   --gecko-navbar-disabled-color: rgba(53, 66, 75, 0.3);
   --gecko-navbar-active-color: rgba(53, 66, 75, 0.9);
-  --gecko-navbar-brand-padding-y: 0.46425rem;
+  --gecko-navbar-brand-padding-y: 0.47854rem;
   --gecko-navbar-brand-margin-end: 1rem;
   --gecko-navbar-brand-font-size: 1.1429rem;
   --gecko-navbar-brand-color: rgba(53, 66, 75, 0.9);
@@ -8685,6 +8704,177 @@ hr.dropdown-divider {
   border-color: #0b2319;
 }
 
+/* line 5, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-100 {
+  color: #828a92;
+  background-color: #fdfdff;
+}
+
+/* line 10, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-100.list-group-item-action:hover, .list-group-item-purple-100.list-group-item-action:focus {
+  color: #828a92;
+  background-color: #e4e4e6;
+}
+
+/* line 16, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-100.list-group-item-action.active {
+  color: white;
+  background-color: #828a92;
+  border-color: #828a92;
+}
+
+/* line 5, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-200 {
+  color: #7f8791;
+  background-color: #fcfcfe;
+}
+
+/* line 10, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-200.list-group-item-action:hover, .list-group-item-purple-200.list-group-item-action:focus {
+  color: #7f8791;
+  background-color: #e3e3e5;
+}
+
+/* line 16, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-200.list-group-item-action.active {
+  color: white;
+  background-color: #7f8791;
+  border-color: #7f8791;
+}
+
+/* line 5, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-300 {
+  color: #7c8391;
+  background-color: #fafafe;
+}
+
+/* line 10, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-300.list-group-item-action:hover, .list-group-item-purple-300.list-group-item-action:focus {
+  color: #7c8391;
+  background-color: #e1e1e5;
+}
+
+/* line 16, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-300.list-group-item-action.active {
+  color: white;
+  background-color: #7c8391;
+  border-color: #7c8391;
+}
+
+/* line 5, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-400 {
+  color: #737b8f;
+  background-color: #f6f6fd;
+}
+
+/* line 10, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-400.list-group-item-action:hover, .list-group-item-purple-400.list-group-item-action:focus {
+  color: #737b8f;
+  background-color: #dddde4;
+}
+
+/* line 16, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-400.list-group-item-action.active {
+  color: white;
+  background-color: #737b8f;
+  border-color: #737b8f;
+}
+
+/* line 5, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-500 {
+  color: #68688f;
+  background-color: #efeffc;
+}
+
+/* line 10, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-500.list-group-item-action:hover, .list-group-item-purple-500.list-group-item-action:focus {
+  color: #68688f;
+  background-color: #d7d7e3;
+}
+
+/* line 16, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-500.list-group-item-action.active {
+  color: white;
+  background-color: #68688f;
+  border-color: #68688f;
+}
+
+/* line 5, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-600 {
+  color: #4c4c8a;
+  background-color: #e5e5fa;
+}
+
+/* line 10, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-600.list-group-item-action:hover, .list-group-item-purple-600.list-group-item-action:focus {
+  color: #4c4c8a;
+  background-color: #cecee1;
+}
+
+/* line 16, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-600.list-group-item-action.active {
+  color: white;
+  background-color: #4c4c8a;
+  border-color: #4c4c8a;
+}
+
+/* line 5, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-700 {
+  color: #3d3d87;
+  background-color: #e0e0f9;
+}
+
+/* line 10, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-700.list-group-item-action:hover, .list-group-item-purple-700.list-group-item-action:focus {
+  color: #3d3d87;
+  background-color: #cacae0;
+}
+
+/* line 16, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-700.list-group-item-action.active {
+  color: white;
+  background-color: #3d3d87;
+  border-color: #3d3d87;
+}
+
+/* line 5, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-800 {
+  color: #141464;
+  background-color: #d3d3ed;
+}
+
+/* line 10, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-800.list-group-item-action:hover, .list-group-item-purple-800.list-group-item-action:focus {
+  color: #141464;
+  background-color: #bebed5;
+}
+
+/* line 16, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-800.list-group-item-action.active {
+  color: white;
+  background-color: #141464;
+  border-color: #141464;
+}
+
+/* line 5, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-900 {
+  color: #0d0d42;
+  background-color: #d0d0e2;
+}
+
+/* line 10, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-900.list-group-item-action:hover, .list-group-item-purple-900.list-group-item-action:focus {
+  color: #0d0d42;
+  background-color: #bbbbcb;
+}
+
+/* line 16, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_list-group.scss */
+.list-group-item-purple-900.list-group-item-action.active {
+  color: white;
+  background-color: #0d0d42;
+  border-color: #0d0d42;
+}
+
 /* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_close.scss */
 .btn-close {
   box-sizing: content-box;
@@ -8898,7 +9088,7 @@ hr.dropdown-divider {
   --gecko-modal-header-padding: 16px 16px 16px 16px;
   --gecko-modal-header-border-color: #e1e6ea;
   --gecko-modal-header-border-width: 1px;
-  --gecko-modal-title-line-height: 1.5;
+  --gecko-modal-title-line-height: 1.3;
   --gecko-modal-title-size: 1.1428rem;
   --gecko-modal-title-font-weight: 700;
   --gecko-modal-body-title-size: 1rem;
@@ -9291,7 +9481,7 @@ hr.dropdown-divider {
   font-family: var(--gecko-font-sans-serif);
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.3;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -9440,7 +9630,7 @@ hr.dropdown-divider {
   font-family: var(--gecko-font-sans-serif);
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.3;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -10511,7 +10701,7 @@ hr.dropdown-divider {
 /* line 135, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_offcanvas.scss */
 .offcanvas-title {
   margin-bottom: 0;
-  line-height: 1.5;
+  line-height: 1.3;
 }
 
 /* line 140, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_offcanvas.scss */
@@ -11796,6 +11986,60 @@ hr.dropdown-divider {
   background-color: RGBA(17.595, 58.905, 41.004, var(--gecko-bg-opacity, 1)) !important;
 }
 
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_color-bg.scss */
+.text-bg-purple-100 {
+  color: #35424b !important;
+  background-color: RGBA(246.483, 246.483, 253.317, var(--gecko-bg-opacity, 1)) !important;
+}
+
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_color-bg.scss */
+.text-bg-purple-200 {
+  color: #35424b !important;
+  background-color: RGBA(237.966, 237.966, 251.634, var(--gecko-bg-opacity, 1)) !important;
+}
+
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_color-bg.scss */
+.text-bg-purple-300 {
+  color: #35424b !important;
+  background-color: RGBA(229.449, 229.449, 249.951, var(--gecko-bg-opacity, 1)) !important;
+}
+
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_color-bg.scss */
+.text-bg-purple-400 {
+  color: #35424b !important;
+  background-color: RGBA(208.1565, 208.1565, 245.7435, var(--gecko-bg-opacity, 1)) !important;
+}
+
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_color-bg.scss */
+.text-bg-purple-500 {
+  color: #35424b !important;
+  background-color: RGBA(174.0885, 174.0885, 239.0115, var(--gecko-bg-opacity, 1)) !important;
+}
+
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_color-bg.scss */
+.text-bg-purple-600 {
+  color: white !important;
+  background-color: RGBA(127.245, 127.245, 229.755, var(--gecko-bg-opacity, 1)) !important;
+}
+
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_color-bg.scss */
+.text-bg-purple-700 {
+  color: white !important;
+  background-color: RGBA(101.694, 101.694, 224.706, var(--gecko-bg-opacity, 1)) !important;
+}
+
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_color-bg.scss */
+.text-bg-purple-800 {
+  color: white !important;
+  background-color: RGBA(32.8185, 32.8185, 166.0815, var(--gecko-bg-opacity, 1)) !important;
+}
+
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_color-bg.scss */
+.text-bg-purple-900 {
+  color: white !important;
+  background-color: RGBA(21.879, 21.879, 110.721, var(--gecko-bg-opacity, 1)) !important;
+}
+
 /* line 2, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
 .link-primary {
   color: #1b325a !important;
@@ -12504,6 +12748,96 @@ hr.dropdown-divider {
 /* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
 .link-green-900:hover, .link-green-900:focus {
   color: #0e2f21 !important;
+}
+
+/* line 2, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-100 {
+  color: #f6f6fd !important;
+}
+
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-100:hover, .link-purple-100:focus {
+  color: #f8f8fe !important;
+}
+
+/* line 2, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-200 {
+  color: #eeeefc !important;
+}
+
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-200:hover, .link-purple-200:focus {
+  color: #f1f1fc !important;
+}
+
+/* line 2, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-300 {
+  color: #e5e5fa !important;
+}
+
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-300:hover, .link-purple-300:focus {
+  color: #ebebfb !important;
+}
+
+/* line 2, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-400 {
+  color: #d0d0f6 !important;
+}
+
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-400:hover, .link-purple-400:focus {
+  color: #dadaf8 !important;
+}
+
+/* line 2, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-500 {
+  color: #aeaeef !important;
+}
+
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-500:hover, .link-purple-500:focus {
+  color: #bebef2 !important;
+}
+
+/* line 2, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-600 {
+  color: #7f7fe6 !important;
+}
+
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-600:hover, .link-purple-600:focus {
+  color: #6666b8 !important;
+}
+
+/* line 2, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-700 {
+  color: #6666e1 !important;
+}
+
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-700:hover, .link-purple-700:focus {
+  color: #5151b4 !important;
+}
+
+/* line 2, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-800 {
+  color: #2121a6 !important;
+}
+
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-800:hover, .link-purple-800:focus {
+  color: #1a1a85 !important;
+}
+
+/* line 2, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-900 {
+  color: #16166f !important;
+}
+
+/* line 6, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_colored-links.scss */
+.link-purple-900:hover, .link-purple-900:focus {
+  color: #121259 !important;
 }
 
 /* line 3, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/helpers/_ratio.scss */
@@ -13447,6 +13781,60 @@ hr.dropdown-divider {
 .border-green-900 {
   --gecko-border-opacity: 1;
   border-color: rgba(var(--gecko-green-900-rgb), var(--gecko-border-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.border-purple-100 {
+  --gecko-border-opacity: 1;
+  border-color: rgba(var(--gecko-purple-100-rgb), var(--gecko-border-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.border-purple-200 {
+  --gecko-border-opacity: 1;
+  border-color: rgba(var(--gecko-purple-200-rgb), var(--gecko-border-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.border-purple-300 {
+  --gecko-border-opacity: 1;
+  border-color: rgba(var(--gecko-purple-300-rgb), var(--gecko-border-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.border-purple-400 {
+  --gecko-border-opacity: 1;
+  border-color: rgba(var(--gecko-purple-400-rgb), var(--gecko-border-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.border-purple-500 {
+  --gecko-border-opacity: 1;
+  border-color: rgba(var(--gecko-purple-500-rgb), var(--gecko-border-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.border-purple-600 {
+  --gecko-border-opacity: 1;
+  border-color: rgba(var(--gecko-purple-600-rgb), var(--gecko-border-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.border-purple-700 {
+  --gecko-border-opacity: 1;
+  border-color: rgba(var(--gecko-purple-700-rgb), var(--gecko-border-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.border-purple-800 {
+  --gecko-border-opacity: 1;
+  border-color: rgba(var(--gecko-purple-800-rgb), var(--gecko-border-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.border-purple-900 {
+  --gecko-border-opacity: 1;
+  border-color: rgba(var(--gecko-purple-900-rgb), var(--gecko-border-opacity)) !important;
 }
 
 /* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
@@ -14452,12 +14840,12 @@ hr.dropdown-divider {
 
 /* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
 .lh-sm {
-  line-height: 1.25 !important;
+  line-height: 1.2 !important;
 }
 
 /* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
 .lh-base {
-  line-height: 1.5 !important;
+  line-height: 1.3 !important;
 }
 
 /* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
@@ -14955,6 +15343,60 @@ hr.dropdown-divider {
 }
 
 /* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.text-purple-100 {
+  --gecko-text-opacity: 1;
+  color: rgba(var(--gecko-purple-100-rgb), var(--gecko-text-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.text-purple-200 {
+  --gecko-text-opacity: 1;
+  color: rgba(var(--gecko-purple-200-rgb), var(--gecko-text-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.text-purple-300 {
+  --gecko-text-opacity: 1;
+  color: rgba(var(--gecko-purple-300-rgb), var(--gecko-text-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.text-purple-400 {
+  --gecko-text-opacity: 1;
+  color: rgba(var(--gecko-purple-400-rgb), var(--gecko-text-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.text-purple-500 {
+  --gecko-text-opacity: 1;
+  color: rgba(var(--gecko-purple-500-rgb), var(--gecko-text-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.text-purple-600 {
+  --gecko-text-opacity: 1;
+  color: rgba(var(--gecko-purple-600-rgb), var(--gecko-text-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.text-purple-700 {
+  --gecko-text-opacity: 1;
+  color: rgba(var(--gecko-purple-700-rgb), var(--gecko-text-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.text-purple-800 {
+  --gecko-text-opacity: 1;
+  color: rgba(var(--gecko-purple-800-rgb), var(--gecko-text-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.text-purple-900 {
+  --gecko-text-opacity: 1;
+  color: rgba(var(--gecko-purple-900-rgb), var(--gecko-text-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
 .text-black {
   --gecko-text-opacity: 1;
   color: rgba(var(--gecko-black-rgb), var(--gecko-text-opacity)) !important;
@@ -15440,6 +15882,60 @@ hr.dropdown-divider {
 .bg-green-900 {
   --gecko-bg-opacity: 1;
   background-color: rgba(var(--gecko-green-900-rgb), var(--gecko-bg-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.bg-purple-100 {
+  --gecko-bg-opacity: 1;
+  background-color: rgba(var(--gecko-purple-100-rgb), var(--gecko-bg-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.bg-purple-200 {
+  --gecko-bg-opacity: 1;
+  background-color: rgba(var(--gecko-purple-200-rgb), var(--gecko-bg-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.bg-purple-300 {
+  --gecko-bg-opacity: 1;
+  background-color: rgba(var(--gecko-purple-300-rgb), var(--gecko-bg-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.bg-purple-400 {
+  --gecko-bg-opacity: 1;
+  background-color: rgba(var(--gecko-purple-400-rgb), var(--gecko-bg-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.bg-purple-500 {
+  --gecko-bg-opacity: 1;
+  background-color: rgba(var(--gecko-purple-500-rgb), var(--gecko-bg-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.bg-purple-600 {
+  --gecko-bg-opacity: 1;
+  background-color: rgba(var(--gecko-purple-600-rgb), var(--gecko-bg-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.bg-purple-700 {
+  --gecko-bg-opacity: 1;
+  background-color: rgba(var(--gecko-purple-700-rgb), var(--gecko-bg-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.bg-purple-800 {
+  --gecko-bg-opacity: 1;
+  background-color: rgba(var(--gecko-purple-800-rgb), var(--gecko-bg-opacity)) !important;
+}
+
+/* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
+.bg-purple-900 {
+  --gecko-bg-opacity: 1;
+  background-color: rgba(var(--gecko-purple-900-rgb), var(--gecko-bg-opacity)) !important;
 }
 
 /* line 67, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/mixins/_utilities.scss */
