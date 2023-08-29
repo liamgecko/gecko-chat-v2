@@ -4680,7 +4680,7 @@ fieldset:disabled .btn {
 /* line 19, ../../../../../Users/liamyoung/Documents/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-menu {
   --gecko-dropdown-zindex: 1000;
-  --gecko-dropdown-min-width: 10rem;
+  --gecko-dropdown-min-width: 12rem;
   --gecko-dropdown-padding-x: 0;
   --gecko-dropdown-padding-y: 8px;
   --gecko-dropdown-spacer: 0.125rem;
@@ -4993,7 +4993,7 @@ fieldset:disabled .btn {
 .dropdown-divider {
   font-size: 0.85714rem;
   font-weight: 700;
-  color: #1b325a;
+  color: #63788c;
   padding: 8px 16px;
   overflow: hidden;
   opacity: 1;
