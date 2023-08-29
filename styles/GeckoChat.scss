@@ -140,6 +140,12 @@
                         }
                     }
                 }
+                .send-btn {
+                    &:disabled {
+                        background: none;
+                        opacity: 0.5;
+                    }
+                }
             }
         }
     }
