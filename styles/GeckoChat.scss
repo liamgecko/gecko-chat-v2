@@ -73,8 +73,15 @@
     }
 
     .panel-side {
-        max-width: 320px;
         min-width: 240px;
+        &.chat-head-sidebar {
+            max-width: 320px;
+            width: 20%;
+        }
+        &.contact-sidebar {
+            max-width: 460px;
+            width: 25%;
+        }
     }
 
     .chat-head-sidebar {
@@ -104,6 +111,14 @@
             .conversation-message {
                 &:last-child {
                     margin-bottom: 0 !important;
+                }
+                .conversation-message-content {
+                    border-radius: 0 6px 6px 6px;
+                }
+                &.agent {
+                    .conversation-message-content {
+                        border-radius: 6px 0 6px 6px;
+                    } 
                 }
             }
         }
@@ -201,20 +216,26 @@
     }
 }
 
-// .activity-feed#activity-feed-accordion.collapse:not(.show) {
-//     display: block;
-//     height: 3rem;
-//     overflow: hidden;
-// }
+@media only screen and (max-width: 1600px) {
+    .app-wrapper {
+        .app-body {
+            .panel-side {
+                &.contact-sidebar {
+                    max-width: 380px;
+                }
+            }
+        }
+    }
+}
 
-// .activity-feed#activity-feed-accordion.collapsing {
-//     height: 3rem;
-// }
-
-// a.activity-feed-reveal::after {
-//     content: '+ Show More';
-// }
-
-// a.activity-feed-reveal:not(.collapsed)::after {
-//     content: '- Show Less';
-// }
+@media only screen and (max-width: 1440px) {
+    .app-wrapper {
+        .app-body {
+            .panel-side {
+                &.contact-sidebar {
+                    max-width: 320px;
+                }
+            }
+        }
+    }
+}
