@@ -53,7 +53,7 @@
                 <ul class="app-menu flex-column mb-auto text-center list-unstyled">
                     <li class="d-flex justify-content-center mb-2">
                         <span class="menu-modal-btn" data-bs-toggle="modal" data-bs-target="#search-modal">
-                            <a title="Search" data-bs-toggle="tooltip" data-bs-title="Search" data-bs-custom-class="tooltip-menu" class="d-flex justify-content-center align-items-center rounded position-relative text-decoration-none"><i class="fa-light fa-search"></i></a>
+                            <a title="Search" role="button" data-bs-toggle="tooltip" data-bs-title="Search" data-bs-custom-class="tooltip-menu" class="d-flex justify-content-center align-items-center rounded position-relative text-decoration-none"><i class="fa-light fa-search"></i></a>
                         </span>
                     </li>
                     <li class="d-flex justify-content-center mb-2">
@@ -106,6 +106,7 @@
                                     My conversations
                                 </button>
                                 <div class="dropdown-menu">
+                                    <div class="dropdown-divider">Filter conversations</div>
                                     <a class="dropdown-item active" href="#">My conversations</a>
                                     <a class="dropdown-item" href="#">Unassigned</a>
                                     <a class="dropdown-item" href="#">Open</a>
@@ -122,6 +123,7 @@
                                     Newest
                                 </button>
                                 <div class="dropdown-menu">
+                                    <div class="dropdown-divider">Sort by</div>
                                     <a class="dropdown-item active" href="#">Newest</a>
                                     <a class="dropdown-item" href="#">Oldest</a>
                                 </div>
