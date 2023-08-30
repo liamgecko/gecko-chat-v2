@@ -41,10 +41,13 @@
   }
 
   a {
-    text-decoration: underline 1px rgba(0,0,0,0);
+    text-decoration: none;
     transition: text-decoration-color 300ms;
+    padding: 4px;
+    border-radius: $border-radius;
+    @include transition();
     &:hover {
-      text-decoration-color: $link-hover-color;
+      background-color: $breadcrumb-hover-bg;
     }
   }
 

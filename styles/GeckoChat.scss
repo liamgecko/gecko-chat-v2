@@ -1,6 +1,9 @@
 .app-wrapper {
-    overflow: hidden;
-    height: 100vh;
+    
+    &.conversation-wrapper {
+        overflow: hidden;
+        height: 100vh;
+    }
 
 .app-menu-wrapper {
     height: 100vh;
@@ -198,6 +201,14 @@
                 .activity-feed-meta {
                     font-size: 0.875em;
                 }
+            }
+        }
+    }
+
+    .app-body-header {
+        .header-actions {
+            .search-input {
+                min-width: 280px;
             }
         }
     }

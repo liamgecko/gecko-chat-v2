@@ -271,14 +271,16 @@ textarea {
   &.input-icon-left,
   &.input-icon-right {
     position: relative;
-    > svg {
+    > svg,
+    > i {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
     }
   }
   &.input-icon-left {
-    > svg {
+    > svg,
+    > i {
       left: $input-icon-left;
     }
     .form-control {
@@ -286,7 +288,8 @@ textarea {
     }
   }
   &.input-icon-right {
-    > svg {
+    > svg,
+    > i {
       right: $input-icon-right;
     }
     .form-control {

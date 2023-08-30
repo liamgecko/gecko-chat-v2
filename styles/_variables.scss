@@ -719,7 +719,7 @@ $table-active-bg:             rgba($black, $table-active-bg-factor) !default;
 
 $table-hover-color:           $table-color !default;
 $table-hover-bg-factor:       .075 !default;
-$table-hover-bg:              lighten($grey-200, 3%) !default;
+$table-hover-bg:              $grey-100 !default;
 
 $table-border-factor:         .1 !default;
 $table-border-width:          $border-width !default;
@@ -735,7 +735,7 @@ $table-caption-color:         $text-muted !default;
 
 $table-bg-scale:              -80% !default;
 
-$table-head-bg:               $grey-200;
+$table-head-bg:               $grey-100;
 $table-head-size:             $font-size-sm;
 // scss-docs-end table-variables
 
@@ -1014,7 +1014,7 @@ $input-padding-y:                       $input-btn-padding-y !default;
 $input-padding-x:                       $input-btn-padding-x !default;
 $input-font-family:                     $input-btn-font-family !default;
 $input-font-size:                       $input-btn-font-size !default;
-$input-font-weight:                     $font-weight-base !default;
+$input-font-weight:                     $font-weight-medium !default;
 $input-line-height:                     $input-btn-line-height !default;
 
 $input-padding-y-sm:                    $input-btn-padding-y-sm !default;
@@ -1301,7 +1301,7 @@ $nav-link-font-size:                null !default;
 $nav-link-color:                    $secondary !default;
 $nav-link-hover-color:              $blue-500 !default;
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
-$nav-link-font-weight:              $font-weight-medium !default;
+$nav-link-font-weight:              $font-weight-semibold !default;
 $nav-link-disabled-color:           $grey-900 !default;
 
 $nav-tabs-border-color:             $grey-300 !default;
@@ -1912,6 +1912,7 @@ $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
 $breadcrumb-divider-size:           $icon-size-sm;
 $breadcrumb-border-radius:          null !default;
 $breadcrumb-font-weight:            $font-weight-medium !default;
+$breadcrumb-hover-bg:               $grey-200 !default;
 // scss-docs-end breadcrumb-variables
 
 // Carousel
