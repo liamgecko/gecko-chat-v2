@@ -1,5 +1,5 @@
 .app-wrapper {
-    
+
     &.conversation-wrapper {
         overflow: hidden;
         height: 100vh;
@@ -209,6 +209,32 @@
         .header-actions {
             .search-input {
                 min-width: 280px;
+            }
+        }
+    }
+
+    .app-body-wrapper {
+        .data-display {
+            // .data-icon {
+            //     height: 38px;
+            //     width: 38px;
+            // }
+            .data-wrapper {
+                margin-left: 56px
+            }
+            .data-result {
+                font-size: 24px;
+                line-height: 1.4;
+            }
+            .data-footer {
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: 0 0 4px 4px;
+                background-color: #F9FAFB;
+                &:hover {
+                    background-color: #F1F3F5;
+                }
             }
         }
     }
