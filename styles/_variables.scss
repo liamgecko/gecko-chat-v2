@@ -762,7 +762,7 @@ $table-variants: (
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
 // scss-docs-start input-btn-variables
-$input-btn-padding-y:         $spacer !default;
+$input-btn-padding-y:         $spacer * 0.95 !default;
 $input-btn-padding-x:         $spacer * 1.5 !default;
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
@@ -774,9 +774,9 @@ $input-btn-focus-color:         rgba($component-active-bg, .25) !default;
 $input-btn-focus-blur:          0 !default;
 $input-btn-focus-box-shadow:    0 0 $input-btn-focus-blur $input-btn-focus-width $input-btn-focus-color !default;
 
-$input-btn-padding-y-sm:      $spacer * 0.75 !default;
+$input-btn-padding-y-sm:      $spacer * 0.85 !default;
 $input-btn-padding-x-sm:      $spacer !default;
-$input-btn-font-size-sm:      $font-size-sm !default;
+$input-btn-font-size-sm:      $font-size-base !default;
 
 $input-btn-padding-y-lg:      $spacer * 1.25 !default;
 $input-btn-padding-x-lg:      $spacer * 1.5 !default;
@@ -800,7 +800,7 @@ $btn-white-space:             null !default; // Set to `nowrap` to prevent text 
 
 $btn-padding-y-sm:            $input-btn-padding-y-sm !default;
 $btn-padding-x-sm:            $input-btn-padding-x-sm !default;
-$btn-font-size-sm:            $input-btn-font-size-sm !default;
+$btn-font-size-sm:            $font-size-sm !default;
 
 $btn-padding-y-lg:            $input-btn-padding-y-lg !default;
 $btn-padding-x-lg:            $input-btn-padding-x-lg !default;

@@ -211,6 +211,9 @@
                 min-width: 280px;
             }
         }
+        .nav-tabs {
+            border: none;
+        }
     }
 
     .app-body-wrapper {
@@ -231,7 +234,7 @@
                 right: 0;
                 bottom: 0;
                 border-radius: 0 0 4px 4px;
-                background-color: #F9FAFB;
+                background-color: #F3F5F7;
                 &:hover {
                     background-color: #F1F3F5;
                 }
