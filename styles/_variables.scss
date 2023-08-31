@@ -6,16 +6,16 @@
 // Color system
 
 // scss-docs-start grey-color-variables
-$white:   hsla(0, 0%, 100%, 1) !default;
-$grey-100: hsla(210, 25%, 98%, 1) !default;
-$grey-200: hsl(210, 17%, 95%) !default;
-$grey-300: hsla(210, 17%, 90%, 1) !default;
-$grey-400: hsla(208, 17%, 85%, 1) !default;
-$grey-500: hsla(209, 17%, 69%, 1) !default;
-$grey-600: hsla(210, 17%, 47%, 1) !default;
-$grey-700: hsla(210, 17%, 40%, 1) !default;
-$grey-800: hsla(208, 17%, 35%, 1) !default;
-$grey-900: hsl(205, 17%, 25%) !default;
+$white:    #ffffff !default;
+$grey-100: #f8fafc !default;
+$grey-200: #f1f5f9 !default;
+$grey-300: #e2e8f0 !default;
+$grey-400: #cbd5e1 !default;
+$grey-500: #94a3b8 !default;
+$grey-600: #64748b !default;
+$grey-700: #475569 !default;
+$grey-800: #334155 !default;
+$grey-900: #1e293b !default;
 $black:    $grey-900 !default;
 // scss-docs-end grey-color-variables
 
@@ -36,19 +36,17 @@ $greys: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:    hsla(218, 54%, 50%, 1) !default;
-$navy:    hsla(218, 54%, 50%, 1) !default;
-$red:     hsla(360, 64%, 50%, 1) !default;
-$orange:  hsla(28, 100%, 67%, 1) !default;
-$yellow:  hsla(45, 87%, 70%, 1) !default;
-$green:   hsla(155, 54%, 46%, 1) !default;
-$purple:  hsla(240, 67%, 70%, 1) !default;
+$blue:    #2563eb !default;
+$red:     #e11d48 !default;
+$orange:  #f97316 !default;
+$yellow:  #eab308 !default;
+$green:   #34d399 !default;
+$purple:  #a855f7 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
 $colors: (
   "blue":       $blue,
-  "navy":       $navy,
   "red":        $red,
   "orange":     $orange,
   "yellow":     $yellow,
@@ -71,75 +69,65 @@ $color-contrast-light:     $white !default;
 
 // fusv-disable
 
-$blue-100: hsla(208, 60%, 95%, 1) !default;
-$blue-200: hsla(209, 57%, 92%, 1) !default;
-$blue-300: hsla(209, 56%, 80%, 1) !default;
-$blue-400: hsla(218, 54%, 61%, 1) !default;
-$blue-500: hsla(218, 50%, 50%, 1) !default;
-$blue-600: hsla(218, 54%, 44%, 1) !default;
-$blue-700: hsla(218, 54%, 33%, 1) !default;
-$blue-800: hsla(218, 54%, 23%, 1) !default;
-$blue-900: hsla(218, 54%, 17%, 1) !default;
+$blue-100: #eff6ff !default;
+$blue-200: #dbeafe !default;
+$blue-300: #93c5fd !default;
+$blue-400: #60a5fa !default;
+$blue-500: #2563eb !default;
+$blue-600: #1d4ed8 !default;
+$blue-700: #1e3a8a !default;
+$blue-800: #172554 !default;
+$blue-900: #101A3C !default;
 
-$navy-100: hsla(208, 60%, 95%, 1) !default;
-$navy-200: hsla(209, 57%, 92%, 1) !default;
-$navy-300: hsla(209, 56%, 80%, 1) !default;
-$navy-400: hsla(218, 54%, 61%, 1) !default;
-$navy-500: hsla(218, 50%, 50%, 1) !default;
-$navy-600: hsla(218, 54%, 44%, 1) !default;
-$navy-700: hsla(218, 54%, 33%, 1) !default;
-$navy-800: hsla(218, 54%, 24%, 1) !default;
-$navy-900: hsla(218, 54%, 22%, 1) !default;
+$red-100: #fff1f2 !default;
+$red-200: #ffe4e6 !default;
+$red-300: #fda4af !default;
+$red-400: #fb7185 !default;
+$red-500: #f43f5e !default;
+$red-600: #e11d48 !default;
+$red-700: #9f1239 !default;
+$red-800: #881337 !default;
+$red-900: #4c0519 !default;
 
-$red-100: hsla(0, 64%, 95%, 1) !default;
-$red-200: hsla(360, 64%, 90%, 1) !default;
-$red-300: hsla(360, 64%, 74%, 1) !default;
-$red-400: hsla(360, 64%, 62%, 1) !default;
-$red-500: hsla(360, 64%, 50%, 1) !default;
-$red-600: hsla(360, 64%, 40%, 1) !default;
-$red-700: hsla(360, 64%, 36%, 1) !default;
-$red-800: hsla(360, 64%, 30%, 1) !default;
-$red-900: hsla(358, 64%, 15%, 1) !default;
+$orange-100: #fff7ed !default;
+$orange-200: #ffedd5 !default;
+$orange-300: #fdba74 !default;
+$orange-400: #fb923c !default;
+$orange-500: #f97316 !default;
+$orange-600: #c2410c !default;
+$orange-700: #9a3412 !default;
+$orange-800: #7c2d12 !default;
+$orange-900: #431407 !default;
 
-$orange-100: hsla(28, 100%, 95%, 1) !default;
-$orange-200: hsla(28, 100%, 90%, 1) !default;
-$orange-300: hsla(28, 100%, 78%, 1) !default;
-$orange-400: hsla(28, 100%, 67%, 1) !default;
-$orange-500: hsla(28, 100%, 60%, 1) !default;
-$orange-600: hsla(28, 100%, 37%, 1) !default;
-$orange-700: hsla(28, 100%, 30%, 1) !default;
-$orange-800: hsla(28, 100%, 25%, 1) !default;
-$orange-900: hsla(28, 100%, 16%, 1) !default;
+$green-100: #ecfdf5 !default;
+$green-200: #d1fae5 !default;
+$green-300: #6ee7b7 !default;
+$green-400: #34d399 !default;
+$green-500: #059669 !default;
+$green-600: #047857 !default;
+$green-700: #065f46 !default;
+$green-800: #064e3b !default;
+$green-900: #022c22 !default;
 
-$green-100: hsla(154, 54%, 95%, 1) !default;
-$green-200: hsla(154, 53%, 90%, 1) !default;
-$green-300: hsla(154, 54%, 79%, 1) !default;
-$green-400: hsla(154, 54%, 70%, 1) !default;
-$green-500: hsla(155, 54%, 46%, 1) !default;
-$green-600: hsla(155, 53%, 38%, 1) !default;
-$green-700: hsla(155, 53%, 30%, 1) !default;
-$green-800: hsla(156, 53%, 24%, 1) !default;
-$green-900: hsla(154, 54%, 15%, 1) !default;
+$yellow-100: #fefce8 !default;
+$yellow-200: #fef9c3 !default;
+$yellow-300: #fde047 !default;
+$yellow-400: #facc15 !default;
+$yellow-500: #eab308 !default;
+$yellow-600: #ca8a04 !default;
+$yellow-700: #a16207 !default;
+$yellow-800: #713f12 !default;
+$yellow-900: #422006 !default;
 
-$yellow-100: hsla(45, 85%, 95%, 1) !default;
-$yellow-200: hsla(45, 84%, 90%, 1) !default;
-$yellow-300: hsla(45, 87%, 80%, 1) !default;
-$yellow-400: hsla(45, 87%, 70%, 1) !default;
-$yellow-500: hsla(45, 87%, 60%, 1) !default;
-$yellow-600: hsla(45, 87%, 50%, 1) !default;
-$yellow-700: hsla(45, 87%, 43%, 1) !default;
-$yellow-800: hsla(45, 87%, 25%, 1) !default;
-$yellow-900: hsla(45, 87%, 15%, 1) !default;
-
-$purple-100: hsla(240, 67%, 98%, 1) !default;
-$purple-200: hsla(240, 67%, 96%, 1) !default;
-$purple-300: hsla(240, 67%, 94%, 1) !default;
-$purple-400: hsla(240, 67%, 89%, 1) !default;
-$purple-500: hsla(240, 67%, 81%, 1) !default;
-$purple-600: hsla(240, 67%, 70%, 1) !default;
-$purple-700: hsla(240, 67%, 64%, 1) !default;
-$purple-800: hsla(240, 67%, 39%, 1) !default;
-$purple-900: hsla(240, 67%, 26%, 1) !default;
+$purple-100: #faf5ff !default;
+$purple-200: #f3e8ff !default;
+$purple-300: #d8b4fe !default;
+$purple-400: #c084fc !default;
+$purple-500: #a855f7 !default;
+$purple-600: #9333ea !default;
+$purple-700: #6b21a8 !default;
+$purple-800: #581c87 !default;
+$purple-900: #3b0764 !default;
 
 $blues: (
   "blue-100": $blue-100,
@@ -151,18 +139,6 @@ $blues: (
   "blue-700": $blue-700,
   "blue-800": $blue-800,
   "blue-900": $blue-900
-) !default;
-
-$navys: (
-  "navy-100": $navy-100,
-  "navy-200": $navy-200,
-  "navy-300": $navy-300,
-  "navy-400": $navy-400,
-  "navy-500": $navy-500,
-  "navy-600": $navy-600,
-  "navy-700": $navy-700,
-  "navy-800": $navy-800,
-  "navy-900": $navy-900
 ) !default;
 
 $reds: (
@@ -268,16 +244,6 @@ $theme-colors: (
     "blue-700": $blue-700,
     "blue-800": $blue-800,
     "blue-900": $blue-900,
-    // navy
-    "navy-100": $navy-100,
-    "navy-200": $navy-200,
-    "navy-300": $navy-300,
-    "navy-400": $navy-400,
-    "navy-500": $navy-500,
-    "navy-600": $navy-600,
-    "navy-700": $navy-700,
-    "navy-800": $navy-800,
-    "navy-900": $navy-900,
     // red
     "red-100": $red-100,
     "red-200": $red-200,
@@ -342,8 +308,8 @@ $bg-primary-text:     $white;
 $bg-secondary-text:   $primary;
 $bg-info-text:        $blue-600;
 $bg-success-text:     $green-700;
-$bg-warning-text:     $orange-800;
-$bg-danger-text:      $red-600;
+$bg-warning-text:     $orange-700;
+$bg-danger-text:      $red-700;
 
 
 // Characters which are escaped by the escape-svg function
@@ -534,7 +500,7 @@ $border-rounded:              50% !default;
 
 // scss-docs-start box-shadow-variables
 $box-shadow:                  0 0 1rem 0 rgba($blue-800, .15) !default; // hsla(208, 17%, 20%, 0.1)
-$box-shadow-sm:               0 .125rem .25rem rgba($blue-800, .075) !default;
+$box-shadow-sm:               0 1px 3px 0 rgba($blue-800, .1), 0 1px 2px -1px rgba($blue-800, .1) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($blue-800, .175) !default;
 $box-shadow-inset:            inset 0 1px 2px rgba($blue-800, .075) !default;
 // scss-docs-end box-shadow-variables
@@ -572,7 +538,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:       "Muli", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:       "Satoshi-Gecko", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-icons:           "Font Awesome 6 Pro";
 // stylelint-enable value-keyword-case
@@ -590,7 +556,6 @@ $font-size-lg:                $font-size-base * 1.1429 !default; // 16px
 $font-weight-normal:          400 !default;
 $font-weight-medium:          500 !default;
 $font-weight-semibold:        600 !default;
-$font-weight-bold:            700 !default;
 
 $font-weight-base:            $font-weight-normal !default;
 
@@ -630,7 +595,7 @@ $font-sizes: (
 $headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
-$headings-font-weight:        700 !default;
+$headings-font-weight:        600 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              null !default;
 // scss-docs-end headings-variables
@@ -684,7 +649,7 @@ $legend-margin-bottom:        .5rem !default;
 $legend-font-size:            1.5rem !default;
 $legend-font-weight:          null !default;
 
-$dt-font-weight:              $font-weight-bold !default;
+$dt-font-weight:              $font-weight-semibold !default;
 
 $list-inline-padding:         .5rem !default;
 
@@ -808,7 +773,7 @@ $btn-font-size-lg:            $input-btn-font-size-lg !default;
 
 $btn-border-width:            $input-btn-border-width !default;
 
-$btn-font-weight:             $font-weight-bold !default;
+$btn-font-weight:             $font-weight-semibold !default;
 $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
 $btn-focus-width:             $input-btn-focus-width !default;
 $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
@@ -845,7 +810,7 @@ $btn-primary-focus-box-shadow:    0 0 0 0.071429rem rgba($blue-500, 100%);
 $btn-secondary-bg:                $grey-300;
 $btn-secondary-color:             $primary;
 $btn-secondary-border:            1px solid $btn-secondary-bg;
-$btn-secondary-hover-bg:          $blue-200;
+$btn-secondary-hover-bg:          $blue-100;
 $btn-secondary-hover-color:       $blue-600;
 $btn-secondary-hover-border:      $btn-secondary-hover-bg;
 $btn-secondary-active-bg:         $btn-secondary-hover-bg;
@@ -1009,7 +974,7 @@ $form-text-color:                       $text-muted !default;
 $form-label-margin-bottom:              2px !default;
 $form-label-font-size:                  $font-size-sm !default;
 $form-label-font-style:                 null !default;
-$form-label-font-weight:                $font-weight-bold !default;
+$form-label-font-weight:                $font-weight-semibold !default;
 $form-label-color:                      $primary !default;
 // scss-docs-end form-label-variables
 
@@ -1302,17 +1267,17 @@ $zindex-toast:                      1090 !default;
 $nav-link-padding-y:                0.57143rem !default;
 $nav-link-padding-x:                1.1429rem !default;
 $nav-link-font-size:                null !default;
-$nav-link-color:                    $secondary !default;
-$nav-link-hover-color:              $blue-500 !default;
+$nav-link-color:                    $primary !default;
+$nav-link-hover-color:              $grey-600 !default;
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
-$nav-link-font-weight:              $font-weight-semibold !default;
+$nav-link-font-weight:              $font-weight-medium !default;
 $nav-link-disabled-color:           $grey-900 !default;
 
 $nav-tabs-border-color:             $grey-300 !default;
 $nav-tabs-border-width:             $border-width !default;
 $nav-tabs-border-radius:            $border-radius !default;
 $nav-tabs-link-hover-border-color:  $grey-300 $grey-300 $nav-tabs-border-color !default;
-$nav-tabs-link-active-color:        $nav-link-hover-color !default;
+$nav-tabs-link-active-color:        $blue-500 !default;
 $nav-tabs-link-active-bg:           $body-bg !default;
 $nav-tabs-link-active-border-color: $grey-500 $grey-500 $nav-tabs-link-active-bg !default;
 
@@ -1376,7 +1341,7 @@ $dropdown-padding-x:                0 !default;
 $dropdown-padding-y:                $spacer !default;
 $dropdown-spacer:                   .125rem !default;
 $dropdown-font-size:                $font-size-base !default;
-$dropdown-font-weight:              $font-weight-semibold !default;
+$dropdown-font-weight:              $font-weight-medium !default;
 $dropdown-color:                    $body-color !default;
 $dropdown-bg:                       $white !default;
 $dropdown-border-color:             var(--#{$prefix}border-color-translucent) !default;
@@ -1385,7 +1350,7 @@ $dropdown-border-width:             $border-width !default;
 $dropdown-inner-border-radius:      subtract($dropdown-border-radius, $dropdown-border-width) !default;
 $dropdown-box-shadow:               0px 0px 15px rgba(42, 51, 59, 0.1) !default;
 
-$dropdown-link-color:               $secondary !default;
+$dropdown-link-color:               $primary !default;
 $dropdown-link-hover-color:         $primary !default;
 $dropdown-link-hover-bg:            $grey-200 !default;
 
@@ -1397,7 +1362,7 @@ $dropdown-link-disabled-color:      $grey-700 !default;
 $dropdown-item-padding-y:           $spacer !default;
 $dropdown-item-padding-x:           $spacer * 2 !default;
 $dropdown-item-margin:              $dropdown-item-padding-y !default;
-$dropdown-item-delete-color:        $red-500 !default;
+$dropdown-item-delete-color:        $red-600 !default;
 $dropdown-item-delete-bg:           $red-100 !default;
 $dropdown-item-delete-hover-color:  $red-600;
 
@@ -1459,7 +1424,7 @@ $pagination-hover-bg:               $grey-300 !default;
 
 $pagination-active-color:           $primary !default;
 $pagination-active-bg:              $grey-300 !default;
-$pagination-active-font-weight:     $font-weight-bold !default;
+$pagination-active-font-weight:     $font-weight-semibold !default;
 
 $pagination-disabled-color:         $grey-900 !default;
 $pagination-disabled-bg:            $white !default;
@@ -1495,7 +1460,7 @@ $card-title-spacer-y:               $spacer * .5 !default;
 $card-border-width:                 $border-width !default;
 $card-border-color:                 $grey-300 !default;
 $card-border-radius:                $border-radius !default;
-$card-box-shadow:                   null !default;
+$card-box-shadow:                   $box-shadow-sm !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y !default;
 $card-cap-padding-x:                $card-spacer-x !default;
@@ -1508,7 +1473,7 @@ $card-img-overlay-padding:          $spacer !default;
 $card-group-margin:                 $grid-gutter-width * .5 !default;
 $card-sub-title-size:               $h3-font-size;
 $card-header-size:                  $font-size-base * 1.1428;
-$card-header-font-weight:           $font-weight-bold;
+$card-header-font-weight:           $font-weight-semibold;
 $card-footer-btn-spacer:            $spacer;
 
 $card-container-flex:               flex;
@@ -1523,7 +1488,7 @@ $card-container-header-spacing:     $spacer;
 $accordion-padding-y:                     1rem !default;
 $accordion-padding-x:                     0 !default;
 $accordion-color:                         $body-color !default; // Sass variable because of $accordion-button-icon
-$accordion-font-weight:                   $font-weight-bold;
+$accordion-font-weight:                   $font-weight-semibold;
 $accordion-bg:                            $white !default;
 $accordion-border-width:                  $border-width !default;
 $accordion-border-color:                  $grey-400 !default;
@@ -1663,7 +1628,7 @@ $toast-danger-btn:                  url("data:image/svg+xml,<svg xmlns='http://w
 
 // scss-docs-start badge-variables
 $badge-font-size:                   .85em !default;
-$badge-font-weight:                 $font-weight-bold !default;
+$badge-font-weight:                 $font-weight-medium !default;
 $badge-padding-y:                   .42857em !default;
 $badge-padding-x:                   .65em !default;
 $badge-border-radius:               $border-radius !default;
@@ -1684,7 +1649,7 @@ $badge-text-danger:                 $bg-danger-text !default;
 // Avatars
 
 $avatar-font-size:      $font-size-sm !default;
-$avatar-font-weight:    $font-weight-bold !default;
+$avatar-font-weight:    $font-weight-semibold !default;
 $avatar-border:         1px solid $white !default;
 $avatar-border-radius:  $border-rounded !default;
 $avatar-bg:             $grey-300 !default;
@@ -1720,7 +1685,7 @@ $avatar-status-lg-size-y:     $avatar-status-lg-size-x !default;
 $avatar-status-xl-size-x:     $spacer * 1.5 !default;
 $avatar-status-xl-size-y:     $avatar-status-xl-size-x !default;
 
-$avatar-name-font-weight:     $font-weight-semibold !default;
+$avatar-name-font-weight:     $font-weight-medium !default;
 $avatar-name-margin:          $spacer !default;
 $avatar-name-font-size-base:  $font-size-sm !default;
 $avatar-name-font-size-xs:    $font-size-sm !default;
@@ -2063,7 +2028,7 @@ $react-select-menu-selected-bg:         $grey-100;
 $react-select-menu-selected-color:      $primary;
 
 $react-select-divider-font-size:        $font-size-sm;
-$react-select-divider-font-weight:      $font-weight-bold;
+$react-select-divider-font-weight:      $font-weight-semibold;
 $react-select-divider-color:            $primary;
 $react-select-divider-padding:          $react-select-menu-padding;
 
