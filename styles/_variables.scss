@@ -12,7 +12,7 @@ $grey-200: #f1f5f9 !default;
 $grey-300: #e2e8f0 !default;
 $grey-400: #cbd5e1 !default;
 $grey-500: #94a3b8 !default;
-$grey-600: #64748b !default;
+$grey-600: #606F85 !default;
 $grey-700: #475569 !default;
 $grey-800: #334155 !default;
 $grey-900: #1e293b !default;
@@ -204,7 +204,7 @@ $purples: (
 
 // scss-docs-start theme-color-variables
 $primary:       $blue-800 !default;
-$secondary:     $grey-700 !default;
+$secondary:     $grey-600 !default;
 $success:       $green-500 !default;
 $info:          $blue-500 !default;
 $warning:       $orange-400 !default;
