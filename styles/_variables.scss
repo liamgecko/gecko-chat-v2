@@ -981,13 +981,13 @@ $form-group-margin:                     $spacer * 2;
 $form-text-margin-top:                  .25rem !default;
 $form-text-font-size:                   $small-font-size !default;
 $form-text-font-style:                  null !default;
-$form-text-font-weight:                 null !default;
+$form-text-font-weight:                 $font-weight-medium !default;
 $form-text-color:                       $text-muted !default;
 // scss-docs-end form-text-variables
 
 // scss-docs-start form-label-variables
 $form-label-margin-bottom:              4px !default;
-$form-label-font-size:                  $font-size-sm !default;
+$form-label-font-size:                  $font-size-base !default;
 $form-label-font-style:                 null !default;
 $form-label-font-weight:                $font-weight-semibold !default;
 $form-label-color:                      $primary !default;
