@@ -179,3 +179,18 @@
     }
   }
 }
+
+.table-sticky {
+  th:last-child,
+  td:last-child {
+    position: sticky;
+    right: 0;
+  }
+  th:last-child {
+    background-color: $table-head-bg;
+  }
+  td:last-child {
+    background-color: $white;
+  }
+
+}
