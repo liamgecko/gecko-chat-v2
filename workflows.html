@@ -52,7 +52,9 @@
             <div class="user-menu">
                 <ul class="app-menu flex-column mb-auto text-center list-unstyled">
                     <li class="d-flex justify-content-center mb-2">
-                        <a href="" title="Search" data-bs-toggle="tooltip" data-bs-title="Search" data-bs-custom-class="tooltip-menu" class="d-flex justify-content-center align-items-center rounded position-relative text-decoration-none"><i class="fa-light fa-search"></i></a>
+                        <span class="menu-modal-btn" data-bs-toggle="modal" data-bs-target="#search-modal">
+                            <a title="Search" role="button" data-bs-toggle="tooltip" data-bs-title="Search" data-bs-custom-class="tooltip-menu" class="d-flex justify-content-center align-items-center rounded position-relative text-decoration-none"><i class="fa-light fa-search"></i></a>
+                        </span>
                     </li>
                     <li class="d-flex justify-content-center mb-2">
                         <a href="settings.html" title="Settings" data-bs-toggle="tooltip" data-bs-title="Settings" data-bs-custom-class="tooltip-menu" class="d-flex justify-content-center align-items-center rounded position-relative text-decoration-none"><i class="fa-light fa-cog"></i></a>
@@ -89,7 +91,7 @@
 
             <div class="app-body-wrapper">
 
-                <div class="app-body-header border-bottom p-6 pb-0">
+                <div class="app-body-header bg-white border-bottom p-6 pb-0">
 
                     <div class="d-flex justify-content-between align-items-center pb-6">
 
@@ -133,7 +135,7 @@
                                                 <img src="img/icon-4.png" />
                                             </div>
                                             <div class="data-wrapper d-flex flex-column col">
-                                                <span class="d-block fw-medium">Total contacts</span>
+                                                <span class="d-block fw-medium">Workflows triggered</span>
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div class="d-flex align-items-baseline">
                                                         <span class="data-result fw-semibold">12,345</span>
@@ -151,7 +153,7 @@
                                                 <img src="img/icon-2.png" />
                                             </div>
                                             <div class="data-wrapper d-flex flex-column col">
-                                                <span class="d-block fw-medium">Total contacts</span>
+                                                <span class="d-block fw-medium">Workflows triggered</span>
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div class="d-flex align-items-baseline">
                                                         <span class="data-result fw-semibold">12,345</span>
@@ -169,7 +171,7 @@
                                                 <img src="img/icon-3.png" />
                                             </div>
                                             <div class="data-wrapper d-flex flex-column col">
-                                                <span class="d-block fw-medium">Total contacts</span>
+                                                <span class="d-block fw-medium">Workflows triggered</span>
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div class="d-flex align-items-baseline">
                                                         <span class="data-result fw-semibold">12,345</span>
@@ -1020,6 +1022,77 @@
 
         </div>
 
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="search-modal" tabindex="-1" aria-labelledby="search-modal" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="search-input position-relative border-bottom d-flex align-items-center">
+                    <i class="search-icon far fa-search position-absolute text-primary"></i>
+                    <input placeholder="Search Gecko Chat" type="search" class="form-control position-relative p-4">
+                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-2">
+                    <div class="search-category-filter">
+                        <span class="fs-3 fw-semibold text-secondary mb-2 px-2">Search in</span>
+                        <ul class="list-unstyled">
+                            <li>
+                                <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
+                                    <span><i class="category-icon text-center far fa-comments me-1"></i> <span class="fw-medium">Conversations</span></span>
+                                    <span>
+                                        <div class="rounded border p-1 fs-4 fw-semibold text-grey-600 bg-grey-100 border-grey-200">&#8984; A</div>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
+                                    <span><i class="category-icon text-center far fa-circle-bolt me-1"></i> <span class="fw-medium">Automation</span></span>
+                                    <span>
+                                        <div class="rounded border p-1 fs-4 fw-semibold text-grey-600 bg-grey-100 border-grey-200">&#8984; B</div>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
+                                    <span><i class="category-icon text-center far fa-address-book me-1"></i> <span class="fw-medium">Contacts</span></span>
+                                    <span>
+                                        <div class="rounded border p-1 fs-4 fw-semibold text-grey-600 bg-grey-100 border-grey-200">&#8984; C</div>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
+                                    <span><i class="category-icon text-center far fa-users me-1"></i> <span class="fw-medium">Agents and teams</span></span>
+                                    <span>
+                                        <div class="rounded border p-1 fs-4 fw-semibold text-grey-600 bg-grey-100 border-grey-200">&#8984; D</div>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
+                                    <span><i class="category-icon text-center far fa-route me-1"></i> <span class="fw-medium">Workflows</span></span>
+                                    <span>
+                                        <div class="rounded border p-1 fs-4 fw-semibold text-grey-600 bg-grey-100 border-grey-200">&#8984; E</div>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
+                                    <span><i class="category-icon text-center far fa-tags me-1"></i> <span class="fw-medium">Tags</span></span>
+                                    <span>
+                                        <div class="rounded border p-1 fs-4 fw-semibold text-grey-600 bg-grey-100 border-grey-200">&#8984; F</div>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer fs-3 bg-grey-100">
+                    💡 Tip: You can use in: or from: in the search box to focus your search.
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

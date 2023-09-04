@@ -162,7 +162,35 @@
         background-color: $btn-outline-disabled-bg;
         color: $btn-outline-disabled-color;
         border-color: $btn-outline-disabled-border;
+      }
     }
+    &-danger {
+      background-color: $btn-outline-danger-bg;
+      color: $btn-outline-danger-color;
+      border-color: $btn-outline-danger-border;
+      &:hover {
+        background-color: $btn-outline-danger-hover-bg;
+        color: $btn-outline-danger-hover-color;
+        border-color: $btn-outline-danger-hover-border;
+      }
+      &:active,
+      &.active {
+        background-color: $btn-outline-danger-active-bg;
+        color: $btn-outline-danger-active-color;
+      }
+      &:focus-visible {
+        background-color: $btn-outline-danger-active-bg;
+        color: $btn-outline-danger-active-color;
+        outline: 1px solid $white;
+        outline-offset: -2px;
+        border-color: $btn-naked-primary-active-border;
+      }
+      &:disabled,
+      &.disabled {
+        background-color: $btn-outline-danger-disabled-bg;
+        color: $btn-outline-danger-disabled-color;
+        border-color: $btn-outline-danger-disabled-border;
+      }
     }
   }
 

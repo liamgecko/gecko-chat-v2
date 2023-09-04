@@ -39,6 +39,18 @@
   white-space: nowrap;
   background-color: var(--#{$prefix}progress-bar-bg);
   @include transition(var(--#{$prefix}progress-bar-transition));
+  &.low {
+    background-color: $red-600;
+  }
+  &.low-mid {
+    background-color: $orange-500;
+  }
+  &.high-mid {
+    background-color: $yellow-500;
+  }
+  &.high {
+    background-color: $green-400;
+  }
 }
 
 .progress-bar-striped {

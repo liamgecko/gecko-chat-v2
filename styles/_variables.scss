@@ -204,11 +204,11 @@ $purples: (
 
 // scss-docs-start theme-color-variables
 $primary:       $blue-800 !default;
-$secondary:     $grey-700 !default;
+$secondary:     $grey-600 !default;
 $success:       $green-500 !default;
 $info:          $blue-500 !default;
 $warning:       $orange-400 !default;
-$danger:        $red-500 !default;
+$danger:        $red-600 !default;
 $light:         $white !default;
 $dark:          $grey-900 !default;
 // scss-docs-end theme-color-variables
@@ -394,7 +394,7 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
+$body-bg:                   $grey-100 !default;
 $body-color:                $primary !default;
 $body-color-secondary:      $secondary !default;
 $body-text-align:           null !default;
@@ -773,7 +773,7 @@ $btn-font-size-lg:            $input-btn-font-size-lg !default;
 
 $btn-border-width:            $input-btn-border-width !default;
 
-$btn-font-weight:             $font-weight-semibold !default;
+$btn-font-weight:             $font-weight-medium !default;
 $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
 $btn-focus-width:             $input-btn-focus-width !default;
 $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
@@ -822,10 +822,10 @@ $btn-secondary-disabled-border:   $btn-secondary-disabled-bg;
 $btn-secondary-focus-box-shadow:  0 0 0 0.071429rem rgba($blue-600, 100%);
 
 // Danger btn
-$btn-danger-bg:                   $red-500;
+$btn-danger-bg:                   $red-600;
 $btn-danger-color:                $white;
 $btn-danger-border:               1px solid $btn-danger-bg;
-$btn-danger-hover-bg:             $red-600;
+$btn-danger-hover-bg:             $red-500;
 $btn-danger-hover-color:          $btn-danger-color;
 $btn-danger-hover-border:         $btn-danger-hover-bg;
 $btn-danger-active-bg:            $btn-danger-hover-bg;
@@ -889,6 +889,21 @@ $btn-icon-right-margin:           $spacer / 2;
 $btn-icon-left-margin:            $btn-icon-right-margin;
 $btn-sm-icon-right-margin:        $btn-icon-right-margin;
 $btn-sm-icon-left-margin:         $btn-sm-icon-right-margin;
+
+$btn-outline-danger-bg:                  $white;
+$btn-outline-danger-color:               $primary;
+$btn-outline-danger-border:              $border-color;
+$btn-outline-danger-hover-bg:            $red-100;
+$btn-outline-danger-hover-color:         $red-700;
+$btn-outline-danger-hover-border:        $red-600;
+$btn-outline-danger-active-bg:           $btn-naked-primary-active-bg;
+$btn-outline-danger-active-border:       $btn-naked-primary-active-border;
+$btn-outline-danger-active-color:        $btn-naked-primary-active-color;
+$btn-outline-danger-disabled-bg:         $btn-naked-primary-disabled-bg;
+$btn-outline-danger-disabled-border:     $btn-naked-primary-disabled-bg;
+$btn-outline-danger-disabled-color:      $btn-naked-primary-disabled-color;
+$btn-outline-danger-disabled-border:     transparent;
+$btn-outline-danger-focus-box-shadow:    $btn-naked-primary-focus-box-shadow;
 
 // Button group
 $btn-group-bg:                      $white;
@@ -971,7 +986,7 @@ $form-text-color:                       $text-muted !default;
 // scss-docs-end form-text-variables
 
 // scss-docs-start form-label-variables
-$form-label-margin-bottom:              2px !default;
+$form-label-margin-bottom:              4px !default;
 $form-label-font-size:                  $font-size-sm !default;
 $form-label-font-style:                 null !default;
 $form-label-font-weight:                $font-weight-semibold !default;
@@ -1960,7 +1975,7 @@ $btn-close-bg-focus:         $btn-close-bg-hover;
 // scss-docs-start offcanvas-variables
 $offcanvas-padding-y:               $modal-inner-padding !default;
 $offcanvas-padding-x:               $modal-inner-padding !default;
-$offcanvas-horizontal-width:        400px !default;
+$offcanvas-horizontal-width:        640px !default;
 $offcanvas-vertical-height:         30vh !default;
 $offcanvas-transition-duration:     .3s !default;
 $offcanvas-border-color:            $modal-content-border-color !default;

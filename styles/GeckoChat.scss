@@ -1,6 +1,7 @@
 .app-wrapper {
 
     &.conversation-wrapper {
+        background-color: #FFFFFF;
         overflow: hidden;
         height: 100vh;
     }
@@ -246,10 +247,81 @@
                 }
             }
         }
+        .active-bot {
+            .card {
+                .card-header {
+                    .bot-header {
+                        .bot-header-bg {
+                            height: 82px;
+                            width: 100%;
+                            border-radius: 4px 4px 0 0;
+                        }
+                        .avatar {
+                            margin-top: -50px;
+                            .avatar-body {
+                                height: 98px;
+                                width: 98px;
+                            }
+                        }
+                    }
+                }
+                .bot-menu {
+                    .bot-menu-link {
+                        cursor: pointer;
+                        transition: color 0.3s ease;
+                        &:hover {
+                            color: #64748b;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 }
 
+}
+
+.progress-ring circle {
+    transition: stroke-dashoffset .35s;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+.time-saved {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: rgba(0,0,0,.05);
+    .time-saved-counter {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        .time-saved-value {
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 600;
+            color: #047857;
+        }
+        .time-saved-label {
+            color: #64748b;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
 }
 
 #search-modal {
