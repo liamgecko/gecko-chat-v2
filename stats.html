@@ -640,7 +640,15 @@
     </script>
 
 <script>
-    const ctx2 = document.getElementById('average-conversations-chart');
+    const ctx2 = document.getElementById('average-conversations-chart').getContext("2d");
+
+    // var gradient1 = ctx2.createLinearGradient(0, 0, 0, 1000);
+    // gradient1.addColorStop(0, 'rgb(37, 99, 235, 1)');
+    // gradient1.addColorStop(1, 'rgb(37, 99, 235, 0)');
+
+    // var gradient2 = ctx2.createLinearGradient(0, 0, 0, 1000);
+    // gradient2.addColorStop(0, 'rgb(192, 132, 252, 1)');
+    // gradient2.addColorStop(1, 'rgb(192, 132, 252, 0)');
 
     new Chart(ctx2, {
     type: 'line',
@@ -654,6 +662,10 @@
                 tension: 0.5,
                 borderColor: '#2563EB',
                 backgroundColor: '#2563EB',
+                // fill: {
+                //     target: 'origin',
+                //     above: gradient1,   // Area will be red above the origin
+                // }
             },
             {
                 label: 'Previous period',
@@ -662,6 +674,10 @@
                 tension: 0.5,
                 borderColor: '#CBD5E1',
                 backgroundColor: '#CBD5E1',
+                // fill: {
+                //     target: 'origin',
+                //     above: gradient2,   // Area will be red above the origin
+                // }
             },
     ]
     },
