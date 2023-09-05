@@ -585,16 +585,41 @@
     </script>
 
     <script>
-        const ctx = document.getElementById('new-conversations-chart');
+        const ctx = document.getElementById('new-conversations-chart').getContext("2d");
+
+        var gradient = ctx.createLinearGradient(0, 0, 0, 300);
+        gradient.addColorStop(0, 'rgb(37, 99, 235, 0.2)');
+        gradient.addColorStop(1, 'rgb(37, 99, 235, 0)');
     
         new Chart(ctx, {
-        type: 'bar',
+        
         data: {
-            labels: ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept'],
-            datasets: [{
-            data: [120, 200, 278, 361, 400, 100],
-            borderWidth: 1
-            }]
+            labels: ['Apr', "", "", "", 'May', "", "", "", 'Jun', "", "", "", 'Jul', "", "", "", 'Aug', "", "", "", 'Sept'],
+            datasets: [
+            {
+                type: 'line',
+                label: 'Average',
+                data: [50, 48, 51, 55, 40, 45, 50, 42, 50, 52, 52, 55, 54, 47, 45, 47, 50, 51, 53, 43, 45, 46, 50, 48],
+                borderWidth: 2,
+                borderColor: '#2563EB',
+                backgroundColor: '#2563EB',
+                tension: 0.1,
+                pointRadius: 0,
+                fill: {
+                    target: 'origin',
+                    above: gradient,   // Area will be red above the origin
+                }
+            },
+            {
+                type: 'bar',
+                barThickness: 20,
+                borderRadius: 4,
+                label: 'Total',
+                data: [77, 100, 40, 46, 39, 90, 30, 59, 82, 41, 56, 48, 43, 38, 69, 47, 86, 44, 42, 63, 48, 76, 49, 99],
+                borderWidth: 1,
+                backgroundColor: "#CBD5E1",
+            }
+        ]
         },
         options: {
             scales: {
@@ -615,17 +640,19 @@
                 ticks: {
                     color: '#606F85',
                     font: 'Satoshi-Gecko',
-                }
+                },
             }
             },
             plugins: {
                 legend: {
-                    display: false,
                     position: 'bottom',
                     labels: {
                         font: {
                             size: 14,
-                        }
+                        },
+                        usePointStyle: true,
+                        boxWidth: 25,
+                        borderRadius: 50,
                     }
                 },
                 tooltip: {
@@ -633,8 +660,7 @@
                     bodyColor: '#FFFFFF',
                 }
             },
-            backgroundColor: "#2563EB",
-            barThickness: 50,
+            
         }
         });
     </script>
@@ -653,13 +679,13 @@
     new Chart(ctx2, {
     type: 'line',
     data: {
-        labels: ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept'],
+        labels: ['Apr', "", "", "", 'May', "", "", "", 'Jun', "", "", "", 'Jul', "", "", "", 'Aug', "", "", "", 'Sept'],
         datasets: [
             {
                 label: 'Selected period',
-                data: [10.4, 20.5, 30.3, 20.1, 30.8, 20.0],
+                data: [50, 48, 51, 55, 40, 45, 50, 42, 50, 52, 52, 55, 54, 47, 45, 47, 50, 51, 53, 43, 45, 46, 50, 48],
                 borderWidth: 3,
-                tension: 0.5,
+                tension: 0.2,
                 borderColor: '#2563EB',
                 backgroundColor: '#2563EB',
                 // fill: {
@@ -669,9 +695,9 @@
             },
             {
                 label: 'Previous period',
-                data: [20.4, 30.1, 20.8, 20.9, 30.2, 30.8],
+                data: [77, 100, 40, 46, 39, 90, 30, 59, 82, 41, 56, 48, 43, 38, 69, 47, 86, 44, 42, 63, 48, 76, 49, 99],
                 borderWidth: 3,
-                tension: 0.5,
+                tension: 0.2,
                 borderColor: '#CBD5E1',
                 backgroundColor: '#CBD5E1',
                 // fill: {
@@ -709,8 +735,17 @@
                 labels: {
                     font: {
                         size: 14,
-                    }
-                }
+                        padding: 12,
+                        color: '#000000'
+                    },
+                    usePointStyle: true,
+                    boxWidth: 25,
+                    borderRadius: 50,
+                },
+                title: {
+                    padding: 12,
+                    color: '#000000'
+                },
             },
             tooltip: {
                 backgroundColor: '#1B325A',
