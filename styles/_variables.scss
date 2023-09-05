@@ -1506,7 +1506,7 @@ $accordion-color:                         $body-color !default; // Sass variable
 $accordion-font-weight:                   $font-weight-semibold;
 $accordion-bg:                            $white !default;
 $accordion-border-width:                  $border-width !default;
-$accordion-border-color:                  $grey-400 !default;
+$accordion-border-color:                  $border-color !default;
 $accordion-border-radius:                 $border-radius !default;
 $accordion-inner-border-radius:           subtract($accordion-border-radius, $accordion-border-width) !default;
 
