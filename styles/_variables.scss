@@ -896,14 +896,14 @@ $btn-outline-danger-border:              $border-color;
 $btn-outline-danger-hover-bg:            $red-100;
 $btn-outline-danger-hover-color:         $red-700;
 $btn-outline-danger-hover-border:        $red-600;
-$btn-outline-danger-active-bg:           $btn-naked-primary-active-bg;
-$btn-outline-danger-active-border:       $btn-naked-primary-active-border;
-$btn-outline-danger-active-color:        $btn-naked-primary-active-color;
+$btn-outline-danger-active-bg:           $btn-outline-danger-hover-bg;
+$btn-outline-danger-active-border:       $btn-outline-danger-hover-border;
+$btn-outline-danger-active-color:        $btn-outline-danger-hover-color;
 $btn-outline-danger-disabled-bg:         $btn-naked-primary-disabled-bg;
 $btn-outline-danger-disabled-border:     $btn-naked-primary-disabled-bg;
 $btn-outline-danger-disabled-color:      $btn-naked-primary-disabled-color;
 $btn-outline-danger-disabled-border:     transparent;
-$btn-outline-danger-focus-box-shadow:    $btn-naked-primary-focus-box-shadow;
+$btn-outline-danger-focus-box-shadow:    $btn-naked-danger-focus-box-shadow;
 
 // Button group
 $btn-group-bg:                      $white;

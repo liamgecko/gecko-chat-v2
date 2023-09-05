@@ -608,6 +608,11 @@
                 fill: {
                     target: 'origin',
                     above: gradient,   // Area will be red above the origin
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                    }
                 }
             },
             {
@@ -720,6 +725,7 @@
             }
         },
         x: {
+            beginAtZero: true,
             grid: {
                 color: '#E2E8F0',
             },
