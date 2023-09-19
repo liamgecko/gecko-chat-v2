@@ -6,6 +6,11 @@
 .dropup-center,
 .dropdown-center {
   position: relative;
+  &.show {
+    .dropdown-menu {
+      display: block;
+    }
+  }
 }
 
 .dropdown-toggle {
@@ -189,7 +194,7 @@
 // Dividers (basically an `<hr>`) within the dropdown
 .dropdown-divider {
   font-size: $font-size-sm;
-  font-weight: $font-weight-semibold;
+  font-weight: $font-weight-medium;
   color: $grey-600;
   padding: $dropdown-divider-padding-y $dropdown-divider-padding-x;
   overflow: hidden;
@@ -217,6 +222,7 @@ hr.dropdown-divider {
   background-color: transparent; // For `<button>`s
   border: 0; // For `<button>`s
   @include transition();
+  cursor: pointer;
 
   &:first-child {
     margin-top: $spacer / 2;
@@ -315,7 +321,7 @@ hr.dropdown-divider {
   padding: 12px 8px;
   margin-top: 8px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   .btn {
     margin-left: $spacer / 2;
   }

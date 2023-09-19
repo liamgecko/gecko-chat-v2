@@ -510,28 +510,323 @@
 
                 <!-- ======================== CONVERSATION PANEL ======================== -->
 
-                <div class="conversation-view panel col position-relative">
+                <div class="d-flex align-items-stretch" style="width: 100%">
 
-                    <div class="panel-heading border-bottom d-flex justify-content-between align-items-center px-4">
+                    <div class="conversation-view panel col position-relative">
 
-                        <div class="conversation-heading-left">
+                        <div class="panel-heading border-bottom d-flex justify-content-between align-items-center px-4">
 
-                            <div class="conversation-name">
+                            <div class="conversation-heading-left">
 
-                                <h3 class="m-0">Liam Young</h3>
+                                <div class="conversation-name">
+
+                                    <h3 class="m-0">Liam Young</h3>
+
+                                </div>
+
+                            </div>
+
+                            <div class="conversation-heading-right d-flex align-items-center">
+
+                                <div class="conversation-controls d-flex align-items-center">
+
+                                    <div class="conversation-agent d-flex align-items-center">
+
+                                        <div class="dropdown d-flex">
+                                            <div class="avatar avatar-sm d-flex" type="button" data-bs-toggle="dropdown">
+                                                <div class="avatar-body">
+                                                    <img src="img/avatar-ju.jpg" alt="Avatar">
+                                                </div>
+                                                <div class="avatar-name">Jonny Urquhart</div>
+                                            </div>
+                                            <div class="dropdown-menu">
+                                                <input placeholder="Search" type="search" class="form-control">
+                                                <a href="#/action-1" data-rr-ui-dropdown-item="" class="dropdown-item active">
+                                                    <div class="avatar avatar-sm d-flex">
+                                                        <div class="avatar-body">
+                                                            <img src="img/avatar-ju.jpg" alt="Avatar">
+                                                        </div>
+                                                        <div class="avatar-name">Jonny Urquhart</div>
+                                                    </div>
+                                                </a>
+                                                <a href="#/action-1" data-rr-ui-dropdown-item="" class="dropdown-item">
+                                                    <div class="avatar avatar-sm d-flex">
+                                                        <div class="avatar-body">
+                                                            <img src="img/avatar-cf.jpg" alt="Avatar">
+                                                        </div>
+                                                        <div class="avatar-name">Chanelle Francis</div>
+                                                    </div>
+                                                </a>
+                                                <a href="#/action-2" data-rr-ui-dropdown-item="" class="dropdown-item">
+                                                    <div class="avatar avatar-sm d-flex">
+                                                        <div class="avatar-body">
+                                                            <img src="img/avatar-sb.jpg" alt="Avatar">
+                                                        </div>
+                                                        <div class="avatar-name">Scott Beresford</div>
+                                                    </div>
+                                                </a>
+                                                <a href="#/action-3" data-rr-ui-dropdown-item="" class="dropdown-item">
+                                                    <div class="avatar avatar-sm d-flex">
+                                                        <div class="avatar-body">
+                                                            <img src="img/avatar-bf.jpg" alt="Avatar">
+                                                        </div>
+                                                        <div class="avatar-name">Bea Fairfax</div>
+                                                    </div>
+                                                </a>
+                                                <a href="#/action-4" data-rr-ui-dropdown-item="" class="dropdown-item">
+                                                    <div class="avatar avatar-sm d-flex">
+                                                        <div class="avatar-body">
+                                                            <img src="img/avatar-dc.jpg" alt="Avatar">
+                                                        </div>
+                                                        <div class="avatar-name">Dayl Cannon</div>
+                                                    </div>
+                                                </a>
+                                                <a href="#/action-5" data-rr-ui-dropdown-item="" class="dropdown-item">
+                                                    <div class="avatar avatar-sm d-flex">
+                                                        <div class="avatar-body">
+                                                            <img src="img/avatar-kd.png" alt="Avatar">
+                                                        </div>
+                                                        <div class="avatar-name">Katie Deters</div>
+                                                    </div>
+                                                </a>
+                                                <a href="#/action-5" data-rr-ui-dropdown-item="" class="dropdown-item">
+                                                    <div class="avatar avatar-sm d-flex">
+                                                        <div class="avatar-body">
+                                                            <img src="img/avatar-hs.png" alt="Avatar">
+                                                        </div>
+                                                        <div class="avatar-name">Hannah Scafaria</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="conversation-actions ms-3">
+
+                                        <button type="button" title="Close conversation" class="btn-icon btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-title="Close conversation" data-bs-placement="bottom">
+                                            <i class="fa-solid fa-check"></i>
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="contact-sidebar-control ms-5">
+
+                                    <button type="button" title="Collapse sidebar" class="sidebar-collapse btn-icon btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-title="Collapse sidebar" data-bs-placement="bottom" onclick="myFunction()">
+                                        <i class="fa-regular fa-sidebar-flip"></i>
+                                    </button>
+
+                                </div>
 
                             </div>
 
                         </div>
 
-                        <div class="conversation-heading-right d-flex align-items-center">
+                        <div class="conversation-messages-container p-4">
 
-                            <div class="conversation-controls d-flex align-items-center">
+                            <div class="conversation-message col-10 col-xxl-8 mb-4">
+                                <div class="d-flex">
+                                    <div class="conversation-message-avatar me-2">
+                                        <div class="avatar">
+                                            <div class="avatar-body" style="background-color: #E6E6FA; color: #4949B4;">
+                                                LY
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversation-message-container">
+                                        <div class="conversation-message-wrapper">
+                                            <div class="conversation-message-content p-3 bg-grey-200 d-inline-block">
+                                            <span class="message-content">
+                                                Hey
+                                            </span>
+                                            </div>
+                                        </div>
+                                        <div class="conversation-message-meta text-secondary mt-1 fs-3">
+                                            Sent via<span> Live-Chat | https://gecko.fm/kfflx</span> - 28/10/2019 14:46 -  <span title="This message has been read" class="far fa-envelope-open text-green-darken-3" aria-hidden="true" data-bs-toggle="tooltip" data-bs-title="This message has been read" data-bs-placement="bottom"></span><span class="sr-only">This message has been read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                                <div class="conversation-agent d-flex align-items-center">
+                            <div class="conversation-message col-10 col-xxl-8 mb-4">
+                                <div class="d-flex">
+                                    <div class="conversation-message-avatar me-2">
+                                        <div class="avatar">
+                                            <div class="avatar-body" style="background-color: #E6E6FA; color: #4949B4;">
+                                                LY
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversation-message-container">
+                                        <div class="conversation-message-wrapper">
+                                            <div class="conversation-message-content p-3 bg-grey-200 d-inline-block">
+                                            <span class="message-content">
+                                                I'm considering applying to Gecko University. Do you offer work-study programs?
+                                            </span>
+                                            </div>
+                                        </div>
+                                        <div class="conversation-message-meta text-secondary mt-1 fs-3">
+                                            Sent via<span> Live-Chat | https://gecko.fm/kfflx</span> - 28/10/2019 14:46 -  <span title="This message has been read" class="far fa-envelope-open text-green-darken-3" aria-hidden="true" data-bs-toggle="tooltip" data-bs-title="This message has been read" data-bs-placement="bottom"></span><span class="sr-only">This message has been read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                                    <div class="dropdown d-flex">
-                                        <div class="avatar avatar-sm d-flex" type="button" data-bs-toggle="dropdown">
+                            <div class="conversation-message agent col-10 col-xxl-8 offset-2 offset-xxl-4 mb-4">
+                                <div class="d-flex flex-row-reverse">
+                                    <div class="conversation-message-avatar ms-2">
+                                        <div class="avatar">
+                                            <div class="avatar-body">
+                                                <img src="img/avatar-ju.jpg" alt="Avatar">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversation-message-container">
+                                        <div class="conversation-message-wrapper">
+                                            <div class="conversation-message-content p-3 bg-blue-100 d-inline-block">
+                                            <span class="message-content">
+                                                Absolutely! We offer work-study opportunities aligned with your field of study. More info here: <a href="">www.geckou.edu/work-study</a>. If you need further assistance, feel free to ask. We're here to help!
+                                            </span>
+                                            </div>
+                                        </div>
+                                        <div class="conversation-message-meta text-secondary mt-1 fs-3 text-end">
+                                            Sent via<span> Live-Chat | https://gecko.fm/kfflx</span> - 28/10/2019 14:46 -  <span title="This message has been read" class="far fa-envelope-open text-green-darken-3" aria-hidden="true" data-bs-toggle="tooltip" data-bs-title="This message has been read" data-bs-placement="bottom"></span><span class="sr-only">This message has been read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="conversation-message col-10 col-xxl-8 mb-4">
+                                <div class="d-flex">
+                                    <div class="conversation-message-avatar me-2">
+                                        <div class="avatar">
+                                            <div class="avatar-body" style="background-color: #E6E6FA; color: #4949B4;">
+                                                LY
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="conversation-message-container">
+                                        <div class="conversation-message-wrapper">
+                                            <div class="conversation-message-content p-3 bg-grey-200 d-inline-block">
+                                            <span class="message-content">
+                                                Thank you! I'll check out the link. Just one more thing, could you provide me with information about the financial aid and tuition costs?
+                                            </span>
+                                            </div>
+                                        </div>
+                                        <div class="conversation-message-meta text-secondary mt-1 fs-3">
+                                            Sent via<span> Live-Chat | https://gecko.fm/kfflx</span> - 28/10/2019 14:46 -  <span title="This message has been read" class="far fa-envelope-open text-green-darken-3" aria-hidden="true" data-bs-toggle="tooltip" data-bs-title="This message has been read" data-bs-placement="bottom"></span><span class="sr-only">This message has been read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="reply-box p-4 pt-0 bg-white position-absolute">
+
+                            <div class="reply-box-container shadow border rounded">
+
+                                <div class="reply-box-head border-bottom p-2">
+
+                                    <div class="dropdown">
+                                        <button class="btn btn-naked-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Live Chat
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item active" href="#">Live Chat</a>
+                                            <a class="dropdown-item" href="#">Facebook Messenger</a>
+                                            <a class="dropdown-item" href="#">Admissions Inbox</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="reply-box-body p-4">
+                                    <span class="reply-placeholder text-secondary">Type your reply</span>
+                                </div>
+
+                                <div class="reply-box-footer d-flex align-items-center justify-content-between p-2">
+
+                                    <div class="reply-box-controls">
+
+                                        <button type="button" title="Change to note mode" class="btn-icon btn btn-naked-primary" data-bs-toggle="tooltip" data-bs-title="Change to note mode" data-bs-placement="top">
+                                            <i class="fa-regular fa-sticky-note"></i>
+                                        </button>
+                                        <button type="button" title="Upload attachment" class="btn-icon btn btn-naked-primary" data-bs-toggle="tooltip" data-bs-title="Upload attachment" data-bs-placement="top">
+                                            <i class="fa-regular fa-paperclip"></i>
+                                        </button>
+                                        <button type="button" title="Use a saved reply" class="btn-icon btn btn-naked-primary" data-bs-toggle="tooltip" data-bs-title="Use a saved reply" data-bs-placement="top">
+                                            <i class="fa-regular fa-bookmark"></i>
+                                        </button>
+                                        <button type="button" title="Mail merge tag builder" class="btn-icon btn btn-naked-primary" data-bs-toggle="tooltip" data-bs-title="Mail merge tag builder" data-bs-placement="top">
+                                            <i class="fa-regular fa-id-card"></i>
+                                        </button>
+                                        <button type="button" title="Use an emoji" class="btn-icon btn btn-naked-primary" data-bs-toggle="tooltip" data-bs-title="Use an emoji" data-bs-placement="top">
+                                            <i class="fa-regular fa-smile"></i>
+                                        </button>
+                                        <button type="button" title="Generate a response" class="btn-icon btn btn-naked-primary btn-ai" data-bs-toggle="tooltip" data-bs-title="Generate a response" data-bs-placement="top">
+                                            <i class="fa-regular fa-wand-magic-sparkles"></i>
+                                        </button>
+
+                                    </div>
+
+                                    <button type="button" title="Send message" class="send-btn btn-icon btn btn-naked-primary" disabled>
+                                        <i class="fa-solid fa-paper-plane-top"></i>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ======================== CONTACT DETAILS PANEL ======================== -->
+
+                    <div class="contact-sidebar panel panel-side col border-start active" id="contact-sidebar">
+
+                        <div class="panel-heading border-bottom d-flex justify-content-between align-items-center px-4">
+
+                            <h3 class="m-0">Contact details</h3>
+
+                            <div class="dropdown">
+                                <button class="btn btn-outline-primary btn-sm btn-icon" title="Contact menu" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-ellipsis-vertical"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">View all conversations</a>
+                                    <a class="dropdown-item" href="#">Download conversations</a>
+                                    <a class="dropdown-item" href="#">Merge contact</a>
+                                    <a class="dropdown-item delete" href="#">Delete contact</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="contact-container">
+
+                            <div class="contact-overview p-4 border-bottom">
+
+                                <div class="d-flex align-items-center">
+
+                                    <div class="avatar avatar-lg me-3">
+                                        <div class="avatar-body avatar-offline" style="background-color: #E6E6FA; color: #4949B4;">LY</div>
+                                    </div>
+
+                                    <div class="contact-meta">
+                                        <h4 class="m-0 fw-medium">Liam Young</h4>
+                                        <div class="fs-3 text-secondary">Last seen yesterday</div>
+                                    </div>
+
+                                </div>
+
+                                <div class="contact-owner mt-4">
+
+                                    <div class="dropdown">
+                                        <div class="avatar avatar-xs d-flex" type="button" data-bs-toggle="dropdown">
                                             <div class="avatar-body">
                                                 <img src="img/avatar-ju.jpg" alt="Avatar">
                                             </div>
@@ -600,532 +895,241 @@
 
                                 </div>
 
-                                <div class="conversation-actions ms-3">
+                            </div>
 
-                                    <button type="button" title="Close conversation" class="btn-icon btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-title="Close conversation" data-bs-placement="bottom">
-                                        <i class="fa-solid fa-check"></i>
+                            <div class="contact-meta accordion" id="contact-sidebar-contact-meta">
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <button class="accordion-button px-4 py-3 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#contact-activity" aria-expanded="false" aria-controls="contact-details">
+                                        Activity
                                     </button>
-
-                                </div>
-
-                            </div>
-
-                            <div class="contact-sidebar-control ms-5">
-
-                                <button type="button" title="Collapse sidebar" class="btn-icon btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-title="Collapse sidebar" data-bs-placement="bottom">
-                                    <i class="fa-regular fa-sidebar-flip"></i>
-                                </button>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="conversation-messages-container p-4">
-
-                        <div class="conversation-message col-10 col-xxl-8 mb-4">
-                            <div class="d-flex">
-                                <div class="conversation-message-avatar me-2">
-                                    <div class="avatar">
-                                        <div class="avatar-body" style="background-color: #E6E6FA; color: #4949B4;">
-                                            LY
+                                    </div>
+                                    <div id="contact-activity" class="accordion-collapse collapse show" data-bs-parent="#contact-sidebar-contact-meta">
+                                    <div class="accordion-body px-4 pt-2 fs-3">
+                                            <ul class="activity-feed list-unstyled mb-0">
+                                                <li class="activity-feed-item pb-4 position-relative">
+                                                    <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
+                                                        <i class="far fa-comment"></i>
+                                                    </div>
+                                                    <div class="activity-feed-data d-flex flex-column">
+                                                        <span class="activity-feed-title fw-medium">Started a live chat with Botty McBotface</span>
+                                                        <span class="activity-feed-meta text-secondary">29th Aug at 11:39</span>
+                                                    </div>
+                                                </li>
+                                                <li class="activity-feed-item pb-4 position-relative">
+                                                    <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
+                                                        <i class="far fa-calendar-plus"></i>
+                                                    </div>
+                                                    <div class="activity-feed-data d-flex flex-column">
+                                                        <span class="activity-feed-title fw-medium">Liam has been added to Gecko Open Day as Registered</span>
+                                                        <span class="activity-feed-meta text-secondary">29th Aug at 11:39 by Jonny Urquhart</span>
+                                                    </div>
+                                                </li>
+                                                <li class="activity-feed-item pb-4 position-relative">
+                                                    <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
+                                                        <i class="far fa-bolt"></i>
+                                                    </div>
+                                                    <div class="activity-feed-data d-flex flex-column">
+                                                        <span class="activity-feed-title fw-medium">Added to Gecko Open Day campaign</span>
+                                                        <span class="activity-feed-meta text-secondary">29th Aug at 11:39 by Jonny Urquhart</span>
+                                                    </div>
+                                                </li>
+                                                <li class="activity-feed-item pb-4 position-relative">
+                                                    <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
+                                                        <i class="far fa-comment"></i>
+                                                    </div>
+                                                    <div class="activity-feed-data d-flex flex-column">
+                                                        <span class="activity-feed-title fw-medium">Started a live chat with Scott Beresford</span>
+                                                        <span class="activity-feed-meta text-secondary">29th Aug at 11:39</span>
+                                                    </div>
+                                                </li>
+                                                <li class="activity-feed-item position-relative">
+                                                    <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
+                                                        <i class="far fa-list"></i>
+                                                    </div>
+                                                    <div class="activity-feed-data d-flex flex-column">
+                                                        <span class="activity-feed-title fw-medium">Submitted a response to the Gecko Open Day form</span>
+                                                        <span class="activity-feed-meta text-secondary">29th Aug at 11:39</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="conversation-message-container">
-                                    <div class="conversation-message-wrapper">
-                                        <div class="conversation-message-content p-3 bg-grey-200 d-inline-block">
-                                        <span class="message-content">
-                                            Hey
-                                        </span>
-                                        </div>
-                                    </div>
-                                    <div class="conversation-message-meta text-secondary mt-1 fs-3">
-                                        Sent via<span> Live-Chat | https://gecko.fm/kfflx</span> - 28/10/2019 14:46 -  <span title="This message has been read" class="far fa-envelope-open text-green-darken-3" aria-hidden="true" data-bs-toggle="tooltip" data-bs-title="This message has been read" data-bs-placement="bottom"></span><span class="sr-only">This message has been read</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="conversation-message col-10 col-xxl-8 mb-4">
-                            <div class="d-flex">
-                                <div class="conversation-message-avatar me-2">
-                                    <div class="avatar">
-                                        <div class="avatar-body" style="background-color: #E6E6FA; color: #4949B4;">
-                                            LY
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="conversation-message-container">
-                                    <div class="conversation-message-wrapper">
-                                        <div class="conversation-message-content p-3 bg-grey-200 d-inline-block">
-                                        <span class="message-content">
-                                            I'm considering applying to Gecko University. Do you offer work-study programs?
-                                        </span>
-                                        </div>
-                                    </div>
-                                    <div class="conversation-message-meta text-secondary mt-1 fs-3">
-                                        Sent via<span> Live-Chat | https://gecko.fm/kfflx</span> - 28/10/2019 14:46 -  <span title="This message has been read" class="far fa-envelope-open text-green-darken-3" aria-hidden="true" data-bs-toggle="tooltip" data-bs-title="This message has been read" data-bs-placement="bottom"></span><span class="sr-only">This message has been read</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="conversation-message agent col-10 col-xxl-8 offset-2 offset-xxl-4 mb-4">
-                            <div class="d-flex flex-row-reverse">
-                                <div class="conversation-message-avatar ms-2">
-                                    <div class="avatar">
-                                        <div class="avatar-body">
-                                            <img src="img/avatar-ju.jpg" alt="Avatar">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="conversation-message-container">
-                                    <div class="conversation-message-wrapper">
-                                        <div class="conversation-message-content p-3 bg-blue-100 d-inline-block">
-                                        <span class="message-content">
-                                            Absolutely! We offer work-study opportunities aligned with your field of study. More info here: <a href="">www.geckou.edu/work-study</a>. If you need further assistance, feel free to ask. We're here to help!
-                                        </span>
-                                        </div>
-                                    </div>
-                                    <div class="conversation-message-meta text-secondary mt-1 fs-3 text-end">
-                                        Sent via<span> Live-Chat | https://gecko.fm/kfflx</span> - 28/10/2019 14:46 -  <span title="This message has been read" class="far fa-envelope-open text-green-darken-3" aria-hidden="true" data-bs-toggle="tooltip" data-bs-title="This message has been read" data-bs-placement="bottom"></span><span class="sr-only">This message has been read</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="conversation-message col-10 col-xxl-8 mb-4">
-                            <div class="d-flex">
-                                <div class="conversation-message-avatar me-2">
-                                    <div class="avatar">
-                                        <div class="avatar-body" style="background-color: #E6E6FA; color: #4949B4;">
-                                            LY
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header">
+                                        <button class="accordion-button collapsed px-4 py-3 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#contact-details" aria-expanded="false" aria-controls="contact-details">
+                                            Contact details
+                                        </button>
+                                    </h4>
+                                    <div id="contact-details" class="accordion-collapse collapse" data-bs-parent="#contact-sidebar-contact-meta">
+                                        <div class="accordion-body px-4 pt-0 fs-3">
+                                            <ul class="list-unstyled m-0">
+                                                <li class="d-flex align-items-center">
+                                                    <span class="contact-details-label text-secondary col-4 overflow me-2">First name</span>
+                                                    <span class="contact-details-data inline-edit fw-semibold col overflow">
+                                                        <input type="text" readonly class="form-control-plaintext fw-medium" value="Liam">
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <span class="contact-details-label text-secondary col-4 overflow me-2">Last name</span>
+                                                    <span class="contact-details-data inline-edit fw-semibold col overflow">
+                                                        <input type="text" readonly class="form-control-plaintext fw-medium" value="Young">
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <span class="contact-details-label text-secondary col-4 overflow me-2">Email</span>
+                                                    <span class="contact-details-data inline-edit fw-semibold col overflow">
+                                                        <input type="text" readonly class="form-control-plaintext fw-medium" value="liam@geckoengage.com">
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <span class="contact-details-label text-secondary col-4 overflow me-2">Telephone</span>
+                                                    <span class="contact-details-data inline-edit fw-semibold col overflow">
+                                                        <input type="text" readonly class="form-control-plaintext fw-medium" value="+44 1234 567890">
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <span class="contact-details-label text-secondary col-4 overflow me-2">Date of birth</span>
+                                                    <span class="contact-details-data inline-edit fw-semibold col overflow">
+                                                        <input type="text" readonly class="form-control-plaintext fw-medium" value="9 Feb 1986">
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <span class="contact-details-label text-secondary col-4 overflow me-2">Language</span>
+                                                    <span class="contact-details-data inline-edit fw-semibold col overflow">
+                                                        <input type="text" readonly class="form-control-plaintext fw-medium" value="English">
+                                                    </span>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="conversation-message-container">
-                                    <div class="conversation-message-wrapper">
-                                        <div class="conversation-message-content p-3 bg-grey-200 d-inline-block">
-                                        <span class="message-content">
-                                            Thank you! I'll check out the link. Just one more thing, could you provide me with information about the financial aid and tuition costs?
-                                        </span>
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header">
+                                        <button class=" accordion-button collapsed px-4 py-3 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#contact-tags" aria-expanded="false" aria-controls="contact-tags">
+                                            Tags
+                                        </button>
+                                    </h4>
+                                    <div id="contact-tags" class="accordion-collapse collapse" data-bs-parent="#contact-sidebar-contact-meta">
+                                        <div class="accordion-body px-4 pt-0 fs-3">
+                                            <p>Tags allow you to more easily find sonversations in the future.</p>
+                                            <button type="button" class="btn-icon-left btn btn-sm btn-secondary"><i class="far fa-plus"></i> Add tag</button>
                                         </div>
                                     </div>
-                                    <div class="conversation-message-meta text-secondary mt-1 fs-3">
-                                        Sent via<span> Live-Chat | https://gecko.fm/kfflx</span> - 28/10/2019 14:46 -  <span title="This message has been read" class="far fa-envelope-open text-green-darken-3" aria-hidden="true" data-bs-toggle="tooltip" data-bs-title="This message has been read" data-bs-placement="bottom"></span><span class="sr-only">This message has been read</span>
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="reply-box p-4 pt-0 bg-white position-absolute">
-
-                        <div class="reply-box-container shadow border rounded">
-
-                            <div class="reply-box-head border-bottom p-2">
-
-                                <div class="dropdown">
-                                    <button class="btn btn-naked-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Live Chat
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item active" href="#">Live Chat</a>
-                                        <a class="dropdown-item" href="#">Facebook Messenger</a>
-                                        <a class="dropdown-item" href="#">Admissions Inbox</a>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="reply-box-body p-4">
-                                <span class="reply-placeholder text-secondary">Type your reply</span>
-                            </div>
-
-                            <div class="reply-box-footer d-flex align-items-center justify-content-between p-2">
-
-                                <div class="reply-box-controls">
-
-                                    <button type="button" title="Change to note mode" class="btn-icon btn btn-naked-primary" data-bs-toggle="tooltip" data-bs-title="Change to note mode" data-bs-placement="top">
-                                        <i class="fa-regular fa-sticky-note"></i>
-                                    </button>
-                                    <button type="button" title="Upload attachment" class="btn-icon btn btn-naked-primary" data-bs-toggle="tooltip" data-bs-title="Upload attachment" data-bs-placement="top">
-                                        <i class="fa-regular fa-paperclip"></i>
-                                    </button>
-                                    <button type="button" title="Use a saved reply" class="btn-icon btn btn-naked-primary" data-bs-toggle="tooltip" data-bs-title="Use a saved reply" data-bs-placement="top">
-                                        <i class="fa-regular fa-bookmark"></i>
-                                    </button>
-                                    <button type="button" title="Mail merge tag builder" class="btn-icon btn btn-naked-primary" data-bs-toggle="tooltip" data-bs-title="Mail merge tag builder" data-bs-placement="top">
-                                        <i class="fa-regular fa-id-card"></i>
-                                    </button>
-                                    <button type="button" title="Use an emoji" class="btn-icon btn btn-naked-primary" data-bs-toggle="tooltip" data-bs-title="Use an emoji" data-bs-placement="top">
-                                        <i class="fa-regular fa-smile"></i>
-                                    </button>
-                                    <button type="button" title="Generate a response" class="btn-icon btn btn-naked-primary btn-ai" data-bs-toggle="tooltip" data-bs-title="Generate a response" data-bs-placement="top">
-                                        <i class="fa-regular fa-wand-magic-sparkles"></i>
-                                    </button>
-
-                                </div>
-
-                                <button type="button" title="Send message" class="send-btn btn-icon btn btn-naked-primary" disabled>
-                                    <i class="fa-solid fa-paper-plane-top"></i>
-                                </button>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- ======================== CONTACT DETAILS PANEL ======================== -->
-
-                <div class="contact-sidebar panel panel-side col border-start">
-
-                    <div class="panel-heading border-bottom d-flex justify-content-between align-items-center px-4">
-
-                        <h3 class="m-0">Contact details</h3>
-
-                        <div class="dropdown">
-                            <button class="btn btn-outline-primary btn-sm btn-icon" title="Contact menu" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-regular fa-ellipsis-vertical"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">View all conversations</a>
-                                <a class="dropdown-item" href="#">Download conversations</a>
-                                <a class="dropdown-item" href="#">Merge contact</a>
-                                <a class="dropdown-item delete" href="#">Delete contact</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="contact-container">
-
-                        <div class="contact-overview p-4 border-bottom">
-
-                            <div class="d-flex align-items-center">
-
-                                <div class="avatar avatar-lg me-3">
-                                    <div class="avatar-body avatar-offline" style="background-color: #E6E6FA; color: #4949B4;">LY</div>
-                                </div>
-
-                                <div class="contact-meta">
-                                    <h4 class="m-0 fw-medium">Liam Young</h4>
-                                    <div class="fs-3 text-secondary">Last seen yesterday</div>
-                                </div>
-
-                            </div>
-
-                            <div class="contact-owner mt-4">
-
-                                <div class="dropdown">
-                                    <div class="avatar avatar-xs d-flex" type="button" data-bs-toggle="dropdown">
-                                        <div class="avatar-body">
-                                            <img src="img/avatar-ju.jpg" alt="Avatar">
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header">
+                                        <button class=" accordion-button collapsed px-4 py-3 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#contact-notes" aria-expanded="false" aria-controls="contact-notes">
+                                            Notes
+                                        </button>
+                                    </h4>
+                                    <div id="contact-notes" class="accordion-collapse collapse" data-bs-parent="#contact-sidebar-contact-meta">
+                                        <div class="accordion-body px-4 pt-0 fs-3">
+                                            <p>Notes help you keep track of your conversations. Only agents can see notes.</p>
+                                            <button type="button" class="btn-icon-left btn btn-sm btn-secondary"><i class="far fa-plus"></i> Add note</button>
                                         </div>
-                                        <div class="avatar-name">Jonny Urquhart</div>
-                                    </div>
-                                    <div class="dropdown-menu">
-                                        <input placeholder="Search" type="search" class="form-control">
-                                        <a href="#/action-1" data-rr-ui-dropdown-item="" class="dropdown-item active">
-                                            <div class="avatar avatar-sm d-flex">
-                                                <div class="avatar-body">
-                                                    <img src="img/avatar-ju.jpg" alt="Avatar">
-                                                </div>
-                                                <div class="avatar-name">Jonny Urquhart</div>
-                                            </div>
-                                        </a>
-                                        <a href="#/action-1" data-rr-ui-dropdown-item="" class="dropdown-item">
-                                            <div class="avatar avatar-sm d-flex">
-                                                <div class="avatar-body">
-                                                    <img src="img/avatar-cf.jpg" alt="Avatar">
-                                                </div>
-                                                <div class="avatar-name">Chanelle Francis</div>
-                                            </div>
-                                        </a>
-                                        <a href="#/action-2" data-rr-ui-dropdown-item="" class="dropdown-item">
-                                            <div class="avatar avatar-sm d-flex">
-                                                <div class="avatar-body">
-                                                    <img src="img/avatar-sb.jpg" alt="Avatar">
-                                                </div>
-                                                <div class="avatar-name">Scott Beresford</div>
-                                            </div>
-                                        </a>
-                                        <a href="#/action-3" data-rr-ui-dropdown-item="" class="dropdown-item">
-                                            <div class="avatar avatar-sm d-flex">
-                                                <div class="avatar-body">
-                                                    <img src="img/avatar-bf.jpg" alt="Avatar">
-                                                </div>
-                                                <div class="avatar-name">Bea Fairfax</div>
-                                            </div>
-                                        </a>
-                                        <a href="#/action-4" data-rr-ui-dropdown-item="" class="dropdown-item">
-                                            <div class="avatar avatar-sm d-flex">
-                                                <div class="avatar-body">
-                                                    <img src="img/avatar-dc.jpg" alt="Avatar">
-                                                </div>
-                                                <div class="avatar-name">Dayl Cannon</div>
-                                            </div>
-                                        </a>
-                                        <a href="#/action-5" data-rr-ui-dropdown-item="" class="dropdown-item">
-                                            <div class="avatar avatar-sm d-flex">
-                                                <div class="avatar-body">
-                                                    <img src="img/avatar-kd.png" alt="Avatar">
-                                                </div>
-                                                <div class="avatar-name">Katie Deters</div>
-                                            </div>
-                                        </a>
-                                        <a href="#/action-5" data-rr-ui-dropdown-item="" class="dropdown-item">
-                                            <div class="avatar avatar-sm d-flex">
-                                                <div class="avatar-body">
-                                                    <img src="img/avatar-hs.png" alt="Avatar">
-                                                </div>
-                                                <div class="avatar-name">Hannah Scafaria</div>
-                                            </div>
-                                        </a>
                                     </div>
                                 </div>
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header">
+                                        <button class=" accordion-button collapsed px-4 py-3 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#contact-forms" aria-expanded="false" aria-controls="contact-forms">
+                                            Forms
+                                        </button>
+                                    </h4>
+                                    <div id="contact-forms" class="accordion-collapse collapse" data-bs-parent="#contact-sidebar-contact-meta">
+                                        <div class="accordion-body px-4 pt-0 fs-3">
+                                            <p>Liam hasn't submitted any forms.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header">
+                                        <button class=" accordion-button collapsed px-4 py-3 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#contact-events" aria-expanded="false" aria-controls="contact-events">
+                                            Events
+                                        </button>
+                                    </h4>
+                                    <div id="contact-events" class="accordion-collapse collapse" data-bs-parent="#contact-sidebar-contact-meta">
+                                        <div class="accordion-body px-4 pt-0 fs-3">
+                                            <p>Liam isn't booked into any events.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header">
+                                        <button class=" accordion-button collapsed px-4 py-3 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#contact-campaigns" aria-expanded="false" aria-controls="contact-campaigns">
+                                            Campaigns
+                                        </button>
+                                    </h4>
+                                    <div id="contact-campaigns" class="accordion-collapse collapse" data-bs-parent="#contact-sidebar-contact-meta">
+                                        <div class="accordion-body px-4 pt-0 fs-3">
+                                            <p>Liam is not part of any campaigns.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h4 class="accordion-header">
+                                        <button class=" accordion-button collapsed px-4 py-3 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#contact-system" aria-expanded="false" aria-controls="contact-system">
+                                            System information
+                                        </button>
+                                    </h4>
+                                    <div id="contact-system" class="accordion-collapse collapse" data-bs-parent="#contact-sidebar-contact-meta">
+                                        <div class="accordion-body px-4 pt-0 fs-3">
+                                            <ul class="list-unstyled m-0">
+                                                <li class="d-flex align-items-center py-1">
+                                                    <span class="contact-details-label text-secondary col-4 overflow me-2">Device type</span>
+                                                    <span class="contact-details-data fw-medium col overflow">
+                                                        Mobile
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex align-items-center py-1">
+                                                    <span class="contact-details-label text-secondary col-4 overflow me-2">Operating system</span>
+                                                    <span class="contact-details-data fw-medium col overflow">
+                                                        iOS 15.3
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex align-items-center py-1">
+                                                    <span class="contact-details-label text-secondary col-4 overflow me-2">Browser</span>
+                                                    <span class="contact-details-data fw-medium col overflow">
+                                                        Safari
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex align-items-center py-1">
+                                                    <span class="contact-details-label text-secondary col-4 overflow me-2">Country</span>
+                                                    <span class="contact-details-data fw-medium col overflow">
+                                                        United Kingdom
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex align-items-center py-1">
+                                                    <span class="contact-details-label text-secondary col-4 overflow me-2">County</span>
+                                                    <span class="contact-details-data fw-medium col overflow">
+                                                        Fife
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex align-items-center py-1">
+                                                    <span class="contact-details-label text-secondary col-4 overflow me-2">City</span>
+                                                    <span class="contact-details-data fw-medium col overflow">
+                                                        Cowdenbeath
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex align-items-center py-1">
+                                                    <span class="contact-details-label text-secondary col-4 overflow me-2">Language</span>
+                                                    <span class="contact-details-data fw-medium col overflow">
+                                                        English (EN)
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex align-items-center py-1">
+                                                    <span class="contact-details-label text-secondary col-4 overflow me-2">IP address</span>
+                                                    <span class="contact-details-data fw-medium col overflow">
+                                                        123.45.67.89
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                            </div>
-
-                        </div>
-
-                        <div class="contact-meta accordion" id="contact-sidebar-contact-meta">
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <button class="accordion-button px-4 py-3 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#contact-activity" aria-expanded="false" aria-controls="contact-details">
-                                    Activity
-                                  </button>
-                                </div>
-                                <div id="contact-activity" class="accordion-collapse collapse show" data-bs-parent="#contact-sidebar-contact-meta">
-                                  <div class="accordion-body px-4 pt-2 fs-3">
-                                        <ul class="activity-feed list-unstyled mb-0">
-                                            <li class="activity-feed-item pb-4 position-relative">
-                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
-                                                    <i class="far fa-comment"></i>
-                                                </div>
-                                                <div class="activity-feed-data d-flex flex-column">
-                                                    <span class="activity-feed-title fw-medium">Started a live chat with Botty McBotface</span>
-                                                    <span class="activity-feed-meta text-secondary">29th Aug at 11:39</span>
-                                                </div>
-                                            </li>
-                                            <li class="activity-feed-item pb-4 position-relative">
-                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
-                                                    <i class="far fa-calendar-plus"></i>
-                                                </div>
-                                                <div class="activity-feed-data d-flex flex-column">
-                                                    <span class="activity-feed-title fw-medium">Liam has been added to Gecko Open Day as Registered</span>
-                                                    <span class="activity-feed-meta text-secondary">29th Aug at 11:39 by Jonny Urquhart</span>
-                                                </div>
-                                            </li>
-                                            <li class="activity-feed-item pb-4 position-relative">
-                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
-                                                    <i class="far fa-bolt"></i>
-                                                </div>
-                                                <div class="activity-feed-data d-flex flex-column">
-                                                    <span class="activity-feed-title fw-medium">Added to Gecko Open Day campaign</span>
-                                                    <span class="activity-feed-meta text-secondary">29th Aug at 11:39 by Jonny Urquhart</span>
-                                                </div>
-                                            </li>
-                                            <li class="activity-feed-item pb-4 position-relative">
-                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
-                                                    <i class="far fa-comment"></i>
-                                                </div>
-                                                <div class="activity-feed-data d-flex flex-column">
-                                                    <span class="activity-feed-title fw-medium">Started a live chat with Scott Beresford</span>
-                                                    <span class="activity-feed-meta text-secondary">29th Aug at 11:39</span>
-                                                </div>
-                                            </li>
-                                            <li class="activity-feed-item position-relative">
-                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
-                                                    <i class="far fa-list"></i>
-                                                </div>
-                                                <div class="activity-feed-data d-flex flex-column">
-                                                    <span class="activity-feed-title fw-medium">Submitted a response to the Gecko Open Day form</span>
-                                                    <span class="activity-feed-meta text-secondary">29th Aug at 11:39</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header">
-                                    <button class="accordion-button collapsed px-4 py-3 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#contact-details" aria-expanded="false" aria-controls="contact-details">
-                                        Contact details
-                                    </button>
-                                </h4>
-                                <div id="contact-details" class="accordion-collapse collapse" data-bs-parent="#contact-sidebar-contact-meta">
-                                    <div class="accordion-body px-4 pt-0 fs-3">
-                                        <ul class="list-unstyled m-0">
-                                            <li class="d-flex align-items-center">
-                                                <span class="contact-details-label text-secondary col-4 overflow me-2">First name</span>
-                                                <span class="contact-details-data inline-edit fw-semibold col overflow">
-                                                    <input type="text" readonly class="form-control-plaintext fw-medium" value="Liam">
-                                                </span>
-                                            </li>
-                                            <li class="d-flex align-items-center">
-                                                <span class="contact-details-label text-secondary col-4 overflow me-2">Last name</span>
-                                                <span class="contact-details-data inline-edit fw-semibold col overflow">
-                                                    <input type="text" readonly class="form-control-plaintext fw-medium" value="Young">
-                                                </span>
-                                            </li>
-                                            <li class="d-flex align-items-center">
-                                                <span class="contact-details-label text-secondary col-4 overflow me-2">Email</span>
-                                                <span class="contact-details-data inline-edit fw-semibold col overflow">
-                                                    <input type="text" readonly class="form-control-plaintext fw-medium" value="liam@geckoengage.com">
-                                                </span>
-                                            </li>
-                                            <li class="d-flex align-items-center">
-                                                <span class="contact-details-label text-secondary col-4 overflow me-2">Telephone</span>
-                                                <span class="contact-details-data inline-edit fw-semibold col overflow">
-                                                    <input type="text" readonly class="form-control-plaintext fw-medium" value="+44 1234 567890">
-                                                </span>
-                                            </li>
-                                            <li class="d-flex align-items-center">
-                                                <span class="contact-details-label text-secondary col-4 overflow me-2">Date of birth</span>
-                                                <span class="contact-details-data inline-edit fw-semibold col overflow">
-                                                    <input type="text" readonly class="form-control-plaintext fw-medium" value="9 Feb 1986">
-                                                </span>
-                                            </li>
-                                            <li class="d-flex align-items-center">
-                                                <span class="contact-details-label text-secondary col-4 overflow me-2">Language</span>
-                                                <span class="contact-details-data inline-edit fw-semibold col overflow">
-                                                    <input type="text" readonly class="form-control-plaintext fw-medium" value="English">
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header">
-                                    <button class=" accordion-button collapsed px-4 py-3 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#contact-tags" aria-expanded="false" aria-controls="contact-tags">
-                                        Tags
-                                    </button>
-                                </h4>
-                                <div id="contact-tags" class="accordion-collapse collapse" data-bs-parent="#contact-sidebar-contact-meta">
-                                    <div class="accordion-body px-4 pt-0 fs-3">
-                                        <p>Tags allow you to more easily find sonversations in the future.</p>
-                                        <button type="button" class="btn-icon-left btn btn-sm btn-secondary"><i class="far fa-plus"></i> Add tag</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header">
-                                    <button class=" accordion-button collapsed px-4 py-3 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#contact-notes" aria-expanded="false" aria-controls="contact-notes">
-                                        Notes
-                                    </button>
-                                </h4>
-                                <div id="contact-notes" class="accordion-collapse collapse" data-bs-parent="#contact-sidebar-contact-meta">
-                                    <div class="accordion-body px-4 pt-0 fs-3">
-                                        <p>Notes help you keep track of your conversations. Only agents can see notes.</p>
-                                        <button type="button" class="btn-icon-left btn btn-sm btn-secondary"><i class="far fa-plus"></i> Add note</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header">
-                                    <button class=" accordion-button collapsed px-4 py-3 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#contact-forms" aria-expanded="false" aria-controls="contact-forms">
-                                        Forms
-                                    </button>
-                                </h4>
-                                <div id="contact-forms" class="accordion-collapse collapse" data-bs-parent="#contact-sidebar-contact-meta">
-                                    <div class="accordion-body px-4 pt-0 fs-3">
-                                        <p>Liam hasn't submitted any forms.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header">
-                                    <button class=" accordion-button collapsed px-4 py-3 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#contact-events" aria-expanded="false" aria-controls="contact-events">
-                                        Events
-                                    </button>
-                                </h4>
-                                <div id="contact-events" class="accordion-collapse collapse" data-bs-parent="#contact-sidebar-contact-meta">
-                                    <div class="accordion-body px-4 pt-0 fs-3">
-                                        <p>Liam isn't booked into any events.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header">
-                                    <button class=" accordion-button collapsed px-4 py-3 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#contact-campaigns" aria-expanded="false" aria-controls="contact-campaigns">
-                                        Campaigns
-                                    </button>
-                                </h4>
-                                <div id="contact-campaigns" class="accordion-collapse collapse" data-bs-parent="#contact-sidebar-contact-meta">
-                                    <div class="accordion-body px-4 pt-0 fs-3">
-                                        <p>Liam is not part of any campaigns.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header">
-                                    <button class=" accordion-button collapsed px-4 py-3 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#contact-system" aria-expanded="false" aria-controls="contact-system">
-                                        System information
-                                    </button>
-                                </h4>
-                                <div id="contact-system" class="accordion-collapse collapse" data-bs-parent="#contact-sidebar-contact-meta">
-                                    <div class="accordion-body px-4 pt-0 fs-3">
-                                        <ul class="list-unstyled m-0">
-                                            <li class="d-flex align-items-center py-1">
-                                                <span class="contact-details-label text-secondary col-4 overflow me-2">Device type</span>
-                                                <span class="contact-details-data fw-medium col overflow">
-                                                    Mobile
-                                                </span>
-                                            </li>
-                                            <li class="d-flex align-items-center py-1">
-                                                <span class="contact-details-label text-secondary col-4 overflow me-2">Operating system</span>
-                                                <span class="contact-details-data fw-medium col overflow">
-                                                    iOS 15.3
-                                                </span>
-                                            </li>
-                                            <li class="d-flex align-items-center py-1">
-                                                <span class="contact-details-label text-secondary col-4 overflow me-2">Browser</span>
-                                                <span class="contact-details-data fw-medium col overflow">
-                                                    Safari
-                                                </span>
-                                            </li>
-                                            <li class="d-flex align-items-center py-1">
-                                                <span class="contact-details-label text-secondary col-4 overflow me-2">Country</span>
-                                                <span class="contact-details-data fw-medium col overflow">
-                                                    United Kingdom
-                                                </span>
-                                            </li>
-                                            <li class="d-flex align-items-center py-1">
-                                                <span class="contact-details-label text-secondary col-4 overflow me-2">County</span>
-                                                <span class="contact-details-data fw-medium col overflow">
-                                                    Fife
-                                                </span>
-                                            </li>
-                                            <li class="d-flex align-items-center py-1">
-                                                <span class="contact-details-label text-secondary col-4 overflow me-2">City</span>
-                                                <span class="contact-details-data fw-medium col overflow">
-                                                    Cowdenbeath
-                                                </span>
-                                            </li>
-                                            <li class="d-flex align-items-center py-1">
-                                                <span class="contact-details-label text-secondary col-4 overflow me-2">Language</span>
-                                                <span class="contact-details-data fw-medium col overflow">
-                                                    English (EN)
-                                                </span>
-                                            </li>
-                                            <li class="d-flex align-items-center py-1">
-                                                <span class="contact-details-label text-secondary col-4 overflow me-2">IP address</span>
-                                                <span class="contact-details-data fw-medium col overflow">
-                                                    123.45.67.89
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
                     </div>
@@ -1219,6 +1223,25 @@
             new bootstrap.Tooltip(tooltipTriggerEl)
         })
         })()
+    </script>
+
+    <script>
+        // $('.sidebar-collapse').click(function(){
+        //     $('.contact-sidebar').addClass('active');
+        // });
+        // $(document).ready(function() {
+        //     $(".sidebar-collapse").live("click", function() {
+        //         $(".contact-sidebar").addClass("active");
+        //     });
+        // });
+        // function myFunction() {
+        //     var element = document.getElementById("contact-sidebar");
+        //     element.classList.add("active");
+        // }
+        function myFunction() {
+            var element = document.getElementById("contact-sidebar");
+            element.classList.remove("active");
+        }
     </script>
 
 </body>

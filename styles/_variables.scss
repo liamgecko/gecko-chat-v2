@@ -61,7 +61,7 @@ $colors: (
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
-$min-contrast-ratio:   4.5 !default;
+$min-contrast-ratio:   2.5 !default;
 
 // Customize the light and dark text colors for use in our color contrast function.
 $color-contrast-dark:      $black !default;
@@ -729,7 +729,7 @@ $table-variants: (
 // scss-docs-start input-btn-variables
 $input-btn-padding-y:         $spacer * 0.95 !default;
 $input-btn-padding-x:         $spacer * 1.5 !default;
-$input-btn-font-family:       null !default;
+$input-btn-font-family:       $font-family-base !default;
 $input-btn-font-size:         $font-size-base !default;
 $input-btn-line-height:       1.3 !default;
 
@@ -1023,7 +1023,7 @@ $input-box-shadow:                      $box-shadow-inset !default;
 $input-border-radius:                   $border-radius !default;
 $input-border-radius-sm:                $border-radius-sm !default;
 $input-border-radius-lg:                $border-radius-lg !default;
-
+ 
 $input-focus-bg:                        $input-bg !default;
 $input-focus-border-color:              $blue-400 !default;
 $input-focus-color:                     $input-color !default;
@@ -1356,7 +1356,7 @@ $dropdown-padding-x:                0 !default;
 $dropdown-padding-y:                $spacer !default;
 $dropdown-spacer:                   .125rem !default;
 $dropdown-font-size:                $font-size-base !default;
-$dropdown-font-weight:              $font-weight-medium !default;
+$dropdown-font-weight:              $font-weight-base !default;
 $dropdown-color:                    $body-color !default;
 $dropdown-bg:                       $white !default;
 $dropdown-border-color:             var(--#{$prefix}border-color-translucent) !default;
@@ -1479,6 +1479,7 @@ $card-box-shadow:                   $box-shadow-sm !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y !default;
 $card-cap-padding-x:                $card-spacer-x !default;
+$card-padding:                      $card-cap-padding-y $card-cap-padding-x;
 $card-cap-bg:                       rgba($black, .03) !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
@@ -1488,6 +1489,7 @@ $card-img-overlay-padding:          $spacer !default;
 $card-group-margin:                 $grid-gutter-width * .5 !default;
 $card-sub-title-size:               $h3-font-size;
 $card-header-size:                  $font-size-base * 1.1428;
+$card-header-color:                 $primary;
 $card-header-font-weight:           $font-weight-semibold;
 $card-footer-btn-spacer:            $spacer;
 
@@ -1771,11 +1773,13 @@ $modal-scale-transform:             scale(1.02) !default;
 // scss-docs-start alert-variables
 $alert-padding-y:               $spacer * 2 !default;
 $alert-padding-x:               $alert-padding-y !default;
+$alert-padding:                 $alert-padding-y $alert-padding-x !default;
 $alert-margin-bottom:           $spacer * 2 !default;
 $alert-border-radius:           $border-radius !default;
 $alert-link-font-weight:        $font-weight-medium !default;
 $alert-border-width:            $border-width !default;
 $alert-dismissible-padding-l:   $alert-padding-y !default; // 3x covers width of x plus default padding on either side
+$alert-font-weight:             $font-size-base !default;
 
 $alert-info-color:              $blue-800 !default;
 $alert-info-link-color:         $alert-info-color !default;
@@ -2057,3 +2061,199 @@ $react-select-custom-meta-font-weight:  $font-weight-base;
 
 $react-select-notice-font-weight:       $react-select-menu-font-weight;
 $react-select-notice-color:             $react-select-menu-color;
+
+// WORKFLOWS
+
+$workflow-number-color:           $white;
+$workflow-number-bg:              $purple;
+$workflow-number-margin:          $spacer;
+$workflow-number-height:          $spacer * 3;
+$workflow-number-width:           $workflow-number-height;
+$workflow-number-line-height:     $workflow-number-height;
+$workflow-number-font-weight:     $font-weight-semibold;
+$workflow-header-font-weight:     $workflow-number-font-weight;
+$workflow-border:                 1px solid $border-color;
+$workflow-indicator-incomplete:   $orange-600;
+$workflow-indicator-progress:     $grey-600;
+$workflow-indicator-complete:     $green-600;
+$workflow-indicator-height:       $spacer * 4;
+$workflow-indicator-width:        $workflow-indicator-height;
+$workflow-indicator-line-height:  $workflow-indicator-height;
+$workflow-condition-padding:      $spacer * 2;
+$workflow-condition-bg:           $grey-200;
+$workflow-condition-margin:       $spacer * 3;
+$workflow-operator-font-size:     $btn-font-size;
+$workflow-operator-font-weight:   $font-weight-semibold;
+$workflow-operator-border-radius: $btn-border-radius;
+$workflow-operator-bg:            $primary;
+$workflow-operator-padding:       0 $spacer * 2;
+$workflow-operator-height:        34px;
+$workflow-operator-line-height:   $btn-line-height;
+$workflow-operator-margin:        24px auto 16px;
+
+// FILTERS 
+
+$filter-font-size:            $font-size-lg;
+$filter-margin-left:          $spacer * 2;
+
+// CHATHEAD
+
+$chathead-padding:                    $spacer * 2;
+$chathead-avatar-margin:              $spacer * 1.5;
+$chathead-border:                     1px solid $border-color;
+$chathead-bg-hover:                   darken($grey-100, 2%);
+$chathead-bg-active:                  $white;
+$chathead-border-active:              $purple;
+$chathead-title-font-size:            $font-size-base;
+$chathead-title-font-weight:          $font-weight-semibold;
+$chathead-title-color:                $body-color;
+$chathead-time-font-size:             $font-size-sm;
+$chathead-time-color:                 $body-color-secondary;
+$chathead-message-font-size:          $chathead-time-font-size;
+$chathead-message-color:              $chathead-time-color;
+$chathead-message-padding-top:        $spacer * 1.5;
+$chathead-close-color:                $chathead-title-color;
+$chathead-close-border-color:         $chathead-close-color;
+$chathead-close-border-radius:        $border-radius;
+$chathead-close-width:                $spacer * 3;
+$chathead-close-height:               $chathead-close-width;
+$chathead-close-line-height:          $chathead-close-width;
+$chathead-close-font-size:            $font-size-sm;
+$chathead-close-color-hover:          $body-color-secondary;
+$chathead-close-border-color-hover:   $chathead-close-color-hover;
+
+// CONTACT DETAILS
+
+$contact-details-toggle-font-size:        $icon-size-lg;
+$contact-details-toggle-padding-y:        0;
+$contact-details-toggle-padding-x:        $spacer * 1.5;
+$contact-details-toggle-padding:          $contact-details-toggle-padding-y $contact-details-toggle-padding-x;
+$contact-details-toggle-color:            $body-color;
+$contact-details-toggle-color-hover:      $body-color-secondary;
+$contact-details-agent-name-font-size:    $font-size-lg;
+$contact-details-agent-name-font-weight:  $font-weight-semibold;
+$contact-details-agent-name-color:        $body-color;
+$contact-details-agent-time-font-size:    $font-size-base;
+$contact-details-agent-time-color:        $body-color-secondary;
+$contact-details-owner-font-size:         $font-size-base;
+$contact-details-owner-font-weight:       $font-weight-semibold;
+
+$contact-module-border:                         1px solid $border-color;
+$contact-module-color:                          $body-color;
+$contact-module-color-hover:                    $body-color-secondary;
+$contact-module-header-font-size:               $font-size-base;
+$contact-module-help-text-font-size:            $font-size-sm;
+$contact-module-header-font-weight:             $font-weight-semibold;
+$contact-module-value-font-weight:              $font-weight-medium;
+$contact-module-value-placeholder-color:        $body-color-secondary;
+$contact-module-value-placeholder-font-weight:  $font-weight-base;
+
+// CONVERSATION
+
+$contact-name-size:           $font-size-lg;
+$contact-name-font-weight:    $font-weight-semibold;
+$contact-name-color:          $body-color;
+
+$chat-bubble-default:                   $grey-100 !default;
+$chat-bubble-agent:                   #EFF2F6 !default;
+$chat-bubble-error:                     $red-200 !default;
+$chat-bubble-note:                      #FBF3D2 !default;
+$chat-bubble-default-border:            transparent $chat-bubble-default transparent transparent !default;
+$chat-bubble-agent-border:              $chat-bubble-agent transparent transparent !default;
+$chat-bubble-error-border:              transparent $chat-bubble-error transparent transparent !default;
+$chat-bubble-error-agent-border:        $chat-bubble-error transparent transparent !default;
+$chat-bubble-note-border:               transparent $chat-bubble-note transparent transparent !default;
+$chat-bubble-note-agent-border:         $chat-bubble-note transparent transparent !default;
+$chat-bubble-status-default:            $body-color-secondary;
+$chat-bubble-status-error:              $red-600;
+$chat-bubble-status-success:            $green-600;
+
+$channel-select-font-weight: $font-weight-medium;
+$channel-select-font-size: $font-size-base;
+
+// REPLY BOX
+
+$replybox-icon-font-size: $font-size-base;
+$replybox-icon-color: $body-color;
+$replybox-icon-color-hover: $body-color-secondary;
+$replybox-icon-spacing: $spacer;
+
+// // BOTS
+
+// BOT HEAD
+
+$bot-head-bg: $purple;
+$bot-head-border-radius: $border-radius;
+$bot-head-title-font-size: $font-size-lg;
+$bot-head-title-font-weight: $font-weight-semibold;
+
+// BOT BODY
+
+$bot-body-border: 1px solid $border-color;
+$bot-body-title-font-size: $font-size-base;
+$bot-body-title-font-weight: $font-weight-semibold;
+$bot-body-title-color: $body-color;
+$bot-body-subtitle-font-size: $font-size-sm;
+$bot-body-subtitle-font-weight: $font-weight-base;
+$bot-body-subtitle-color: $body-color-secondary;
+$bot-body-menu-font-size: $bot-body-title-font-size;
+$bot-body-menu-font-weight: $bot-body-title-font-weight;
+$bot-body-menu-color: $dropdown-color;
+$bot-body-menu-color-hover: $primary;
+
+// BOT RINGS
+
+$red-ring: $red-600;
+$orange-ring: $orange-500;
+$green-ring: $green-400;
+$grey-ring: $grey-100;
+$blue-ring: $blue-500;
+
+// BOT STATS
+
+$bot-stats-border: $bot-body-border;
+$bot-stats-title-font-size: $bot-body-title-font-size;
+$bot-stats-title-font-weight: $bot-body-title-font-weight;
+$bot-stats-subtitle-font-size: $bot-body-subtitle-font-size;
+$bot-stats-subtitle-font-weight: $bot-body-subtitle-font-weight;
+$bot-stats-subtitle-color: $bot-body-subtitle-color;
+
+// BOT SETTINGS 
+
+$bot-settings-border: $input-border-width solid $input-border-color;
+$bot-settings-header-font-size: $font-size-lg;
+$bot-settings-header-font-weight: $card-header-font-weight;
+
+// BOT SKILLS
+
+$bot-skill-border: $input-border-width solid $input-border-color;
+$bot-skill-border-radius: $input-border-radius;
+$bot-skill-icon-color: $purple;
+$bot-skill-header-color: $body-color;
+$bot-skill-text-color: $body-color-secondary;
+
+$bot-skill-display-list-border: $blue-500;
+$bot-skill-display-list-color: $blue-600;
+$bot-skill-display-list-bg: $white;
+
+$bot-skill-suggest-answer-border: $bot-skill-display-list-border;
+$bot-skill-suggest-answer-color: $bot-skill-display-list-color;
+$bot-skill-suggest-answer-bg: $bot-skill-display-list-bg;
+$bot-skill-suggest-answer-border-radius: $bot-skill-border-radius;
+
+// ANIMATION
+
+$bounce: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+
+// DATE PICKER 
+
+$date-picker-font-size:             $font-size-base;
+$date-picker-font-weight:           $font-weight-semibold;
+$date-picker-color:                 $body-color;
+$date-picker-label:                 $body-color-secondary;
+$date-picker-day-color:             $date-picker-color;
+$date-picker-day-height:            36px;
+$date-picker-day-width:             $date-picker-day-height;
+$date-picker-day-line-height:       $date-picker-day-height;
+$date-picker-day-border-radius:     $input-border-radius;
+$date-picker-day-bg:                $grey-200;
