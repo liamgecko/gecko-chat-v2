@@ -1,6 +1,5 @@
 .app-wrapper.conversation-wrapper {
   background-color: #FFFFFF;
-  overflow: hidden;
   height: 100vh;
 }
 
@@ -63,15 +62,19 @@
 
 .app-wrapper .app-body .panel {
   height: 100vh;
-  width: 100%;
 }
 
 .app-wrapper .app-body .panel .panel-heading {
   height: 60px;
 }
 
+.app-wrapper .app-body .panel-side {
+  min-width: 240px;
+}
+
 .app-wrapper .app-body .panel-side.contact-sidebar, .app-wrapper .app-body .panel-side.chat-head-sidebar {
-  width: 460px;
+  max-width: 460px;
+  width: 25%;
 }
 
 .app-wrapper .app-body .chat-head-sidebar .chat-head-container {
@@ -139,14 +142,6 @@
 .app-wrapper .app-body .conversation-view .reply-box .reply-box-container .send-btn:disabled {
   background: none;
   opacity: 0.5;
-}
-
-.app-wrapper .app-body .contact-sidebar {
-  margin-right: -1432px;
-}
-
-.app-wrapper .app-body .contact-sidebar.active {
-  margin-right: -460px;
 }
 
 .app-wrapper .app-body .contact-sidebar .contact-container {

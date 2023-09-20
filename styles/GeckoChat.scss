@@ -2,7 +2,7 @@
 
     &.conversation-wrapper {
         background-color: #FFFFFF;
-        overflow: hidden;
+        // overflow: hidden;
         height: 100vh;
     }
 
@@ -71,16 +71,17 @@
 
     .panel {
         height: 100vh;
-        width: 100%;
         .panel-heading {
             height: 60px;
         }
     }
 
     .panel-side {
+        min-width: 240px;
         &.contact-sidebar,
         &.chat-head-sidebar {
-            width: 460px;
+            max-width: 460px;
+            width: 25%;
         }
     }
 
@@ -154,10 +155,6 @@
     }
 
     .contact-sidebar {
-        margin-right: -1432px;
-        &.active {
-            margin-right: -460px;
-        }
         .contact-container {
             overflow: auto;
             height: calc(100% - 60px);
