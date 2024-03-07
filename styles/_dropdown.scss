@@ -275,6 +275,19 @@ hr.dropdown-divider {
       }
     }
   }
+
+  &.unread {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .unread-indicator {
+      height: 8px;
+      width: 8px;
+      background: $red-500;
+      border-radius: 50%;
+      margin-left: 12px;
+    }
+  }
 }
 
 .dropdown-menu.show {

@@ -5372,12 +5372,28 @@ hr.dropdown-divider {
   font-size: 1rem;
 }
 
-/* line 280, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 279, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+.dropdown-item.unread {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 283, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+.dropdown-item.unread .unread-indicator {
+  height: 8px;
+  width: 8px;
+  background: #f43f5e;
+  border-radius: 50%;
+  margin-left: 12px;
+}
+
+/* line 293, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-menu.show {
   display: block;
 }
 
-/* line 285, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 298, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-header {
   display: block;
   padding: var(--gecko-dropdown-header-padding-y) var(--gecko-dropdown-header-padding-x);
@@ -5387,14 +5403,14 @@ hr.dropdown-divider {
   white-space: nowrap;
 }
 
-/* line 295, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 308, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-item-text {
   display: block;
   padding: var(--gecko-dropdown-item-padding-y) var(--gecko-dropdown-item-padding-x);
   color: var(--gecko-dropdown-link-color);
 }
 
-/* line 302, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 315, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-menu-dark {
   --gecko-dropdown-color: #94a3b8;
   --gecko-dropdown-bg: #1e293b;
@@ -5410,7 +5426,7 @@ hr.dropdown-divider {
   --gecko-dropdown-header-color: #475569;
 }
 
-/* line 319, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 332, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-footer {
   border-top: 1px solid #e2e8f0;
   padding: 12px 8px;
@@ -5419,7 +5435,7 @@ hr.dropdown-divider {
   justify-content: flex-end;
 }
 
-/* line 325, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
+/* line 338, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/_dropdown.scss */
 .dropdown-footer .btn {
   margin-left: 4px;
 }
