@@ -2948,8 +2948,8 @@ progress {
 
 /* line 32, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/forms/_labels.scss */
 .col-form-label-sm {
-  padding-top: 7.8px;
-  padding-bottom: 7.8px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   font-size: 1rem;
 }
 
@@ -3101,15 +3101,15 @@ progress {
 
 /* line 145, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/forms/_form-control.scss */
 .form-control-sm {
-  min-height: calc(1.3em + 15.6px);
-  padding: 6.8px 8px;
+  min-height: calc(1.3em + 14px);
+  padding: 6px 8px;
   font-size: 1rem;
 }
 
 /* line 150, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/forms/_form-control.scss */
 .form-control-sm::file-selector-button {
-  padding: 6.8px 8px;
-  margin: -6.8px -8px;
+  padding: 6px 8px;
+  margin: -6px -8px;
   margin-inline-end: 8px;
 }
 
@@ -3134,7 +3134,7 @@ textarea.form-control {
 
 /* line 177, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/forms/_form-control.scss */
 textarea.form-control-sm {
-  min-height: calc(1.3em + 15.6px);
+  min-height: calc(1.3em + 14px);
 }
 
 /* line 181, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/forms/_form-control.scss */
@@ -3217,7 +3217,7 @@ textarea.form-control-lg {
 
 /* line 235, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/forms/_form-control.scss */
 .color-input .form-control-color.form-control-sm {
-  height: calc(1.3em + 15.6px);
+  height: calc(1.3em + 14px);
 }
 
 /* line 236, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/forms/_form-control.scss */
@@ -3392,8 +3392,8 @@ textarea.form-control-lg {
 
 /* line 82, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/forms/_form-select.scss */
 .form-select-sm {
-  padding-top: 6.8px;
-  padding-bottom: 6.8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   padding-left: 8px;
   font-size: 1rem;
   border-radius: 4px;
@@ -4127,7 +4127,7 @@ textarea.form-control-lg {
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn {
-  padding: 6.8px 8px;
+  padding: 6px 8px;
   font-size: 1rem;
   border-radius: 2px;
 }
@@ -4808,7 +4808,7 @@ fieldset:disabled .btn {
 
 /* line 386, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/_buttons.scss */
 .btn-sm, .btn-group-sm > .btn {
-  --gecko-btn-padding-y: 6.8px;
+  --gecko-btn-padding-y: 6px;
   --gecko-btn-padding-x: 8px;
   --gecko-btn-font-size: 0.85714rem;
   --gecko-btn-border-radius: 4px;
