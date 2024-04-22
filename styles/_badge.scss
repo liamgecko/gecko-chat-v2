@@ -60,4 +60,9 @@
     background-color: $badge-bg-danger !important;
     color: $badge-text-danger;
   }
+  &.bg-outline {
+    background-color: $bg-outline !important;
+    color: $primary;
+    border: 1px solid $border-color;
+  }
 }

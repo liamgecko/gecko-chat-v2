@@ -19,6 +19,13 @@
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+
+  .nav-item {
+    .badge {
+      margin-left: $spacer;
+    }
+  }
+
 }
 
 .nav-link {
@@ -127,7 +134,14 @@
   .nav-link {
     background: none;
     border: 0;
+    padding: $nav-pills-padding;
+    margin-bottom: 1px;
     @include border-radius(var(--#{$prefix}nav-pills-border-radius));
+
+    &:hover {
+      background-color: $nav-pills-link-hover-bg;
+      color: $nav-pills-link-hover-color;
+    }
 
     &:disabled {
       color: var(--#{$prefix}nav-link-disabled-color);

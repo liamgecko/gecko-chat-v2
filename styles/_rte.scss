@@ -15,7 +15,7 @@
     }
     .tox-toolbar-overlord {
         .tox-toolbar__primary {
-            background-color: $grey-200;
+            background-color: $grey-50;
             border-radius: $border-radius;
         }
     }
@@ -42,7 +42,7 @@
         opacity: 0.5;
     }
     .tox-tbtn--bespoke {
-        background-color: $body-bg !important;
+        background-color: $grey-50 !important;
         cursor: pointer;
         @include transition();
         &:hover,
@@ -71,19 +71,19 @@
     }
     &.tox-tinymce-aux {
         .tox-toolbar__overflow {
-            box-shadow: $box-shadow !important;
+            box-shadow: $box-shadow-md !important;
             border-radius: $border-radius !important;
             .tox-tbtn {
                 &:hover,
                 &:active,
                 &:focus {
-                    background: $grey-200 !important;
+                    background: $grey-50 !important;
                 }
             }
         }
     }
     .tox-menu {
-        box-shadow: $box-shadow !important;
+        box-shadow: $box-shadow-md !important;
         border-radius: $border-radius !important;
         border: none !important;
         &.tox-collection {
@@ -96,7 +96,7 @@
                     &:hover,
                     &:focus,
                     &:active {
-                        background-color: $grey-200 !important;
+                        background-color: $grey-50 !important;
                         color: $body-color !important;
                     }
                     .tox-collection__item-label {
@@ -104,15 +104,15 @@
                     }
                 }
                 .tox-collection__item--active {
-                    background-color: $grey-200 !important;
+                    background-color: $grey-50 !important;
                     color: $body-color !important;
                 }
             }
         }
     }
     .tox-insert-table-picker .tox-insert-table-picker__selected {
-        background-color: $blue-200 !important;
-        border-color: $blue-600 !important;
+        background-color: $blue-50 !important;
+        border-color: $blue-500 !important;
     }
     .tox-statusbar a, 
     .tox-statusbar__path-item, 
@@ -130,7 +130,7 @@
             color: $btn-secondary-active-color;
             outline: 1px solid $white;
             outline-offset: -2px;
-            border-color: $grey-600; 
+            border-color: $grey-400; 
         }
     }
     // Forms
@@ -204,7 +204,7 @@
                 color: $body-color;
                 padding: 0;
                 &:hover {
-                    background-color: $grey-200;
+                    background-color: $grey-50;
                     border-radius: $border-radius;
                 }
             }

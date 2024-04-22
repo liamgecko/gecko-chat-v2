@@ -5,15 +5,12 @@
 .input-group {
   position: relative;
   display: flex;
-  flex-wrap: wrap; // For form validation feedback
-  align-items: stretch;
   width: 100%;
 
   > .form-control,
   > .form-select,
   > .form-floating {
     position: relative; // For focus state's z-index
-    flex: 1 1 auto;
     width: 1%;
     min-width: 0; // https://stackoverflow.com/questions/36247140/why-dont-flex-items-shrink-past-content-size
   }
@@ -36,6 +33,20 @@
       z-index: 5;
     }
   }
+
+  &.date-field {
+    .form-control {
+      width: 52px;
+      margin-right: $spacer;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      &.year-four-digit {
+        width: 60px;
+      }
+    }
+  }
+
 }
 
 
@@ -86,47 +97,4 @@
 .input-group-lg > .form-select,
 .input-group-sm > .form-select {
   padding-right: $form-select-padding-x + $form-select-indicator-padding;
-}
-
-
-// Rounded corners
-//
-// These rulesets must come after the sizing ones to properly override sm and lg
-// border-radius values when extending. They're more specific than we'd like
-// with the `.input-group >` part, but without it, we cannot override the sizing.
-
-// stylelint-disable-next-line no-duplicate-selectors
-.input-group {
-  &:not(.has-validation) {
-    > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
-    > .dropdown-toggle:nth-last-child(n + 3),
-    > .form-floating:not(:last-child) > .form-control,
-    > .form-floating:not(:last-child) > .form-select {
-      @include border-end-radius(0);
-    }
-  }
-
-  &.has-validation {
-    > :nth-last-child(n + 3):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
-    > .dropdown-toggle:nth-last-child(n + 4),
-    > .form-floating:nth-last-child(n + 3) > .form-control,
-    > .form-floating:nth-last-child(n + 3) > .form-select {
-      @include border-end-radius(0);
-    }
-  }
-
-  $validation-messages: "";
-  @each $state in map-keys($form-validation-states) {
-    $validation-messages: $validation-messages + ":not(." + unquote($state) + "-tooltip)" + ":not(." + unquote($state) + "-feedback)";
-  }
-
-  > :not(:first-child):not(.dropdown-menu)#{$validation-messages} {
-    margin-left: -$input-border-width;
-    @include border-start-radius(0);
-  }
-
-  > .form-floating:not(:first-child) > .form-control,
-  > .form-floating:not(:first-child) > .form-select {
-    @include border-start-radius(0);
-  }
 }

@@ -1,0 +1,10 @@
+.empty-state {
+  position: relative;
+  .empty-state-bg {
+    position: absolute;
+    left: 50%;
+    top: -211px;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+}

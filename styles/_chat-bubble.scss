@@ -1,0 +1,48 @@
+.conversation-message {
+  .conversation-message-content {
+    background-color: $grey-50;
+  }
+  .conversation-message-avatar {
+    margin-right: $spacer;
+  }
+  &.agent {
+    > div {
+      flex-direction: row-reverse;
+    }
+    .conversation-message-content {
+      background-color: $blue-25;
+    }
+    .conversation-message-avatar {
+      margin-left: $spacer;
+      margin-right: 0;
+    }
+  }
+  &.note {
+    > div {
+      flex-direction: row-reverse;
+    }
+    .conversation-message-content {
+      background-color: $yellow-25;
+      color: $yellow-600;
+    }
+    .conversation-message-avatar {
+      margin-left: $spacer;
+      margin-right: 0;
+    }
+  }
+  &.failed {
+    .conversation-message-content {
+      background-color: $red-25;
+      color: $red-600;
+    }
+    .conversation-error-message {
+      color: $red-600;
+      a {
+        color: $red-600;
+      }
+    }
+  }
+  .conversation-meta-reveal {
+    cursor: pointer;
+  }
+}

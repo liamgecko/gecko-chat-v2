@@ -13,11 +13,11 @@
   // scss-docs-end breadcrumb-css-vars
 
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   padding: var(--#{$prefix}breadcrumb-padding-y) var(--#{$prefix}breadcrumb-padding-x);
   margin-bottom: var(--#{$prefix}breadcrumb-margin-bottom);
   @include font-size(var(--#{$prefix}breadcrumb-font-size));
-  font-weight: var(--#{$prefix}breadcrumb-font-weight);
   list-style: none;
   background-color: var(--#{$prefix}breadcrumb-bg);
   @include border-radius(var(--#{$prefix}breadcrumb-border-radius));
@@ -36,7 +36,6 @@
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       font-family: $font-family-icons;
-      font-size: $breadcrumb-divider-size;
     }
   }
 

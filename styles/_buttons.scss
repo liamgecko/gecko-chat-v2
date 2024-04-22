@@ -236,6 +236,7 @@
       &:focus-visible {
         background-color: $btn-naked-danger-active-bg;
         color: $btn-naked-danger-active-color;
+        border-color: $btn-naked-danger-active-border;
         outline: 1px solid $white;
         outline-offset: -2px;
       }
@@ -251,6 +252,7 @@
     svg,
     i {
       margin-right: $btn-icon-right-margin;
+      margin-left: 0;
     }
     &.btn-sm {
       svg,
@@ -264,6 +266,7 @@
     svg,
     i {
       margin-left: $btn-icon-left-margin;
+      margin-right: 0;
     }
     &.btn-sm {
       svg,
@@ -281,7 +284,7 @@
   &.btn-sm {
     > svg,
     > i {
-      font-size: $icon-size-sm;
+      font-size: $icon-size-xs;
     }
   }
 
@@ -297,7 +300,8 @@
    }
 
    &.btn-ai {
-    i {
+    i,
+    svg {
       background-image: linear-gradient(0deg, #CF66D1, #3460AD);
       background-size: 100%;
       -webkit-background-clip: text;
@@ -306,7 +310,7 @@
       -moz-text-fill-color: transparent;
     }
     &:hover {
-      background-color: $grey-200;
+      background-color: $grey-50;
      }
    }
 

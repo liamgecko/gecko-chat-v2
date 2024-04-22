@@ -30,7 +30,7 @@
                     <a href="" title="Dashboard" data-bs-toggle="tooltip" data-bs-title="Dashboard" data-bs-custom-class="tooltip-menu" class="d-flex justify-content-center align-items-center rounded position-relative text-decoration-none"><i class="fa-light fa-house-blank"></i></a>
                 </li>
                 <li class="d-flex justify-content-center mb-2">
-                    <a href="index.html" title="Conversations" data-bs-toggle="tooltip" data-bs-title="Conversations" data-bs-custom-class="tooltip-menu" class="active d-flex justify-content-center align-items-center rounded position-relative text-decoration-none unread"><i class="fa-light fa-comments"></i></a>
+                    <a href="index.html" title="Conversations" data-bs-toggle="tooltip" data-bs-title="Conversations" data-bs-custom-class="tooltip-menu" class="active d-flex justify-content-center align-items-center rounded position-relative text-decoration-none unread"><i class="fa-light fa-message-lines"></i></a>
                 </li>
                 <li class="d-flex justify-content-center mb-2">
                     <a href="bots.html" title="Automation" data-bs-toggle="tooltip" data-bs-title="Automation" data-bs-custom-class="tooltip-menu" class="d-flex justify-content-center align-items-center rounded position-relative text-decoration-none"><i class="fa-light fa-circle-bolt"></i></a>
@@ -93,6 +93,48 @@
 
             <div class="app-body-container d-flex">
 
+                <div class="chat-filters-sidebar panel panel-side border-end">
+
+                    <div class="panel-heading border-bottom d-flex justify-content-between align-items-center px-4">
+
+                        <h3 class="mb-0">Conversations</h1>
+
+                        <div class="chat-filters-sidebar-control ms-5">
+
+                            <button type="button" title="Hide menu" class="sidebar-collapse btn-icon btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-title="Hide menu" data-bs-placement="bottom" onclick="myFunction()">
+                                <i class="fa-regular fa-sidebar"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="chat-filters-container p-4">
+
+                        <div>
+                            <span class="sidebar-menu-item-group-title fs-3 fw-bold text-secondary d-block mb-2">Filters</span>
+                            <ul class="list-unstyled">
+                                <li class="mb-1"><a class="d-flex justify-content-between align-items-center px-3 py-2 rounded active unread" href="#">My conversations <span class="conversation-count fw-medium text-secondary fs-2">15</span></a></li>
+                                <li class="mb-1"><a class="d-flex justify-content-between align-items-center px-3 py-2 rounded " href="#">Unassigned <span class="conversation-count fw-medium text-secondary fs-2">0</span></a></li>
+                                <li class="mb-1"><a class="d-flex justify-content-between align-items-center px-3 py-2 rounded " href="#">Open <span class="conversation-count fw-medium text-secondary fs-2">1,450</span></a></li>
+                                <li class="mb-1"><a class="d-flex justify-content-between align-items-center px-3 py-2 rounded " href="#">Closed <span class="conversation-count fw-medium text-secondary fs-2">15,002</span></a></li>
+                                <li class="mb-1"><a class="d-flex justify-content-between align-items-center px-3 py-2 rounded " href="#">Sent <span class="conversation-count fw-medium text-secondary fs-2">12,495</span></a></li>
+                                <li class="mb-1"><a class="d-flex justify-content-between align-items-center px-3 py-2 rounded unread" href="#">Assigned to bot <span class="conversation-count fw-medium text-secondary fs-2">888</span></a></li>
+                            </ul>
+                            <span class="sidebar-menu-item-group-title fs-3 fw-bold text-secondary d-block mb-2">Pinned filters</span>
+                            <ul class="list-unstyled">
+                                <li class="mb-1"><a class="d-flex justify-content-between align-items-center px-3 py-2 rounded unread" href="#"><div><i class="fa fa-thumbtack me-2 fs-2"></i>Admissions enquiries</div> <span class="conversation-count fw-medium text-secondary fs-2">15</span></a></li>
+                                <li class="mb-1"><a class="d-flex justify-content-between align-items-center px-3 py-2 rounded " href="#"><div><i class="fa fa-thumbtack me-2 fs-2"></i>Prospects</div> <span class="conversation-count fw-medium text-secondary fs-2">15</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-secondary btn-sm d-block"><i class="fa-regular fa-layer-plus me-2"></i>Create filter</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
                 <!-- ======================== CHAT HEAD PANEL ======================== -->
 
                 <div class="chat-head-sidebar panel panel-side col border-end">
@@ -103,20 +145,17 @@
 
                             <div class="dropdown me-1">
                                 <button class="btn btn-naked-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    My conversations
+                                    All conversations
                                 </button>
                                 <div class="dropdown-menu">
-                                    <div class="dropdown-divider">Filter by</div>
-                                    <a class="dropdown-item active unread" href="#">My conversations (15) <div class="unread-indicator"></div></a>
-                                    <a class="dropdown-item" href="#">Unassigned</a>
-                                    <a class="dropdown-item" href="#">Open (28)</a>
-                                    <a class="dropdown-item" href="#">Closed</a>
-                                    <a class="dropdown-item" href="#">Sent</a>
-                                    <a class="dropdown-item" href="#">Assigned to bot</a>
-                                    <a class="dropdown-item" href="#"><i class="fa fa-thumbtack me-2"></i>Admissions enquiries</a>
-                                    <a class="dropdown-item" href="#"><i class="fa fa-thumbtack me-2"></i>Prospects</a>
-                                    <hr class="dropdown-divider">
-                                    <a class="dropdown-item" href="#">Custom filter</a>
+                                    <a class="dropdown-item active" href="#">All conversations</a>
+                                    <a class="dropdown-item" href="#">Team assigned: awaiting agent</a>
+                                    <a class="dropdown-item" href="#">Waiting for a response</a>
+                                    <div class="dropdown-divider">Your assignments</div>
+                                    <a class="dropdown-item" href="#">Directly to you</a>
+                                    <a class="dropdown-item" href="#">Admission team</a>
+                                    <a class="dropdown-item" href="#">Facebook messenger team</a>
+                                    <a class="dropdown-item" href="#">Email inbox</a>
                                 </div>
                             </div>
 
@@ -614,7 +653,7 @@
 
                             <div class="contact-sidebar-control ms-5">
 
-                                <button type="button" title="Collapse sidebar" class="sidebar-collapse btn-icon btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-title="Collapse sidebar" data-bs-placement="bottom" onclick="myFunction()">
+                                <button type="button" title="Collapse sidebar" class="sidebar-collapse btn-icon btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" data-bs-title="Hide contact details" data-bs-placement="bottom" onclick="myFunction()">
                                     <i class="fa-regular fa-sidebar-flip"></i>
                                 </button>
 
@@ -637,7 +676,7 @@
                                 </div>
                                 <div class="conversation-message-container">
                                     <div class="conversation-message-wrapper">
-                                        <div class="conversation-message-content p-3 bg-grey-200 d-inline-block">
+                                        <div class="conversation-message-content p-3 bg-grey-50 d-inline-block">
                                         <span class="message-content">
                                             Hey
                                         </span>
@@ -661,7 +700,7 @@
                                 </div>
                                 <div class="conversation-message-container">
                                     <div class="conversation-message-wrapper">
-                                        <div class="conversation-message-content p-3 bg-grey-200 d-inline-block">
+                                        <div class="conversation-message-content p-3 bg-grey-50 d-inline-block">
                                         <span class="message-content">
                                             I'm considering applying to Gecko University. Do you offer work-study programs?
                                         </span>
@@ -685,7 +724,7 @@
                                 </div>
                                 <div class="conversation-message-container">
                                     <div class="conversation-message-wrapper">
-                                        <div class="conversation-message-content p-3 bg-blue-100 d-inline-block">
+                                        <div class="conversation-message-content p-3 bg-blue-25 d-inline-block">
                                         <span class="message-content">
                                             Absolutely! We offer work-study opportunities aligned with your field of study. More info here: <a href="">www.geckou.edu/work-study</a>. If you need further assistance, feel free to ask. We're here to help!
                                         </span>
@@ -709,7 +748,7 @@
                                 </div>
                                 <div class="conversation-message-container">
                                     <div class="conversation-message-wrapper">
-                                        <div class="conversation-message-content p-3 bg-grey-200 d-inline-block">
+                                        <div class="conversation-message-content p-3 bg-grey-50 d-inline-block">
                                         <span class="message-content">
                                             Thank you! I'll check out the link. Just one more thing, could you provide me with information about the financial aid and tuition costs?
                                         </span>
@@ -912,7 +951,7 @@
                                     <div class="accordion-body px-4 pt-2 fs-3">
                                         <ul class="activity-feed list-unstyled mb-0">
                                             <li class="activity-feed-item pb-4 position-relative">
-                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
+                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-50 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
                                                     <i class="far fa-comment"></i>
                                                 </div>
                                                 <div class="activity-feed-data d-flex flex-column">
@@ -921,7 +960,7 @@
                                                 </div>
                                             </li>
                                             <li class="activity-feed-item pb-4 position-relative">
-                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
+                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-50 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
                                                     <i class="far fa-calendar-plus"></i>
                                                 </div>
                                                 <div class="activity-feed-data d-flex flex-column">
@@ -930,7 +969,7 @@
                                                 </div>
                                             </li>
                                             <li class="activity-feed-item pb-4 position-relative">
-                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
+                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-50 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
                                                     <i class="far fa-bolt"></i>
                                                 </div>
                                                 <div class="activity-feed-data d-flex flex-column">
@@ -939,7 +978,7 @@
                                                 </div>
                                             </li>
                                             <li class="activity-feed-item pb-4 position-relative">
-                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
+                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-50 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
                                                     <i class="far fa-comment"></i>
                                                 </div>
                                                 <div class="activity-feed-data d-flex flex-column">
@@ -948,7 +987,7 @@
                                                 </div>
                                             </li>
                                             <li class="activity-feed-item position-relative">
-                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
+                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-50 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
                                                     <i class="far fa-list"></i>
                                                 </div>
                                                 <div class="activity-feed-data d-flex flex-column">
@@ -970,7 +1009,7 @@
                                     <div class="accordion-body px-4 pt-2 fs-3" style="max-height: 280px; overflow: scroll;">
                                         <ul class="activity-feed list-unstyled mb-0">
                                             <li class="activity-feed-item pb-4 position-relative">
-                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
+                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-50 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
                                                     <i class="far fa-comment-plus" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="activity-feed-data d-flex flex-column">
@@ -979,7 +1018,7 @@
                                                 </div>
                                             </li>
                                             <li class="activity-feed-item pb-4 position-relative">
-                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
+                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-50 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
                                                     <i class="far fa-user-plus" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="activity-feed-data d-flex flex-column">
@@ -988,7 +1027,7 @@
                                                 </div>
                                             </li>
                                             <li class="activity-feed-item pb-4 position-relative">
-                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
+                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-50 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
                                                     <i class="far fa-note" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="activity-feed-data d-flex flex-column">
@@ -997,7 +1036,7 @@
                                                 </div>
                                             </li>
                                             <li class="activity-feed-item pb-4 position-relative">
-                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
+                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-50 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
                                                     <i class="far fa-comment-check" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="activity-feed-data d-flex flex-column">
@@ -1006,7 +1045,7 @@
                                                 </div>
                                             </li>
                                             <li class="activity-feed-item pb-4 position-relative">
-                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
+                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-50 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
                                                     <i class="far fa-star" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="activity-feed-data d-flex flex-column">
@@ -1015,7 +1054,7 @@
                                                 </div>
                                             </li>
                                             <li class="activity-feed-item pb-4 position-relative">
-                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
+                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-50 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
                                                     <i class="far fa-tags" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="activity-feed-data d-flex flex-column">
@@ -1031,7 +1070,7 @@
                                                 </div>
                                             </li>
                                             <li class="activity-feed-item position-relative">
-                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-200 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
+                                                <div class="activity-feed-icon rounded-circle text-primary bg-grey-50 d-flex me-2 float-start justify-content-around align-items-center flex-nowrap position-relative">
                                                     <i class="far fa-tag" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="activity-feed-data d-flex flex-column">
@@ -1255,7 +1294,7 @@
                                 <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
                                     <span><i class="category-icon text-center far fa-comments me-1"></i> <span class="fw-medium">Conversations</span></span>
                                     <span>
-                                        <div class="rounded border p-1 fs-4 fw-semibold text-grey-600 bg-grey-100 border-grey-200">&#8984; A</div>
+                                        <div class="rounded border p-1 fs-3 fw-semibold text-grey-400 bg-grey-25 border-grey-50">&#8984; A</div>
                                     </span>
                                 </div>
                             </li>
@@ -1263,7 +1302,7 @@
                                 <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
                                     <span><i class="category-icon text-center far fa-circle-bolt me-1"></i> <span class="fw-medium">Automation</span></span>
                                     <span>
-                                        <div class="rounded border p-1 fs-4 fw-semibold text-grey-600 bg-grey-100 border-grey-200">&#8984; B</div>
+                                        <div class="rounded border p-1 fs-3 fw-semibold text-grey-400 bg-grey-25 border-grey-50">&#8984; B</div>
                                     </span>
                                 </div>
                             </li>
@@ -1271,7 +1310,7 @@
                                 <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
                                     <span><i class="category-icon text-center far fa-address-book me-1"></i> <span class="fw-medium">Contacts</span></span>
                                     <span>
-                                        <div class="rounded border p-1 fs-4 fw-semibold text-grey-600 bg-grey-100 border-grey-200">&#8984; C</div>
+                                        <div class="rounded border p-1 fs-3 fw-semibold text-grey-400 bg-grey-25 border-grey-50">&#8984; C</div>
                                     </span>
                                 </div>
                             </li>
@@ -1279,7 +1318,7 @@
                                 <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
                                     <span><i class="category-icon text-center far fa-users me-1"></i> <span class="fw-medium">Agents and teams</span></span>
                                     <span>
-                                        <div class="rounded border p-1 fs-4 fw-semibold text-grey-600 bg-grey-100 border-grey-200">&#8984; D</div>
+                                        <div class="rounded border p-1 fs-3 fw-semibold text-grey-400 bg-grey-25 border-grey-50">&#8984; D</div>
                                     </span>
                                 </div>
                             </li>
@@ -1287,7 +1326,7 @@
                                 <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
                                     <span><i class="category-icon text-center far fa-route me-1"></i> <span class="fw-medium">Workflows</span></span>
                                     <span>
-                                        <div class="rounded border p-1 fs-4 fw-semibold text-grey-600 bg-grey-100 border-grey-200">&#8984; E</div>
+                                        <div class="rounded border p-1 fs-3 fw-semibold text-grey-400 bg-grey-25 border-grey-50">&#8984; E</div>
                                     </span>
                                 </div>
                             </li>
@@ -1295,14 +1334,14 @@
                                 <div class="search-category-filter-item rounded p-2 d-flex justify-content-between align-items-center">
                                     <span><i class="category-icon text-center far fa-tags me-1"></i> <span class="fw-medium">Tags</span></span>
                                     <span>
-                                        <div class="rounded border p-1 fs-4 fw-semibold text-grey-600 bg-grey-100 border-grey-200">&#8984; F</div>
+                                        <div class="rounded border p-1 fs-3 fw-semibold text-grey-400 bg-grey-25 border-grey-50">&#8984; F</div>
                                     </span>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="modal-footer fs-3 bg-grey-100">
+                <div class="modal-footer fs-3 bg-grey-25">
                     💡 Tip: You can use in: or from: in the search box to focus your search.
                 </div>
             </div>

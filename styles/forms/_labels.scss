@@ -8,6 +8,29 @@
   font-style: $form-label-font-style;
   font-weight: $form-label-font-weight;
   color: $form-label-color;
+  .file-upload {
+    cursor: pointer;
+    border: 1px solid $input-border-color;
+    width: 360px;
+    @include transition();
+    &:hover {
+      border-color: $input-hover-border-color;
+    }
+    &.error {
+      border-color: $red-600;
+      .file-upload-icon  {
+        color: $red-600;
+      }
+    }
+  }
+  .dropzone {
+    cursor: pointer;
+    @include transition();
+    &:hover {
+      border-color: $blue-500;
+      background-color: $blue-25;
+    }
+  }
 }
 
 // For use with horizontal and inline forms, when you need the label (or legend)

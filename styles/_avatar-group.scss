@@ -40,6 +40,9 @@
                     content: "";
                     background-color: change-color($color: $primary, $alpha: 0.5);
                 }
+                img {
+                    filter: grayscale(100);
+                }
             }
         }
         &.avatar-xs,
@@ -59,7 +62,7 @@
             width: 32px;
             height: 32px;
             font-size: 0.85714rem;
-            font-weight: 700;
+            font-weight: $font-weight-semibold;
             vertical-align: middle;
             line-height: 1;
             box-sizing: content-box;
@@ -71,14 +74,14 @@
                 display: none;
             }
             &:hover {
-                background-color: $grey-400;
+                background-color: $grey-200;
             }
             &:active,
             &.active {
                 color: $primary;
             }
             &:focus-visible {
-                background-color: $grey-400;
+                background-color: $grey-200;
                 color: $primary;
                 border-color: $grey-500
             }   

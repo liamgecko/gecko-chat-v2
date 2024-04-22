@@ -31,8 +31,10 @@
   word-wrap: break-word;
   background-color: var(--#{$prefix}card-bg);
   background-clip: border-box;
+  box-shadow: var(--#{$prefix}card-box-shadow);
+  border: var(--#{$prefix}card-border-width) solid var(--#{$prefix}card-border-color);
   @include border-radius(var(--#{$prefix}card-border-radius));
-  @include box-shadow(var(--#{$prefix}card-box-shadow));
+  
 
   > hr {
     margin-right: 0;

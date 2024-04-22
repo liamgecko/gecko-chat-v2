@@ -55,9 +55,13 @@ $utilities: map-merge(
       property: box-shadow,
       class: shadow,
       values: (
-        null: $box-shadow,
+        xs: $box-shadow-xs,
         sm: $box-shadow-sm,
+        md: $box-shadow-md,
         lg: $box-shadow-lg,
+        xl: $box-shadow-xl,
+        2xl: $box-shadow-2xl,
+        3xl: $box-shadow-3xl,
         none: none,
       )
     ),
@@ -476,6 +480,7 @@ $utilities: map-merge(
         normal: $font-weight-normal,
         semibold: $font-weight-semibold,
         medium: $font-weight-medium,
+        bold: $font-weight-bold,
       )
     ),
     "line-height": (
@@ -603,8 +608,7 @@ $utilities: map-merge(
         2: var(--#{$prefix}border-radius),
         3: var(--#{$prefix}border-radius-lg),
         4: var(--#{$prefix}border-radius-xl),
-        5: var(--#{$prefix}border-radius-2xl),
-        circle: 50%,
+        circle: 9999px,
         pill: var(--#{$prefix}border-radius-pill)
       )
     ),

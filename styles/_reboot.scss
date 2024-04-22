@@ -52,7 +52,7 @@ html {
 body {
   margin: 0; // 1
   font-family: var(--#{$prefix}body-font-family);
-  font-size: 15px;
+  font-size: 14px;
   font-size: 1rem;
   font-weight: var(--#{$prefix}body-font-weight);
   line-height: var(--#{$prefix}body-line-height);
@@ -307,10 +307,6 @@ code {
   @include font-size($code-font-size);
   color: var(--#{$prefix}code-color);
   word-wrap: break-word;
-  background-color: $grey-100;
-  border: 1px solid $grey-400;
-  padding: 2px;
-  border-radius: 4px;
 
   // Streamline the style when inside anchors to avoid broken underline and more
   a > & {

@@ -2,7 +2,6 @@
 
     &.conversation-wrapper {
         background-color: #FFFFFF;
-        // overflow: hidden;
         height: 100vh;
     }
 
@@ -95,6 +94,37 @@
         &.chat-head-sidebar {
             max-width: 460px;
             width: 25%;
+        }
+    }
+
+    .chat-filters-sidebar {
+        width: 226px;
+        min-width: 0;
+        .chat-filters-container {
+            a {
+                color: #172554;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 500;
+                position: relative;
+                &.active {
+                    background-color: #F1F5F9;
+                }
+                &:hover {
+                    background-color: #F1F5F9;
+                }
+                &.unread {
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 6px;
+                        height: 6px;
+                        background: #E11D48;
+                        left: 2px;
+                        border-radius: 50%;
+                    }
+                }
+            }
         }
     }
 
@@ -256,6 +286,7 @@
                 border-radius: 0 0 4px 4px;
                 background-color: #f8fafc;
                 color: #172554;
+                font-size: 13px;
                 &:hover {
                     background-color: #f1f5f9;
                 }
@@ -377,7 +408,7 @@
             .panel-side {
                 &.contact-sidebar,
                 &.chat-head-sidebar {
-                    max-width: 380px;
+                    max-width: 354px;
                 }
             }
         }

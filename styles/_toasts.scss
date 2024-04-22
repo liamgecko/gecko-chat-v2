@@ -79,6 +79,9 @@
       &:hover {
         background-color: $toast-info-dismiss-bg;
       }
+      &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.25)
+      }
     }
   }
 
@@ -90,6 +93,9 @@
       background: transparent escape-svg($toast-success-btn) center / 12px auto no-repeat;
       &:hover {
         background-color: $toast-success-dismiss-bg;
+      }
+      &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(21, 128, 61, 0.25)
       }
     }
   }
@@ -103,6 +109,9 @@
       &:hover {
         background-color: $toast-warning-dismiss-bg;
       }
+      &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(249, 115, 22, 0.25)
+      }
     }
   }
 
@@ -114,6 +123,9 @@
       background: transparent escape-svg($toast-danger-btn) center / 12px auto no-repeat;
       &:hover {
         background-color: $toast-danger-dismiss-bg;
+      }
+      &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(225, 29, 72, 0.25)
       }
     }
   }

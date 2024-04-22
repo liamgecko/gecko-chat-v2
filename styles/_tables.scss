@@ -49,10 +49,12 @@
     tr {
       th {
         border-bottom: var(--#{$prefix}table-border);
+        border-top: var(--#{$prefix}table-border);
         font-size: $table-head-size;
+        font-weight: $table-head-font-weight;
         background-color: $table-head-bg;
         line-height: 24px;
-        padding: $table-cell-padding;
+        padding: $table-header-cell-padding;
       }
     }
   }

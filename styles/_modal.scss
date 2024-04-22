@@ -107,7 +107,6 @@
   pointer-events: auto;
   background-color: var(--#{$prefix}modal-bg);
   background-clip: padding-box;
-  border: var(--#{$prefix}modal-border-width) solid var(--#{$prefix}modal-border-color);
   @include border-radius(var(--#{$prefix}modal-border-radius));
   // Remove focus outline from opened modal
   outline: 0;
@@ -141,8 +140,6 @@
   }
 
   .btn-close {
-    padding: calc(var(--#{$prefix}modal-header-padding-y) * .5) calc(var(--#{$prefix}modal-header-padding-x) * .5);
-    margin: calc(-.5 * var(--#{$prefix}modal-header-padding-y)) calc(-.5 * var(--#{$prefix}modal-header-padding-x)) calc(-.5 * var(--#{$prefix}modal-header-padding-y)) auto;
   }
 }
 

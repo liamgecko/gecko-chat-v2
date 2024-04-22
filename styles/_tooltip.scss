@@ -118,7 +118,7 @@
   line-height: initial;
   background-color: var(--#{$prefix}tooltip-bg);
   @include border-radius(var(--#{$prefix}tooltip-border-radius));
-  box-shadow: $box-shadow;
+  box-shadow: $box-shadow-md;
 }
 
 .tooltip-menu {
