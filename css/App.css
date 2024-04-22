@@ -205,14 +205,14 @@
 
 /* line 49, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/_reboot.scss */
 html {
-  font-size: 87.5%;
+  font-size: 93.75%;
 }
 
 /* line 52, ../../../../../Users/liamyoung/Repos/Gecko-Chat-v2/styles/_reboot.scss */
 body {
   margin: 0;
   font-family: var(--gecko-body-font-family);
-  font-size: 14px;
+  font-size: 15px;
   font-size: 1rem;
   font-weight: var(--gecko-body-font-weight);
   line-height: var(--gecko-body-line-height);
